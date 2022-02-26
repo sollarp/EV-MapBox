@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">EV Mapbox</string>
     <string name="mapbox_access_token">pk.eyJ1Ijoic3pwaXRvciIsImEiOiJja3o5bmVweDgxb2d5Mm51c2p6aW1waDdxIn0.YgUWEkvPNxdzTE9XraPETw</string>
+    <string name="button">api_button</string>
 </resources>
