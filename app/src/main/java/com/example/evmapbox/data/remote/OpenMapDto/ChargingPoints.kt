@@ -84,7 +84,7 @@ class ChargingPoints : ArrayList<ChargingPoints.ChargingPointsItem>(){
             @SerializedName("Voltage")
             val voltage: Int?,
             @SerializedName("PowerKW")
-            val powerKW: Int?,
+            val powerKW: Double?,
             @SerializedName("CurrentTypeID")
             val currentTypeID: Int?,
             @SerializedName("Quantity")

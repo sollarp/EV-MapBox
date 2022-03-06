@@ -45,19 +45,8 @@ fun ChargingPointsAllItem.toEvPointItems(): EvPointItems {
 
     return EvPointItems(
         iD = iD,
-        powerKW = connections?.map { it.powerKW },
-        amps = connections?.map { it.amps },
-        connectionTypeID = connections?.map { it.connectionTypeID },
-        postcode = addressInfo?.postcode,
-        latitude = addressInfo?.latitude,
-        longitude = addressInfo?.longitude,
-        addressLine1 = addressInfo?.addressLine1,
-        addressLine2 = addressInfo?.addressLine2,
-        distanceUnit = addressInfo?.distanceUnit,
-        voltage = connections?.map { it.amps },
+        operatorID = operatorID,
         usageCost = usageCost,
-        title = addressInfo?.title,
-        town = addressInfo?.town,
-        distance = addressInfo?.distance
-    )
+        addressInfo = addressInfo,
+        )
 }
