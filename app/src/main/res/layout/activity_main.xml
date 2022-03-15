@@ -10,10 +10,14 @@
     mapbox:mapbox_cameraZoom="9.0">
 
     <TextView
-        android:id="@+id/api_textView"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="61dp"
+        android:text=""
         mapbox:layout_constraintBottom_toBottomOf="parent"
         mapbox:layout_constraintLeft_toLeftOf="parent"
         mapbox:layout_constraintRight_toRightOf="parent"
