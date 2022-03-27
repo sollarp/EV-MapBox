@@ -17,7 +17,7 @@
         android:layout_marginTop="200dp"
         android:layout_marginEnd="159dp"
         android:layout_marginBottom="61dp"
-        android:text=""
+        android:text="Message here"
         mapbox:layout_constraintBottom_toBottomOf="parent"
         mapbox:layout_constraintLeft_toLeftOf="parent"
         mapbox:layout_constraintRight_toRightOf="parent"

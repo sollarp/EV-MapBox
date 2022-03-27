@@ -12,7 +12,6 @@ import androidx.compose.runtime.Composable
 import androidx.lifecycle.viewModelScope
 import com.example.evmapbox.data.EvRepoImpl
 import com.example.evmapbox.data.remote.OpenMapApi
-import com.example.evmapbox.data.remote.OpenMapDto.ChargingPointsAllItem
 import com.example.evmapbox.data.testImpl
 import com.example.evmapbox.databinding.ActivityMainBinding
 import com.example.evmapbox.di.AppModule
@@ -65,11 +64,11 @@ class MainActivity : AppCompatActivity() {
 
 
     }
-    @SuppressLint("SetTextI18n")
     fun startFun() {
         viewModel.state.observe(this) {EvPointItems ->
             binding.apply {
-                textView.text = EvPointItems.points.map { it.operatorID }.toString()
+                textView.text = EvPointItems.points.map { it.connections }.toString()
+                //Log.d("mapView", "talald meg ${evPointItems.addressInfo?.latitude.toString()}")
             }
         }
     }
