@@ -1,13 +1,22 @@
 package com.example.call_mapbox_api
 
 import android.app.Application
-import com.example.call_mapbox_api.homescreen.data.SearchListRepository
+import android.content.Context
+import com.example.call_mapbox_api.domain.SearchListUseCase
 import com.example.call_mapbox_api.util.AppContainer
 
-class MyApplication: Application() {
+class MyApplication : Application() {
 
-    fun getMyApp(): SearchListRepository {
-        return AppContainer().getRepository()
-
+    fun getMyApp(): SearchListUseCase {
+        return AppContainer().getSearchListUseCase()
     }
+
+     override fun onCreate() {
+         super.onCreate()
+         appContext = this
+     }
+
+     companion object {
+         lateinit var appContext: Context
+     }
 }

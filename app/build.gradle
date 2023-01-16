@@ -4,6 +4,7 @@ plugins {
     id 'kotlin-kapt'
     id 'org.jetbrains.kotlin.plugin.serialization' version '1.6.10'
     id "kotlin-parcelize"
+    id "androidx.navigation.safeargs.kotlin"
 }
 
 android {
@@ -38,6 +39,23 @@ android {
 }
 
 dependencies {
+    def nav_version = "2.5.3"
+    def room_version = "2.4.3"
+    def moshi_version = "1.13.0"
+
+    // Room
+    implementation("androidx.room:room-runtime:$room_version")
+    //annotationProcessor("androidx.room:room-compiler:$room_version")
+    // Kapt recommended for unit test instead of annotationProcessor
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation("androidx.room:room-ktx:$room_version")
+    implementation("androidx.room:room-paging:$room_version")
+    testImplementation("androidx.room:room-testing:$room_version")
+
+    // Kotlin Fragment with SafeArg
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
 
     implementation 'androidx.core:core-ktx:1.6.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
@@ -47,6 +65,8 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
     implementation 'androidx.test:core-ktx:1.5.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
@@ -76,7 +96,6 @@ dependencies {
     implementation "com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2"
 
     // moshi for parsing the JSON format
-    def moshi_version = "1.13.0"
     implementation "com.squareup.moshi:moshi:$moshi_version"
     implementation "com.squareup.moshi:moshi-kotlin:$moshi_version"
     kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshi_version"
@@ -85,8 +104,6 @@ dependencies {
     implementation "androidx.cardview:cardview:1.0.0"
 
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.0")
-
-
 
 }
 java {

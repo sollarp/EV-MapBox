@@ -19,7 +19,7 @@
         android:theme="@style/Theme.Call_Mapbox_API"
         tools:targetApi="31">
         <activity
-            android:name=".homescreen.ui.MainActivity"
+            android:name="com.example.call_mapbox_api.ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,8 +27,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".homescreen.ui.SearchListActivity" />
-        <activity android:name=".homescreen.ui.DetailActivity" />
     </application>
 
 </manifest>
