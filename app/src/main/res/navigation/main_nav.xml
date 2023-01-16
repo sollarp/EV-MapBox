@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main_nav"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/mapBarFragment">
 
     <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.example.call_mapbox_api.EvListFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        android:id="@+id/mapBarFragment"
+        android:name="com.example.call_mapbox_api.MapBarFragment"
+        android:label="fragment_searchMap"
+        tools:layout="@layout/activity_mapbar" />
 </navigation>

@@ -1,14 +1,16 @@
-package com.example.call_mapbox_api
+package com.example.call_mapbox_api.homescreen.data
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.call_mapbox_api.Connection
+import com.example.call_mapbox_api.R
 import kotlin.collections.ArrayList
 
-class DetailsAdapter(private val connectionsItemList: ArrayList<Connection>):
-    RecyclerView.Adapter<DetailsAdapter.MainViewHolder>(){
+class DetailRecycleAdapter(private val connectionsItemList: ArrayList<Connection>):
+    RecyclerView.Adapter<DetailRecycleAdapter.MainViewHolder>(){
 
     inner class MainViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 

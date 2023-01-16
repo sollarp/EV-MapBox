@@ -8,25 +8,22 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
 
-        var mHttpLoggingInterceptor = HttpLoggingInterceptor()
-            .setLevel(HttpLoggingInterceptor.Level.BODY)
-
-        var mOkHttpClient = OkHttpClient
-            .Builder()
-            .addInterceptor(mHttpLoggingInterceptor)
-            .build()
+//        var mHttpLoggingInterceptor = HttpLoggingInterceptor()
+//            .setLevel(HttpLoggingInterceptor.Level.BODY)
+//
+//        var mOkHttpClient = OkHttpClient
+//            .Builder()
+//            .addInterceptor(mHttpLoggingInterceptor)
+//            .build()
 //    var gsonBuilder = GsonBuilder()
 //    .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES).setLenient();
 
 //  https://api.openchargemap.io/
-        private val retrofit: Retrofit by lazy {
-            Retrofit.Builder()
-                .baseUrl("https://d01abe6f-6cca-4fc5-aaf9-18b2ff7178f4.mock.pstmn.io/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .client(mOkHttpClient)
-                .build()
-        }
-    val evList : OpenMapApi by lazy {
-        retrofit.create(OpenMapApi::class.java)
-    }
+//        private val retrofit: Retrofit by lazy {
+//            Retrofit.Builder()
+//                .baseUrl("https://d01abe6f-6cca-4fc5-aaf9-18b2ff7178f4.mock.pstmn.io/")
+//                .addConverterFactory(GsonConverterFactory.create())
+//                .client(mOkHttpClient)
+//                .build()
+//        }
 }

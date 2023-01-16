@@ -1,4 +1,4 @@
-package com.example.call_mapbox_api
+package com.example.call_mapbox_api.util
 
 
 import java.io.Serializable
