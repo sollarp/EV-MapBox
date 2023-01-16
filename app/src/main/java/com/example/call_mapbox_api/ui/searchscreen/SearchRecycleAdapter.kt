@@ -26,7 +26,7 @@ class SearchRecycleAdapter(
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         val textView: TextView
-        val goButton = view.findViewById<Button>(R.id.button_go)
+        val goButton: Button = view.findViewById(R.id.button_go)
 
         init {
             // Define click listener for the ViewHolder's View.
@@ -55,7 +55,7 @@ class SearchRecycleAdapter(
             val lat = address.map { (it.AddressInfo.Latitude) }[position]
             val lon = address.map { it.AddressInfo.Longitude }[position]
             val navigationIntentUri: Uri =
-                Uri.parse("google.navigation:q=" + lat + "," + lon)
+                Uri.parse("google.navigation:q=$lat,$lon")
             val context = viewHolder.itemView.context
             val bundle = Bundle()
             val intent = Intent(Intent.ACTION_VIEW, navigationIntentUri)

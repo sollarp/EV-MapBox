@@ -12,12 +12,15 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.call_mapbox_api.R
 import com.example.call_mapbox_api.databinding.FragmentDetailBinding
 import com.example.call_mapbox_api.ui.searchscreen.SearchListViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class DetailFragment : Fragment() {
 
     private var fragmentDetailBinding: FragmentDetailBinding? = null
-    private val viewModel: SearchListViewModel by activityViewModels { SearchListViewModel.Factory}
+    //private val viewModel: SearchListViewModel by activityViewModels { SearchListViewModel.Factory}
+    private val viewModel: SearchListViewModel by activityViewModels()
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

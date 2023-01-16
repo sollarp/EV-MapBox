@@ -3,16 +3,20 @@ package com.example.call_mapbox_api.data.repository
 import android.util.Log
 import com.example.call_mapbox_api.data.IEvPointRemoteDataSource
 import com.example.call_mapbox_api.data.IEvPointLocalDataSource
-import com.example.call_mapbox_api.data.remote.EvPointsBrakeItem
+import com.example.call_mapbox_api.data.local.EvPointsEntity
 import com.example.call_mapbox_api.model.toEvPointsBreakItems
 import kotlinx.coroutines.flow.Flow
+import javax.inject.Inject
+import javax.inject.Singleton
 
-class SearchListRepository(
+
+@Singleton
+class SearchListRepository @Inject constructor(
     private val evPointDataSource: IEvPointRemoteDataSource,
     private val localDataSource: IEvPointLocalDataSource
 ) : ISearchListRepository {
 
-    override suspend fun fetchList(): Flow<List<EvPointsBrakeItem>> {
+    override suspend fun fetchList(): Flow<List<EvPointsEntity>> {
         try {
             evPointDataSource.getLatestEvPoint().collect { items ->
                 localDataSource.updatePoints(items.toEvPointsBreakItems())
@@ -25,6 +29,6 @@ class SearchListRepository(
 }
 
 interface ISearchListRepository {
-    suspend fun fetchList(): Flow<List<EvPointsBrakeItem>>
+    suspend fun fetchList(): Flow<List<EvPointsEntity>>
 }
 

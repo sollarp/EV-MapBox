@@ -1,17 +1,19 @@
-package com.example.call_mapbox_api.data.remote
+package com.example.call_mapbox_api.data.local
 
 
 import androidx.annotation.Keep
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.example.call_mapbox_api.data.remote.AddressInfo
+import com.example.call_mapbox_api.data.remote.Connections
 import com.example.call_mapbox_api.model.EvPointDetails
 import kotlinx.serialization.Serializable
 
 @Keep
 @Serializable
 @Entity(tableName = "evPointsDb")
-data class EvPointsBrakeItem(
+data class EvPointsEntity(
     @PrimaryKey(autoGenerate = false)
     val ID: Int?,
 
@@ -62,7 +64,7 @@ data class EvPointsBrakeItem(
 )
 
 
-fun List<EvPointsBrakeItem>.toEvPointDetails() : List<EvPointDetails> {
+fun List<EvPointsEntity>.toEvPointDetails() : List<EvPointDetails> {
     return this.map {
         EvPointDetails(
             AddressInfo = it.AddressInfo,

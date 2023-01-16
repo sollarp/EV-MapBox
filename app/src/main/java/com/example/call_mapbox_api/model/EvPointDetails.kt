@@ -1,11 +1,9 @@
 package com.example.call_mapbox_api.model
 
+import com.example.call_mapbox_api.data.local.EvPointsEntity
 import com.example.call_mapbox_api.data.remote.AddressInfo
 import com.example.call_mapbox_api.data.remote.Connections
-import com.example.call_mapbox_api.data.remote.EvPointsBrakeItem
 import kotlinx.serialization.Serializable
-
-// This class has not been used. Room using EvPointsBreakItems
 
 @Serializable
 data class EvPointDetails(
@@ -27,9 +25,9 @@ data class EvPointDetails(
     val Connections: List<Connections>
 )
 
-fun List<EvPointDetails>.toEvPointsBreakItems() : List<EvPointsBrakeItem> {
+fun List<EvPointDetails>.toEvPointsBreakItems() : List<EvPointsEntity> {
     return this.map {
-        EvPointsBrakeItem(
+        EvPointsEntity(
             AddressInfo = it.AddressInfo,
             Connections = it.Connections,
             NumberOfPoints = it.NumberOfPoints,
