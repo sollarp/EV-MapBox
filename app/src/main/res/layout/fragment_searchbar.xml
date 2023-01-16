@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relLayout1"
+        android:layout_width="367dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/white_border"
+        android:elevation="10dp">
+
+        <ImageView
+            android:id="@+id/ic_magnify"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_magnify" />
+
+        <EditText
+            android:id="@+id/input_search"
+            android:layout_width="292dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="9dp"
+            android:layout_toEndOf="@+id/ic_magnify"
+            android:background="@null"
+            android:hint="@string/enter_address_city_or_zip_code"
+            android:imeOptions="actionSearch"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

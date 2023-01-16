@@ -1,5 +1,15 @@
 <resources>
-    <string name="app_name">EV Mapbox</string>
-    <string name="mapbox_access_token">pk.eyJ1Ijoic3pwaXRvciIsImEiOiJja3o5bmVweDgxb2d5Mm51c2p6aW1waDdxIn0.YgUWEkvPNxdzTE9XraPETw</string>
-    <string name="button">api_button</string>
+    <string name="app_name">Call_Mapbox_API</string>
+    <string name="semmi_nem_add_hozza">semmi nem add hozza</string>
+    <string name="todo">TODO</string>
+    <string name="close_approach_data_title">close_approach_data_title</string>
+    <string name="absolute_magnitude_title">absolute_magnitude_title</string>
+    <string name="relative_velocity_title">relative_velocity_title</string>
+    <string name="distance_from_earth_title">distance_from_earth_title</string>
+    <string name="estimated_diameter_title">estimated_diameter_title</string>
+    <string name="location_details">location details</string>
+    <string name="address">address</string>
+    <string name="number_of_bays">Number of Bays</string>
+    <string name="datelaststatusupdate">DateLastStatusUpdate</string>
+    <string name="enter_address_city_or_zip_code">entrer_address</string>
 </resources>

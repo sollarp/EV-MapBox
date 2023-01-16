@@ -1,0 +1,789 @@
+[
+  {
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-08-23T11:10:00Z",
+    "ID": 200875,
+    "UUID": "7226AA93-AF84-476E-BFD0-43294C91D90C",
+    "DataProviderID": 18,
+    "DataProvidersReference": "8c0bed3bc5676d0a55fee0c77517d685",
+    "OperatorID": 157,
+    "UsageTypeID": 1,
+    "AddressInfo": {
+      "ID": 201234,
+      "Title": "Hempton Road",
+      "AddressLine1": "Hempton Road",
+      "Town": "Cherwell",
+      "Postcode": "OX15 0QH",
+      "CountryID": 1,
+      "Latitude": 51.981107,
+      "Longitude": -1.330938,
+      "AccessComments": "",
+      "RelatedURL": "https://shellrecharge.com/en",
+      "Distance": 2.2534887722346735,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 334904,
+        "ConnectionTypeID": 25,
+        "Reference": "8103563",
+        "StatusTypeID": 50,
+        "LevelID": 2,
+        "Amps": 32,
+        "Voltage": 400,
+        "PowerKW": 22,
+        "CurrentTypeID": 20
+      },
+      {
+        "ID": 334905,
+        "ConnectionTypeID": 25,
+        "Reference": "09102084_1",
+        "StatusTypeID": 50,
+        "LevelID": 2,
+        "Amps": 32,
+        "Voltage": 400,
+        "PowerKW": 22,
+        "CurrentTypeID": 20
+      }
+    ],
+    "StatusTypeID": 0,
+    "DateLastStatusUpdate": "2022-08-23T11:10:00Z",
+    "MetadataValues": [
+      {
+        "ID": 21297,
+        "MetadataFieldID": 4,
+        "ItemValue": "Contains public sector information licensed under the Open Government Licence v2.0. http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"
+      }
+    ],
+    "DataQualityLevel": 3,
+    "DateCreated": "2022-08-23T11:10:00Z",
+    "SubmissionStatusTypeID": 100
+  },
+  {
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-08-15T18:42:00Z",
+    "ID": 169362,
+    "UUID": "ACB334E7-958B-4A88-9404-D2325A60A6A2",
+    "DataProviderID": 1,
+    "OperatorID": 3,
+    "OperatorsReference": "PG-84813",
+    "UsageTypeID": 4,
+    "UsageCost": "£0.15/kWh",
+    "AddressInfo": {
+      "ID": 169721,
+      "Title": "George Inn LTD-For Visitor Use Only",
+      "AddressLine1": "Barford St. Michael",
+      "Town": "Banbury",
+      "Postcode": "OX15 0RH",
+      "CountryID": 1,
+      "Latitude": 51.991392,
+      "Longitude": -1.368406,
+      "Distance": 2.6050055248551525,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 257682,
+        "ConnectionTypeID": 25,
+        "Reference": "PG-84813",
+        "StatusTypeID": 50,
+        "LevelID": 2,
+        "Amps": 32,
+        "Voltage": 230,
+        "PowerKW": 7,
+        "CurrentTypeID": 10,
+        "Quantity": 2,
+        "Comments": "Robb-Gene"
+      }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "This is an open charge unit installed at the George Inn LTD site Barford St Michael, Banbury OX15 0RH",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-08-15T18:42:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-10-15T21:35:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "IsRecentlyVerified": false,
+    "DateLastVerified": "2018-10-03T19:27:00Z",
+    "ID": 74962,
+    "UUID": "45399616-96F4-43FB-AC8F-0309799F7E62",
+    "DataProviderID": 1,
+    "OperatorID": 23,
+    "OperatorsReference": "20591",
+    "UsageTypeID": 6,
+    "UsageCost": "Free",
+    "AddressInfo": {
+      "ID": 75308,
+      "Title": "Soho Farmhouse",
+      "AddressLine1": "Soho Farmhouse",
+      "Town": "Chipping Norton",
+      "Postcode": "OX7 4JS",
+      "CountryID": 1,
+      "Latitude": 51.940126,
+      "Longitude": -1.42165,
+      "ContactTelephone1": "+44 160 861 9000",
+      "Distance": 2.7793492709668537,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 108145,
+        "ConnectionTypeID": 30,
+        "StatusTypeID": 50,
+        "LevelID": 2,
+        "Amps": 16,
+        "Voltage": 400,
+        "PowerKW": 11,
+        "CurrentTypeID": 20,
+        "Quantity": 1
+      }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "1 Tesla Connector, up to 11kW.Available for patrons only. Please see front desk.",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2018-10-03T19:27:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2016-12-09T09:56:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "IsRecentlyVerified": false,
+    "DateLastVerified": "2019-05-08T13:06:00Z",
+    "ID": 125923,
+    "UUID": "6FA0E8AB-85FA-4B94-B202-7F13D8957161",
+    "DataProviderID": 1,
+    "OperatorID": 19,
+    "UsageTypeID": 6,
+    "UsageCost": "Free",
+    "AddressInfo": {
+      "ID": 126269,
+      "Title": "Heath Farm Holiday Cottages",
+      "AddressLine1": "Heath Farm,",
+      "AddressLine2": "Swerford",
+      "Town": "Chipping Norton",
+      "StateOrProvince": "Oxfordshire",
+      "Postcode": "OX7 4BN",
+      "CountryID": 1,
+      "Latitude": 51.984726,
+      "Longitude": -1.429766,
+      "ContactTelephone1": "01608683270",
+      "ContactEmail": "cottages@heathfarm.com",
+      "RelatedURL": "http://heathfarm.com",
+      "Distance": 3.6360639952106384,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 176497,
+        "ConnectionTypeID": 25,
+        "StatusTypeID": 50,
+        "LevelID": 2,
+        "Amps": 32,
+        "Voltage": 230,
+        "PowerKW": 7,
+        "CurrentTypeID": 10,
+        "Quantity": 1
+      }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2019-05-08T13:06:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2019-05-08T13:03:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-09-12T05:21:00Z",
+    "ID": 187845,
+    "UUID": "9F1B4E83-2E45-4C28-9217-DADBF26AF0D5",
+    "DataProviderID": 1,
+    "OperatorID": 3,
+    "OperatorsReference": "PG-102387",
+    "UsageTypeID": 4,
+    "UsageCost": "£0.20/kWh",
+    "AddressInfo": {
+      "ID": 188204,
+      "Title": "Bloxham Mill",
+      "AddressLine1": "Barford Road",
+      "Town": "Banbury",
+      "Postcode": "OX15 4FF",
+      "CountryID": 1,
+      "Latitude": 52.016682,
+      "Longitude": -1.37961,
+      "RelatedURL": "http://pod-point.com",
+      "Distance": 4.4065690841934515,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 303137,
+        "ConnectionTypeID": 25,
+        "Reference": "PG-102387",
+        "StatusTypeID": 50,
+        "LevelID": 2,
+        "Amps": 32,
+        "Voltage": 230,
+        "PowerKW": 7,
+        "CurrentTypeID": 10,
+        "Quantity": 1,
+        "Comments": "Neve-Bret"
+      }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-09-12T05:21:00Z",
+    "MetadataValues": [
+      {
+        "ID": 20085,
+        "MetadataFieldID": 4,
+        "ItemValue": "Contains public sector information licensed under the Open Government Licence v2.0. http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"
+      }
+    ],
+    "DataQualityLevel": 1,
+    "DateCreated": "2021-07-12T03:39:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "IsRecentlyVerified": false,
+    "DateLastVerified": "2020-12-21T07:15:00Z",
+    "ID": 167710,
+    "UUID": "72E13C25-0B24-4F7A-BF17-C13D94218B98",
+    "DataProviderID": 1,
+    "OperatorID": 1,
+    "UsageTypeID": 3,
+    "AddressInfo": {
+      "ID": 168069,
+      "Title": "Home",
+      "AddressLine1": "Willows End ",
+      "AddressLine2": "Banbury Rd ",
+      "Town": "Banbury",
+      "StateOrProvince": "England",
+      "Postcode": "OX15 4PD",
+      "CountryID": 1,
+      "Latitude": 52.023914228519004,
+      "Longitude": -1.3737651217179518,
+      "Distance": 4.863196344561909,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 254654,
+        "ConnectionTypeID": 1036,
+        "StatusTypeID": 50,
+        "LevelID": 2,
+        "Quantity": 1
+      }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2020-12-21T07:15:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-09-11T08:06:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "IsRecentlyVerified": false,
+    "DateLastVerified": "2019-06-20T05:35:00Z",
+    "ID": 101181,
+    "UUID": "F8018D7D-F308-4E08-8938-24D53E0C0392",
+    "DataProviderID": 1,
+    "OperatorID": 32,
+    "OperatorsReference": "24085,24110",
+    "UsageTypeID": 4,
+    "UsageCost": "£0.108/kWh; for Polar Plus subscription members only",
+    "AddressInfo": {
+      "ID": 101527,
+      "Title": "Crowne Plaza Heythrop Park",
+      "AddressLine1": "Enstone",
+      "Town": "Chipping Norton",
+      "Postcode": "OX7 5UF",
+      "CountryID": 1,
+      "Latitude": 51.935089,
+      "Longitude": -1.474167,
+      "Distance": 5.018798406521318,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 142839,
+        "ConnectionTypeID": 33,
+        "StatusTypeID": 50,
+        "LevelID": 3,
+        "PowerKW": 50,
+        "CurrentTypeID": 30,
+        "Quantity": 2
+      },
+      {
+        "ID": 142840,
+        "ConnectionTypeID": 2,
+        "StatusTypeID": 50,
+        "LevelID": 3,
+        "PowerKW": 50,
+        "CurrentTypeID": 30,
+        "Quantity": 2
+      },
+      {
+        "ID": 142841,
+        "ConnectionTypeID": 1036,
+        "StatusTypeID": 50,
+        "LevelID": 3,
+        "PowerKW": 43,
+        "CurrentTypeID": 20,
+        "Quantity": 2
+      }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2019-06-20T05:35:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2018-03-20T06:14:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "IsRecentlyVerified": false,
+    "DateLastVerified": "2019-06-20T05:32:00Z",
+    "ID": 118705,
+    "UUID": "ED87DB8F-4DC8-431E-A9CC-99D8EDB61FF9",
+    "DataProviderID": 1,
+    "OperatorID": 32,
+    "OperatorsReference": "24357",
+    "UsageTypeID": 4,
+    "UsageCost": "£0.108/kWh; for Polar Plus subscription members only",
+    "AddressInfo": {
+      "ID": 119051,
+      "Title": "The Killingworth Castle",
+      "AddressLine1": "The Killingworth Castle",
+      "Town": "Glympton Road",
+      "StateOrProvince": "Woodstock",
+      "Postcode": "OX20 1EJ",
+      "CountryID": 1,
+      "Latitude": 51.880005,
+      "Longitude": -1.365153,
+      "Distance": 5.117914060602527,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 167900,
+        "ConnectionTypeID": 33,
+        "StatusTypeID": 50,
+        "LevelID": 3,
+        "PowerKW": 50,
+        "CurrentTypeID": 30,
+        "Quantity": 1
+      },
+      {
+        "ID": 167901,
+        "ConnectionTypeID": 2,
+        "StatusTypeID": 50,
+        "LevelID": 3,
+        "PowerKW": 50,
+        "CurrentTypeID": 30,
+        "Quantity": 1
+      },
+      {
+        "ID": 167902,
+        "ConnectionTypeID": 1036,
+        "StatusTypeID": 50,
+        "LevelID": 3,
+        "PowerKW": 43,
+        "CurrentTypeID": 20,
+        "Quantity": 1
+      }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "Unit located in the main car park",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2019-06-20T05:32:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2019-03-30T06:16:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "IsRecentlyVerified": false,
+    "DateLastVerified": "2018-03-13T18:03:00Z",
+    "ID": 100980,
+    "UUID": "D5F886C2-580E-4053-B1A8-795EC160CEC0",
+    "DataProviderID": 1,
+    "OperatorID": 3296,
+    "UsageTypeID": 5,
+    "UsageCost": "£0.25/kWh",
+    "AddressInfo": {
+      "ID": 101326,
+      "Title": "Bannatyne Health Club And Spa - Banbury",
+      "AddressLine1": "Oxford Road",
+      "Town": "Bodicote",
+      "Postcode": "OX15 4AF",
+      "CountryID": 1,
+      "Latitude": 52.036303,
+      "Longitude": -1.31908,
+      "AccessComments": "Station can be found within the car park of Bannatyne Gym. This station is available for all public use., ",
+      "Distance": 5.951550746617596,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 142579,
+        "ConnectionTypeID": 2,
+        "Reference": "CHA003-006-02",
+        "StatusTypeID": 50,
+        "LevelID": 3,
+        "Amps": 125,
+        "Voltage": 400,
+        "PowerKW": 50,
+        "CurrentTypeID": 30,
+        "Quantity": 2
+      },
+      {
+        "ID": 142586,
+        "ConnectionTypeID": 33,
+        "StatusTypeID": 50,
+        "LevelID": 3,
+        "Amps": 125,
+        "Voltage": 400,
+        "PowerKW": 50,
+        "CurrentTypeID": 30,
+        "Quantity": 2
+      }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2018-03-13T18:03:00Z",
+    "MetadataValues": [
+      {
+        "ID": 4086,
+        "MetadataFieldID": 4,
+        "ItemValue": "Contains public sector information licensed under the Open Government Licence v2.0. http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"
+      }
+    ],
+    "DataQualityLevel": 3,
+    "DateCreated": "2018-03-13T17:57:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-06-17T14:13:00Z",
+    "ID": 193535,
+    "UUID": "18D0FBDE-58C5-4240-B92E-BF3E61405200",
+    "DataProviderID": 1,
+    "OperatorID": 3296,
+    "UsageTypeID": 5,
+    "UsageCost": "£0.57/kWh",
+    "AddressInfo": {
+      "ID": 193894,
+      "Title": "McDonald's Baynards Green",
+      "AddressLine1": "Baynards Green Roundabout",
+      "Town": "Bicester",
+      "StateOrProvince": "England",
+      "Postcode": "OX27 7SG",
+      "CountryID": 1,
+      "Latitude": 51.959104707911735,
+      "Longitude": -1.202526949433718,
+      "Distance": 6.7320368872764496,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 314948,
+        "ConnectionTypeID": 33,
+        "StatusTypeID": 50,
+        "LevelID": 3,
+        "PowerKW": 120,
+        "CurrentTypeID": 30,
+        "Quantity": 2
+      },
+      {
+        "ID": 314949,
+        "ConnectionTypeID": 2,
+        "StatusTypeID": 50,
+        "LevelID": 3,
+        "PowerKW": 100,
+        "CurrentTypeID": 30,
+        "Quantity": 2
+      }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-06-17T14:13:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2022-06-17T14:13:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "IsRecentlyVerified": false,
+    "DateLastVerified": "2022-01-12T16:24:00Z",
+    "ID": 174120,
+    "UUID": "8AD45D2A-AC67-4899-AE79-EC614935FE48",
+    "DataProviderID": 1,
+    "OperatorID": 24,
+    "OperatorsReference": "0043,0044",
+    "UsageTypeID": 5,
+    "UsageCost": "£0.39/kWh",
+    "AddressInfo": {
+      "ID": 174479,
+      "Title": "Moto Cherwell Valley Services",
+      "AddressLine1": "Cherwell Valley Services",
+      "Town": "Fewcott",
+      "Postcode": "OX27 7RD",
+      "CountryID": 1,
+      "Latitude": 51.94964,
+      "Longitude": -1.19891,
+      "Distance": 6.884227967518919,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 268985,
+        "ConnectionTypeID": 2,
+        "StatusTypeID": 50,
+        "LevelID": 3,
+        "PowerKW": 100,
+        "CurrentTypeID": 30,
+        "Quantity": 1
+      },
+      {
+        "ID": 268986,
+        "ConnectionTypeID": 33,
+        "StatusTypeID": 50,
+        "LevelID": 3,
+        "PowerKW": 120,
+        "CurrentTypeID": 30,
+        "Quantity": 1
+      },
+      {
+        "ID": 269131,
+        "ConnectionTypeID": 33,
+        "StatusTypeID": 50,
+        "LevelID": 3,
+        "PowerKW": 50,
+        "CurrentTypeID": 30,
+        "Quantity": 2
+      }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-01-12T16:24:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2021-03-16T06:12:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-08-16T13:50:00Z",
+    "ID": 195268,
+    "UUID": "10630BED-5B38-4296-BCCE-59C0AFB6A07D",
+    "DataProviderID": 1,
+    "OperatorID": 3,
+    "OperatorsReference": "PG-88607,PG-88627",
+    "UsageTypeID": 4,
+    "UsageCost": "£0.17/hour,£0.24/hour,£0.17/hour,£0.24/hour,£0.17/hour,£0.24/hour,£0.17/hour,£0.24/hour,£0.17/hour,£0.24/hour,£0.17/hour,£0.24/hour,£0.17/hour,£0.24/hour",
+    "AddressInfo": {
+      "ID": 195627,
+      "Title": "Swalcliffe Park School",
+      "AddressLine1": "Main Road",
+      "Town": "Swalcliffe",
+      "StateOrProvince": "Banbury",
+      "Postcode": "OX15 5EP",
+      "CountryID": 1,
+      "Latitude": 52.0372349,
+      "Longitude": -1.4521768,
+      "Distance": 6.950515760143719,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 318417,
+        "ConnectionTypeID": 25,
+        "Reference": "PG-88607",
+        "StatusTypeID": 50,
+        "LevelID": 2,
+        "Amps": 32,
+        "Voltage": 230,
+        "PowerKW": 7,
+        "CurrentTypeID": 10,
+        "Quantity": 2,
+        "Comments": "Rory-Axel"
+      },
+      {
+        "ID": 318418,
+        "ConnectionTypeID": 25,
+        "Reference": "PG-88627",
+        "StatusTypeID": 50,
+        "LevelID": 2,
+        "Amps": 32,
+        "Voltage": 230,
+        "PowerKW": 7,
+        "CurrentTypeID": 10,
+        "Quantity": 2,
+        "Comments": "Gene-Faye"
+      }
+    ],
+    "NumberOfPoints": 4,
+    "GeneralComments": "This is an open charge unit installed at the Swalcliffe Park School site in Main Rd, Banbury.",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-08-16T13:50:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2022-08-13T16:59:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "IsRecentlyVerified": false,
+    "DateLastVerified": "2015-07-26T09:25:00Z",
+    "ID": 51415,
+    "UUID": "BEE187D1-343E-4CAF-8E17-0625F9B80EDD",
+    "DataProviderID": 1,
+    "OperatorID": 196,
+    "UsageTypeID": 4,
+    "AddressInfo": {
+      "ID": 51761,
+      "Title": "Cherwell Valley Moto M40 Services Nomadpower",
+      "AddressLine1": "M40 Junction 10",
+      "AddressLine2": "Northampton Road",
+      "Town": "Bicester",
+      "StateOrProvince": "Oxfordshire",
+      "Postcode": "OX6 9RD",
+      "CountryID": 1,
+      "Latitude": 51.94899331949851,
+      "Longitude": -1.1970806121826172,
+      "AccessComments": "Although initially created for powering cooling trucks, the station can be used by EVs as well. Registration at Nomadpower is mandatory. Activation by phone or web.",
+      "RelatedURL": "https://www.nomadpower.eu/de/chargepoints/33/connector/87/",
+      "Distance": 6.964194239545561,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 63673,
+        "ConnectionTypeID": 17,
+        "StatusTypeID": 50,
+        "LevelID": 2,
+        "Amps": 32,
+        "Voltage": 400,
+        "PowerKW": 22,
+        "CurrentTypeID": 20,
+        "Quantity": 6
+      }
+    ],
+    "NumberOfPoints": 6,
+    "GeneralComments": "Users from other Nomadpower stations tell that it is not possible to use the full 22kW. Instead one should limit the charging power to 15kW for avoiding blown fuses in the charging station.",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2015-07-26T09:25:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2015-07-26T09:25:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "IsRecentlyVerified": false,
+    "DateLastVerified": "2020-03-12T12:44:00Z",
+    "ID": 146583,
+    "UUID": "EBC9A13F-D914-4DFD-8259-4FD244FAE670",
+    "DataProviderID": 1,
+    "OperatorsReference": "GBALLEGO000138",
+    "UsageTypeID": 5,
+    "UsageCost": "£0.39p/kWh contactless; £0.30/kWh through Shell Recharge, Smoov or NewMotion app",
+    "AddressInfo": {
+      "ID": 146935,
+      "Title": "Shell Recharge Holywell",
+      "AddressLine1": "Banbury Road",
+      "AddressLine2": "Chapel Cross Roads",
+      "Town": "Chipping Norton",
+      "StateOrProvince": "Oxfordshire",
+      "Postcode": "OX7 5SX",
+      "CountryID": 1,
+      "Latitude": 51.951161696590106,
+      "Longitude": -1.5244193947889926,
+      "ContactTelephone1": "0800 029 4601",
+      "AccessComments": "In Shell garage",
+      "Distance": 6.9873746373319685,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 203810,
+        "ConnectionTypeID": 33,
+        "StatusTypeID": 50,
+        "LevelID": 3,
+        "PowerKW": 150,
+        "CurrentTypeID": 30,
+        "Quantity": 1
+      },
+      {
+        "ID": 203811,
+        "ConnectionTypeID": 2,
+        "StatusTypeID": 50,
+        "LevelID": 3,
+        "PowerKW": 50,
+        "CurrentTypeID": 30,
+        "Quantity": 1
+      }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "Contactless payment, no app or login required.  Tap your card, plug it in and away you go!",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2020-03-12T12:44:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-01-11T14:36:00Z",
+    "SubmissionStatusTypeID": 200
+  },
+  {
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-08-23T11:10:00Z",
+    "ID": 157964,
+    "UUID": "3CA614C2-BF44-432A-8614-C79265C304FA",
+    "DataProviderID": 18,
+    "DataProvidersReference": "d10c3d8e2eab13e9d3db9f2c7d44a78a",
+    "OperatorID": 32,
+    "UsageTypeID": 4,
+    "AddressInfo": {
+      "ID": 158318,
+      "Title": "Brook Hill",
+      "AddressLine1": "Brook Hill",
+      "Town": "Woodstock",
+      "Postcode": "OX20 1TU",
+      "CountryID": 1,
+      "Latitude": 51.8522,
+      "Longitude": -1.3519,
+      "AccessComments": "",
+      "RelatedURL": "https://www.bpchargemaster.com",
+      "Distance": 7.04451574056006,
+      "DistanceUnit": 2
+    },
+    "Connections": [
+      {
+        "ID": 227676,
+        "ConnectionTypeID": 25,
+        "Reference": "1",
+        "StatusTypeID": 50,
+        "LevelID": 2,
+        "Amps": 32,
+        "Voltage": 230,
+        "PowerKW": 7,
+        "CurrentTypeID": 10
+      },
+      {
+        "ID": 227677,
+        "ConnectionTypeID": 25,
+        "Reference": "2",
+        "StatusTypeID": 50,
+        "LevelID": 2,
+        "Amps": 32,
+        "Voltage": 400,
+        "PowerKW": 22,
+        "CurrentTypeID": 20
+      }
+    ],
+    "DateLastStatusUpdate": "2022-08-23T11:10:00Z",
+    "MetadataValues": [
+      {
+        "ID": 7497,
+        "MetadataFieldID": 4,
+        "ItemValue": "Contains public sector information licensed under the Open Government Licence v2.0. http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"
+      }
+    ],
+    "DataQualityLevel": 3,
+    "DateCreated": "2020-06-25T10:00:00Z",
+    "SubmissionStatusTypeID": 100
+  }
+]
