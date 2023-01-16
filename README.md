@@ -11,6 +11,7 @@ This app uses the latest cutting edge libraries and tools:
 - 100% written in Kotlin;
 - Kotlin Coroutines for asynchronous programming;
 - Kotlin-Hilt for dependency injection.
+- Room for local data base.
 
 Other features:
 - MVVM architecture;
