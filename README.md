@@ -10,7 +10,7 @@ The app also contains a handy search bar which allows to enter a postcode and mo
 This app uses the latest cutting edge libraries and tools:
 - 100% written in Kotlin;
 - Kotlin Coroutines for asynchronous programming;
-- Kotlin-Hilt for dependency injection.
+- Dagger-Hilt for dependency injection.
 - Flow
 - Room for local data base.
 
