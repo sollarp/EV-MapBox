@@ -11,6 +11,7 @@ This app uses the latest cutting edge libraries and tools:
 - 100% written in Kotlin;
 - Kotlin Coroutines for asynchronous programming;
 - Kotlin-Hilt for dependency injection.
+- Flow
 - Room for local data base.
 
 Other features:
@@ -18,6 +19,7 @@ Other features:
 - Clean Architecture;
 - Google Maps Android SDK;
 - Retrofit2 for consuming RESTful Apis;
+- LiveData
 - JUnit4, Mockito-Kotlin.
 
 ## Development setup
