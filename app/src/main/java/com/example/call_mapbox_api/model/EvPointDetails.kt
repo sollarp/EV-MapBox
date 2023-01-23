@@ -1,8 +1,8 @@
 package com.example.call_mapbox_api.model
 
-import com.example.call_mapbox_api.data.local.EvPointsEntity
 import com.example.call_mapbox_api.data.remote.AddressInfo
 import com.example.call_mapbox_api.data.remote.Connections
+import com.example.call_mapbox_api.data.remote.EvPointsEntity
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -21,8 +21,9 @@ data class EvPointDetails(
     val UUID: String?,
     val UsageCost: String?,
     val UsageTypeID: Int?,
-    val AddressInfo: AddressInfo,
-    val Connections: List<Connections>
+    val Connections: List<Connections>,
+    val AddressInfo: AddressInfo
+
 )
 
 fun List<EvPointDetails>.toEvPointsBreakItems() : List<EvPointsEntity> {

@@ -1,7 +1,7 @@
 package com.example.call_mapbox_api.di
 
 import com.example.call_mapbox_api.domain.ISearchListUseCase
-import com.example.call_mapbox_api.domain.SearchListUseCase
+import com.example.call_mapbox_api.domain.SearchListUseCaseImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -14,5 +14,5 @@ abstract class UseCaseModule {
 
     @Singleton
     @Binds
-    abstract fun bindSearchListUseCase(impl: SearchListUseCase): ISearchListUseCase
+    abstract fun bindSearchListUseCase(impl: SearchListUseCaseImpl): ISearchListUseCase
 }

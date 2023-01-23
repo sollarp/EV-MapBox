@@ -14,6 +14,7 @@ import com.example.call_mapbox_api.databinding.FragmentDetailBinding
 import com.example.call_mapbox_api.ui.searchscreen.SearchListViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
+
 @AndroidEntryPoint
 class DetailFragment : Fragment() {
 

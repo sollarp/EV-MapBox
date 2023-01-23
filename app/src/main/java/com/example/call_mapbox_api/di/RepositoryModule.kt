@@ -1,7 +1,7 @@
 package com.example.call_mapbox_api.di
 
 import com.example.call_mapbox_api.data.repository.ISearchListRepository
-import com.example.call_mapbox_api.data.repository.SearchListRepository
+import com.example.call_mapbox_api.data.repository.SearchListRepositoryImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -14,5 +14,5 @@ abstract class RepositoryModule {
 
     @Singleton
     @Binds
-    abstract fun bindSearchListRepository(impl: SearchListRepository): ISearchListRepository
+    abstract fun bindSearchListRepository(impl: SearchListRepositoryImpl): ISearchListRepository
 }

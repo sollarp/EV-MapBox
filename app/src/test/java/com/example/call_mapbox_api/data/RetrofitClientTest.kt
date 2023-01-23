@@ -16,12 +16,4 @@ class RetrofitClientTest{
         assert(instance.baseUrl().toUrl().toString() == MOCK_BASE_URL)
 
     }
-
-    /*@Test
-    suspend fun `Incorrect Api key or missing`() {
-        val response = API_KEY_ERROR
-        val actualResponse = openMapApi.getMaxResults()
-        assert(actualResponse.toString() == response)
-    }*/
-
 }

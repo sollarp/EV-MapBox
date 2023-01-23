@@ -1,12 +1,10 @@
-package com.example.call_mapbox_api.data.local
+package com.example.call_mapbox_api.data.remote
 
 
 import androidx.annotation.Keep
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.example.call_mapbox_api.data.remote.AddressInfo
-import com.example.call_mapbox_api.data.remote.Connections
 import com.example.call_mapbox_api.model.EvPointDetails
 import kotlinx.serialization.Serializable
 

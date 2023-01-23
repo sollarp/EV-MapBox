@@ -27,16 +27,18 @@ class MapBarFragment : Fragment() {
         fragmentMapBarBinding = binding
         val searchBar = view.findViewById<EditText>(R.id.input_search)
         searchBar.focusable = View.NOT_FOCUSABLE
-        searchBar.setOnClickListener {
-            val softKey =
-                context?.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-            softKey.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0)
-            searchBar.focusable = View.FOCUSABLE
-            val navHostFragment =
-                activity?.supportFragmentManager?.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
-            val navController = navHostFragment.navController
-            navController.navigate(R.id.searchlistFragment)
-        }
+        searchBar.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(view: View?) {
+                val softKey =
+                    context?.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+                softKey.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0)
+                searchBar.focusable = View.FOCUSABLE
+                val navHostFragment =
+                    activity?.supportFragmentManager?.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+                val navController = navHostFragment.navController
+                navController.navigate(R.id.searchlistFragment)
+            }
+        })
         return view
     }
 }
