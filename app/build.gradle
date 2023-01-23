@@ -41,6 +41,9 @@ android {
     kapt {
         correctErrorTypes = true
     }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
 
 }
 
@@ -51,7 +54,7 @@ dependencies {
     def androidXTestVersion = "1.5.0"
     def mockitoVersion = "4.11.0"
     def mockitoKotlinVersion = "3.2.0"
-    def mockkVersion = "1.13.3"
+    def coroutines_version = "1.6.4"
     def hamcrestVersion = "1.3"
 
 
@@ -120,13 +123,17 @@ dependencies {
     // Optional -- mockito-kotlin
     testImplementation "org.mockito.kotlin:mockito-kotlin:$mockitoKotlinVersion"
     // Optional -- Mockk framework
-    testImplementation "io.mockk:mockk:$mockkVersion"
+//    testImplementation "io.mockk:mockk:$mockkVersion"
     // Mock web server
     testImplementation 'com.squareup.okhttp3:mockwebserver:4.10.0'
     // Google truth for assertion
     testImplementation "com.google.truth:truth:1.1.3"
+    // Coroutine
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines_version"
     // Other dependencies
     testImplementation "org.hamcrest:hamcrest-all:$hamcrestVersion"
+//    testImplementation "io.mockk:mockk-android:${mockkVersion}"
+//    testImplementation "io.mockk:mockk-agent:${mockkVersion}"
 
 
 

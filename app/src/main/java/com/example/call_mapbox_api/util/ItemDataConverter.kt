@@ -34,6 +34,3 @@ fun itemDataConverter(address: EvPointDetails): ItemDataConverter {
     )
 }
 
-
-
-

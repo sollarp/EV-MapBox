@@ -25,7 +25,7 @@ class SearchListViewModel
 
     // import androidx.lifecycle.asLiveData
     // searchListUseCase.invoke().asLiveData()
-    suspend fun getListUseCase() {
+    private suspend fun getListUseCase() {
         searchListUseCase.invoke().collect { items ->
             listOfItems.postValue(items)
         }
