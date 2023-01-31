@@ -1,5 +1,58 @@
 package com.example.call_mapbox_api.data.local
 
+import com.example.call_mapbox_api.fakeData.fakeEvPointsEntity
+import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.toList
+import kotlinx.coroutines.runBlocking
 import org.junit.Assert.*
+import org.junit.Before
+import org.junit.Test
+import org.junit.runner.RunWith
+import org.mockito.Mock
+import org.mockito.Mockito.`when`
+import org.mockito.Mockito.verify
+import org.mockito.junit.MockitoJUnitRunner
 
-class EvPointLocalDataSourceImplTest
+@RunWith(MockitoJUnitRunner::class)
+class EvPointLocalDataSourceImplTest {
+
+    private lateinit var evPointLocalDataSource: IEvPointLocalDataSource
+
+    @Mock
+    lateinit var evPointsDao: EvPointsDao
+
+    @Before
+    fun setUp() {
+        evPointLocalDataSource = EvPointLocalDataSourceImpl(evPointsDao)
+    }
+
+    @Test
+    fun fetchPoints_returnsData(): Unit = runBlocking {
+        // Arrange
+        val evPointsEntities = listOf(fakeEvPointsEntity())
+        `when`(evPointsDao.getEvPoints()).thenReturn(flowOf(evPointsEntities))
+        val evPointLocalDataSourceImpl = EvPointLocalDataSourceImpl(evPointsDao)
+
+        // Act
+        val result = evPointLocalDataSourceImpl.fetchPoints().toList().first()
+
+        // Assert
+        assertEquals(evPointsEntities, result)
+        verify(evPointsDao).getEvPoints()
+    }
+
+    @Test
+    fun updatePoints_updatesData() = runBlocking {
+        // Arrange
+        val evPointsEntities = listOf(fakeEvPointsEntity())
+        val evPointLocalDataSourceImpl = EvPointLocalDataSourceImpl(evPointsDao)
+
+        // Act
+        evPointLocalDataSourceImpl.updatePoints(evPointsEntities)
+
+        // Assert
+        verify(evPointsDao).insert(evPointsEntities)
+    }
+
+
+}

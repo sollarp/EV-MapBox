@@ -12,10 +12,10 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.call_mapbox_api.R
-import com.example.call_mapbox_api.model.EvPointDetails
+import com.example.call_mapbox_api.data.remote.EvPointsEntity
 
 class SearchRecycleAdapter(
-    private val address: List<EvPointDetails>,
+    private val address: List<EvPointsEntity>,
     private val listener: OnAdapterListener
 ) :
     RecyclerView.Adapter<SearchRecycleAdapter.ViewHolder>() {
@@ -67,7 +67,7 @@ class SearchRecycleAdapter(
     }
 
     interface OnAdapterListener {
-        fun onClick(address: EvPointDetails)
+        fun onClick(address: EvPointsEntity)
     }
 
     override fun getItemCount() = address.size

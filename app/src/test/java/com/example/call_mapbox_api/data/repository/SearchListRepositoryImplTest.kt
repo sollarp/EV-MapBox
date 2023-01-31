@@ -2,15 +2,16 @@ package com.example.call_mapbox_api.data.repository
 
 import com.example.call_mapbox_api.data.IEvPointRemoteDataSource
 import com.example.call_mapbox_api.data.local.IEvPointLocalDataSource
+import com.example.call_mapbox_api.fakeData.fakeEvPointDetails
 import com.example.call_mapbox_api.fakeData.fakeEvPointsEntity
-import kotlinx.coroutines.flow.toList
+import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
-import org.mockito.Mockito
+import org.mockito.Mockito.*
 import org.mockito.junit.MockitoJUnitRunner
 
 @RunWith(MockitoJUnitRunner::class)
@@ -30,19 +31,18 @@ class SearchListRepositoryTestImpl {
     }
 
     @Test
-    fun `Check local and remote data source objects`() = runBlocking {
-        val actual = searchListRepository.fetchList()
-        assertEquals(evPointRemoteDataSource.getLatestEvPoint(), actual)
-        assertEquals(evPointLocalDataSource.fetchPoints(), actual)
-    }
+    fun `return data from localDataSource after updating it with data from evPointDataSource`() =
+        runBlocking {
+            val evPointsEntity = listOf(fakeEvPointsEntity())
+            val evPointsBreakItems = listOf(fakeEvPointDetails())
+            `when`(evPointLocalDataSource.fetchPoints()).thenReturn(flowOf(evPointsEntity))
+            `when`(evPointRemoteDataSource.getLatestEvPoint()).thenReturn(flowOf(evPointsBreakItems))
 
-    @Test
-    fun `Test localDataSource entities and verify one item`() = runBlocking {
-        Mockito.`when`(evPointLocalDataSource.fetchPoints()).thenReturn(fakeEvPointsEntity())
-        val actual = searchListRepository.fetchList().toList()[0]
-            .toList()
-            .map { it.NumberOfPoints }
-        val expected = fakeEvPointsEntity().toList()[0].map { it.NumberOfPoints }
-        assertEquals(expected, actual)
-    }
+            val result = searchListRepository.fetchList().first()
+
+            assertEquals(evPointsEntity, result)
+            verify(evPointLocalDataSource, times(1)).fetchPoints()
+            verify(evPointRemoteDataSource, times(1)).getLatestEvPoint()
+            verify(evPointLocalDataSource, times(1)).updatePoints(evPointsEntity)
+        }
 }
