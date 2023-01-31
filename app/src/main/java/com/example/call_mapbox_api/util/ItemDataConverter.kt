@@ -1,6 +1,7 @@
 package com.example.call_mapbox_api.util
 
 import com.example.call_mapbox_api.data.remote.Connections
+import com.example.call_mapbox_api.data.remote.EvPointsEntity
 import com.example.call_mapbox_api.model.EvPointDetails
 import java.io.Serializable
 
@@ -18,7 +19,7 @@ data class ItemDataConverter(
     val Connection: List<Connections>?
 ): Serializable
 
-fun itemDataConverter(address: EvPointDetails): ItemDataConverter {
+fun itemDataConverter(address: EvPointsEntity): ItemDataConverter {
     return ItemDataConverter(
         address.AddressInfo.AddressLine1,
         address.AddressInfo.AddressLine2,
