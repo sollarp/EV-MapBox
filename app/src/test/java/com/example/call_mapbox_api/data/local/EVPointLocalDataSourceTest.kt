@@ -14,16 +14,16 @@ import org.mockito.Mockito.verify
 import org.mockito.junit.MockitoJUnitRunner
 
 @RunWith(MockitoJUnitRunner::class)
-class EvPointLocalDataSourceImplTest {
+class EVPointLocalDataSourceTest {
 
-    private lateinit var evPointLocalDataSource: IEvPointLocalDataSource
+    private lateinit var evPointLocalDataSource: EvPointLocalDataSource
 
     @Mock
     lateinit var evPointsDao: EvPointsDao
 
     @Before
     fun setUp() {
-        evPointLocalDataSource = EvPointLocalDataSourceImpl(evPointsDao)
+        evPointLocalDataSource = EvPointLocalDataSource(evPointsDao)
     }
 
     @Test
@@ -31,7 +31,7 @@ class EvPointLocalDataSourceImplTest {
         // Arrange
         val evPointsEntities = listOf(fakeEvPointsEntity())
         `when`(evPointsDao.getEvPoints()).thenReturn(flowOf(evPointsEntities))
-        val evPointLocalDataSourceImpl = EvPointLocalDataSourceImpl(evPointsDao)
+        val evPointLocalDataSourceImpl = EvPointLocalDataSource(evPointsDao)
 
         // Act
         val result = evPointLocalDataSourceImpl.fetchPoints().toList().first()
@@ -45,7 +45,7 @@ class EvPointLocalDataSourceImplTest {
     fun updatePoints_updatesData() = runBlocking {
         // Arrange
         val evPointsEntities = listOf(fakeEvPointsEntity())
-        val evPointLocalDataSourceImpl = EvPointLocalDataSourceImpl(evPointsDao)
+        val evPointLocalDataSourceImpl = EvPointLocalDataSource(evPointsDao)
 
         // Act
         evPointLocalDataSourceImpl.updatePoints(evPointsEntities)
@@ -53,6 +53,4 @@ class EvPointLocalDataSourceImplTest {
         // Assert
         verify(evPointsDao).insert(evPointsEntities)
     }
-
-
 }

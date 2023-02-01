@@ -1,3 +1,6 @@
+
+// Add git ignore look into it.
+
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
@@ -123,7 +126,6 @@ dependencies {
     // Optional -- mockito-kotlin
     testImplementation "org.mockito.kotlin:mockito-kotlin:$mockitoKotlinVersion"
     // Optional -- Mockk framework
-//    testImplementation "io.mockk:mockk:$mockkVersion"
     // Mock web server
     testImplementation 'com.squareup.okhttp3:mockwebserver:4.10.0'
     // Google truth for assertion
@@ -132,8 +134,9 @@ dependencies {
     testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines_version"
     // Other dependencies
     testImplementation "org.hamcrest:hamcrest-all:$hamcrestVersion"
-//    testImplementation "io.mockk:mockk-android:${mockkVersion}"
-//    testImplementation "io.mockk:mockk-agent:${mockkVersion}"
+    // Mock final Class no interface
+    testImplementation 'org.mockito:mockito-inline:4.0.0'
+
 
 
 

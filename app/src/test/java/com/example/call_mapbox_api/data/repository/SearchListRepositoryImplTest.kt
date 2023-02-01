@@ -1,7 +1,7 @@
 package com.example.call_mapbox_api.data.repository
 
-import com.example.call_mapbox_api.data.IEvPointRemoteDataSource
-import com.example.call_mapbox_api.data.local.IEvPointLocalDataSource
+import com.example.call_mapbox_api.data.local.EvPointLocalDataSource
+import com.example.call_mapbox_api.data.remote.EvPointRemoteDataSource
 import com.example.call_mapbox_api.fakeData.fakeEvPointDetails
 import com.example.call_mapbox_api.fakeData.fakeEvPointsEntity
 import kotlinx.coroutines.flow.*
@@ -20,10 +20,10 @@ class SearchListRepositoryTestImpl {
     private lateinit var searchListRepository: ISearchListRepository
 
     @Mock
-    lateinit var evPointRemoteDataSource: IEvPointRemoteDataSource
+    lateinit var evPointRemoteDataSource: EvPointRemoteDataSource
 
     @Mock
-    lateinit var evPointLocalDataSource: IEvPointLocalDataSource
+    lateinit var evPointLocalDataSource: EvPointLocalDataSource
 
     @Before
     fun setUp() {

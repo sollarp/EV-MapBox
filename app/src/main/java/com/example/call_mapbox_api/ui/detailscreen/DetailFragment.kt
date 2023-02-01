@@ -11,56 +11,51 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.call_mapbox_api.R
 import com.example.call_mapbox_api.databinding.FragmentDetailBinding
+import com.example.call_mapbox_api.databinding.FragmentMapbarBinding
+import com.example.call_mapbox_api.databinding.FragmentSearchListBinding
 import com.example.call_mapbox_api.ui.searchscreen.SearchListViewModel
+import com.example.call_mapbox_api.util.SPAN_COUNT
 import dagger.hilt.android.AndroidEntryPoint
-
 
 @AndroidEntryPoint
 class DetailFragment : Fragment() {
 
-    private var fragmentDetailBinding: FragmentDetailBinding? = null
-    //private val viewModel: SearchListViewModel by activityViewModels { SearchListViewModel.Factory}
     private val viewModel: SearchListViewModel by activityViewModels()
-
+    private var _binding: FragmentDetailBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        _binding = FragmentDetailBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
-        val binding = FragmentDetailBinding.inflate(inflater, container, false)
-        val view = binding.root
-        fragmentDetailBinding = binding
-        viewModel.getDetailItems().observe(viewLifecycleOwner) { it ->
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-            val add1 = view.findViewById<TextView>(R.id.addressline1)
-            val add2 = view.findViewById<TextView>(R.id.addressline2)
-            val town = view.findViewById<TextView>(R.id.town)
-            val tile = view.findViewById<TextView>(R.id.title)
-            val cost = view.findViewById<TextView>(R.id.usage_cost)
-            val bays = view.findViewById<TextView>(R.id.number_of_bays)
-            val postCode = view.findViewById<TextView>(R.id.postcode)
-            val lon = view.findViewById<TextView>(R.id.latitude)
-            val lat = view.findViewById<TextView>(R.id.longitude)
-            val lastUpdate = view.findViewById<TextView>(R.id.dateLastStatusUpdate)
+        viewModel.getDetailItems().observe(viewLifecycleOwner) { detailItems ->
+            binding.addressline1.text = detailItems.AddressLine1
+            binding.addressline2.text = detailItems.AddressLine2
+            binding.town.text = detailItems.Town
+            binding.title.text = detailItems.Postcode
+            binding.usageCost.text = detailItems.UsageCost
+            binding.numberOfBays.text = detailItems.NumberOfPoints.toString()
+            binding.postcode.text = detailItems.Title
+            binding.longitude.text = detailItems.Longitude.toString()
+            binding.latitude.text = detailItems.Latitude.toString()
+            binding.dateLastStatusUpdate.text = detailItems.DateLastStatusUpdate
 
-            add1.text = it.AddressLine1
-            add2.text = it.AddressLine2
-            town.text = it.Town
-            tile.text = it.Postcode
-            cost.text = it.UsageCost
-            bays.text = it.NumberOfPoints.toString()
-            postCode.text = it.Title
-            lon.text = it.Longitude.toString()
-            lat.text = it.Latitude.toString()
-            lastUpdate.text = it?.DateLastStatusUpdate
-
-            val adapter = it?.Connection?.let { DetailRecycleAdapter(it) }
-            val recyclerView = view.findViewById<RecyclerView>(R.id.connection_recycler)
-            recyclerView.layoutManager =
-                StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL)
-            recyclerView.adapter = adapter
+            binding.connectionRecycler.apply {
+                layoutManager = StaggeredGridLayoutManager(SPAN_COUNT, StaggeredGridLayoutManager.VERTICAL)
+                adapter = detailItems.Connection?.let { DetailRecycleAdapter(it) }
+            }
         }
-        return view
+    }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
