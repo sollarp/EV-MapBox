@@ -9,7 +9,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.call_mapbox_api.databinding.FragmentDetailBinding
 import com.example.call_mapbox_api.ui.searchscreen.SearchListViewModel
-import com.example.call_mapbox_api.util.SPAN_COUNT
+import com.example.call_mapbox_api.util.Constants.SPAN_COUNT
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
