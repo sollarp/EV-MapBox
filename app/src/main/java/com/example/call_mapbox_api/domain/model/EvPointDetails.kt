@@ -23,7 +23,6 @@ data class EvPointDetails(
     val UsageTypeID: Int?,
     val Connections: List<Connections>,
     val AddressInfo: AddressInfo
-
 )
 
 fun List<EvPointDetails>.toEvPointsBreakItems() : List<EvPointsEntity> {

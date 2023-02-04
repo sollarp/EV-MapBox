@@ -1,11 +1,14 @@
 package com.example.call_mapbox_api.data.repository
 
-import android.util.Log
 import com.example.call_mapbox_api.data.local.EvPointLocalDataSource
 import com.example.call_mapbox_api.data.local.EvPointsEntity
 import com.example.call_mapbox_api.data.remote.EvPointRemoteDataSource
+import com.example.call_mapbox_api.domain.model.EvPointDetails
 import com.example.call_mapbox_api.domain.model.toEvPointsBreakItems
+import com.example.call_mapbox_api.util.Resource
 import kotlinx.coroutines.flow.Flow
+import retrofit2.HttpException
+import java.io.IOException
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -16,12 +19,22 @@ class SearchListRepositoryImpl @Inject constructor(
 ) : ISearchListRepository {
 
     override suspend fun fetchList(): Flow<List<EvPointsEntity>> {
+
         try {
-            evPointDataSource.getLatestEvPoint().collect { items ->
+            Resource.Loading<List<EvPointDetails>>()
+            val getPoints = evPointDataSource.getLatestEvPoint()
+                getPoints.collect { items ->
                 localDataSource.updatePoints(items.toEvPointsBreakItems())
             }
-        } catch (e: Exception) {
-            Log.d("SearchListRepository", "Connection failed using local data base")
+            Resource.Success<List<EvPointDetails>>(getPoints)
+        } catch (e: HttpException) {
+            Resource.Error<EvPointDetails>(
+                e.localizedMessage ?: "An unexpected error occurred"
+            )
+        } catch (e: IOException) {
+            Resource.Error<List<EvPointDetails>>(
+                "Couldn't reach server. Check your internet connection."
+            )
         }
         return localDataSource.fetchPoints()
     }

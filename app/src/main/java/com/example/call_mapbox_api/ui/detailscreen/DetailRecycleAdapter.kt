@@ -25,12 +25,13 @@ class DetailRecycleAdapter(
         return ViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.binding.powerKW.text = connectionsItemList.map { it.PowerKW }[position].toString()
-        holder.binding.voltage.text = connectionsItemList.map { it.Voltage }[position].toString()
-        holder.binding.id.text = connectionsItemList.map { it.ID }[position].toString()
-        holder.binding.levelId.text = connectionsItemList.map { it.LevelID }[position].toString()
-    }
+   override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+       val connection = connectionsItemList[position]
+       holder.binding.powerKW.text = connection.PowerKW.toString()
+       holder.binding.voltage.text = connection.Voltage.toString()
+       holder.binding.id.text = connection.ID.toString()
+       holder.binding.levelId.text = connection.LevelID.toString()
+   }
 
     override fun getItemCount(): Int {
         return connectionsItemList.size

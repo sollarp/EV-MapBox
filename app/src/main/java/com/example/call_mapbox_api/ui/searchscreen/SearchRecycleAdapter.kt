@@ -55,7 +55,6 @@ class SearchRecycleAdapter(
         holder.binding.listView.setOnClickListener { listener.onClick(address[position]) }
     }
 
-
     interface OnAdapterListener {
         fun onClick(address: EvPointsEntity)
     }

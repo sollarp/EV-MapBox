@@ -30,6 +30,7 @@ class SearchListRepositoryTestImpl {
         searchListRepository = SearchListRepositoryImpl(evPointRemoteDataSource, evPointLocalDataSource)
     }
 
+    // Separate testing for local and remote datasource.
     @Test
     fun `return data from localDataSource after updating it with data from evPointDataSource`() =
         runBlocking {
