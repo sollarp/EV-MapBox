@@ -1,7 +1,7 @@
 package com.example.call_mapbox_api.data.remote
 
 import com.example.call_mapbox_api.data.OpenMapApi
-import com.example.call_mapbox_api.model.EvPointDetails
+import com.example.call_mapbox_api.domain.model.EvPointDetails
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject

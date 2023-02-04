@@ -2,9 +2,9 @@ package com.example.call_mapbox_api.data.repository
 
 import android.util.Log
 import com.example.call_mapbox_api.data.local.EvPointLocalDataSource
+import com.example.call_mapbox_api.data.local.EvPointsEntity
 import com.example.call_mapbox_api.data.remote.EvPointRemoteDataSource
-import com.example.call_mapbox_api.data.remote.EvPointsEntity
-import com.example.call_mapbox_api.model.toEvPointsBreakItems
+import com.example.call_mapbox_api.domain.model.toEvPointsBreakItems
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 import javax.inject.Singleton

@@ -8,7 +8,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.example.call_mapbox_api.data.remote.EvPointsEntity
+import com.example.call_mapbox_api.data.local.EvPointsEntity
 import com.example.call_mapbox_api.databinding.FragmentSearchlistitemBinding
 
 class SearchRecycleAdapter(

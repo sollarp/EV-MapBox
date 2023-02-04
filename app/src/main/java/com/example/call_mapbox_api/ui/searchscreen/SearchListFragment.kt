@@ -11,12 +11,12 @@ import androidx.navigation.NavDirections
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.example.call_mapbox_api.data.remote.EvPointsEntity
+import com.example.call_mapbox_api.data.local.EvPointsEntity
 import com.example.call_mapbox_api.databinding.FragmentSearchListBinding
-import com.example.call_mapbox_api.util.ItemDataConverter
+import com.example.call_mapbox_api.domain.model.ItemDataConverter
+import com.example.call_mapbox_api.domain.model.itemDataConverter
 import com.example.call_mapbox_api.util.SPAN_COUNT
 import com.example.call_mapbox_api.util.hideKeyboard
-import com.example.call_mapbox_api.util.itemDataConverter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch

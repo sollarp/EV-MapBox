@@ -1,8 +1,8 @@
 package com.example.call_mapbox_api.data.local
 
 import androidx.room.TypeConverter
-import com.example.call_mapbox_api.data.remote.AddressInfo
-import com.example.call_mapbox_api.data.remote.Connections
+import com.example.call_mapbox_api.data.remote.dto.AddressInfo
+import com.example.call_mapbox_api.data.remote.dto.Connections
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.lang.reflect.Type

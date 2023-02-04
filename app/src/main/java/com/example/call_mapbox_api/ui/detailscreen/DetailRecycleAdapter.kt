@@ -3,7 +3,7 @@ package com.example.call_mapbox_api.ui.detailscreen
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.call_mapbox_api.data.remote.Connections
+import com.example.call_mapbox_api.data.remote.dto.Connections
 import com.example.call_mapbox_api.databinding.FragmentListConnectionsBinding
 
 class DetailRecycleAdapter(

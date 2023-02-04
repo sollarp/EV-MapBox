@@ -1,8 +1,7 @@
-package com.example.call_mapbox_api.util
+package com.example.call_mapbox_api.domain.model
 
-import com.example.call_mapbox_api.data.remote.Connections
-import com.example.call_mapbox_api.data.remote.EvPointsEntity
-import com.example.call_mapbox_api.model.EvPointDetails
+import com.example.call_mapbox_api.data.local.EvPointsEntity
+import com.example.call_mapbox_api.data.remote.dto.Connections
 import java.io.Serializable
 
 data class ItemDataConverter(

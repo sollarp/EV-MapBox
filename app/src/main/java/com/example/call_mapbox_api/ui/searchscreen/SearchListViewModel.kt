@@ -4,9 +4,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.call_mapbox_api.data.remote.EvPointsEntity
+import com.example.call_mapbox_api.data.local.EvPointsEntity
 import com.example.call_mapbox_api.domain.ISearchListUseCase
-import com.example.call_mapbox_api.util.ItemDataConverter
+import com.example.call_mapbox_api.domain.model.ItemDataConverter
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

@@ -1,6 +1,6 @@
 package com.example.call_mapbox_api.data
 
-import com.example.call_mapbox_api.model.EvPointDetails
+import com.example.call_mapbox_api.domain.model.EvPointDetails
 import com.example.call_mapbox_api.util.MOCK_RESOURCE_PATH
 import retrofit2.http.GET
 

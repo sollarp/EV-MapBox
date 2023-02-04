@@ -1,6 +1,6 @@
 package com.example.call_mapbox_api.domain
 
-import com.example.call_mapbox_api.data.remote.EvPointsEntity
+import com.example.call_mapbox_api.data.local.EvPointsEntity
 import com.example.call_mapbox_api.data.repository.ISearchListRepository
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
