@@ -1,12 +1,9 @@
 package com.example.call_mapbox_api.ui.searchscreen
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
-import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.call_mapbox_api.data.local.EvPointsEntity
 import com.example.call_mapbox_api.databinding.FragmentSearchlistitemBinding
@@ -34,30 +31,30 @@ class SearchRecycleAdapter(
         return ViewHolder(binding)
     }
 
-    @SuppressLint("QueryPermissionsNeeded")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val items = address.map {
-            it.AddressInfo.AddressLine1 + ", " +
-                    it.AddressInfo.AddressLine2 + ", " +
-                    it.AddressInfo.Town + ", " +
-                    it.AddressInfo.Postcode
-        }
-        holder.binding.listView.text = items[position]
+        val addressInfo = address[position].AddressInfo
+        val items = "" +
+                "${addressInfo.AddressLine1}, " +
+                "${addressInfo.AddressLine2}, " +
+                "${addressInfo.Town}, " +
+                "${addressInfo.Postcode}"
+        holder.binding.listView.text = items
         holder.binding.buttonGo.setOnClickListener {
-            val lat = address.map { (it.AddressInfo.Latitude) }[position]
-            val lon = address.map { it.AddressInfo.Longitude }[position]
-            val navigationIntentUri: Uri =
-                Uri.parse("google.navigation:q=$lat,$lon")
+            val navigationIntentUri =
+                Uri.parse(
+                    "google.navigation:q=" +
+                            "${addressInfo.Latitude}," +
+                            "${addressInfo.Longitude}"
+                )
             val context = holder.itemView.context
-            val bundle = Bundle()
-            val intent = Intent(Intent.ACTION_VIEW, navigationIntentUri)
-            intent.setPackage("com.google.android.apps.maps")
-            // not recommended to call this here
-            startActivity(context, intent, bundle)
+            val intent = Intent(Intent.ACTION_VIEW, navigationIntentUri).apply {
+                setPackage("com.google.android.apps.maps")
+            }
+            context.startActivity(intent)
         }
-        val pos = address[position]
-        holder.binding.listView.setOnClickListener { listener.onClick(pos) }
+        holder.binding.listView.setOnClickListener { listener.onClick(address[position]) }
     }
+
 
     interface OnAdapterListener {
         fun onClick(address: EvPointsEntity)

@@ -15,7 +15,7 @@ import com.example.call_mapbox_api.data.local.EvPointsEntity
 import com.example.call_mapbox_api.databinding.FragmentSearchListBinding
 import com.example.call_mapbox_api.domain.model.ItemDataConverter
 import com.example.call_mapbox_api.domain.model.itemDataConverter
-import com.example.call_mapbox_api.util.SPAN_COUNT
+import com.example.call_mapbox_api.util.Constants.SPAN_COUNT
 import com.example.call_mapbox_api.util.hideKeyboard
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Job
