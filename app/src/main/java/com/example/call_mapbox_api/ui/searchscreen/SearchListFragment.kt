@@ -7,20 +7,20 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.*
+import androidx.navigation.NavDirections
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.example.call_mapbox_api.data.remote.EvPointsEntity
+import com.example.call_mapbox_api.data.local.EvPointsEntity
 import com.example.call_mapbox_api.databinding.FragmentSearchListBinding
-import com.example.call_mapbox_api.util.ItemDataConverter
+import com.example.call_mapbox_api.domain.model.ItemDataConverter
+import com.example.call_mapbox_api.domain.model.itemDataConverter
 import com.example.call_mapbox_api.util.SPAN_COUNT
 import com.example.call_mapbox_api.util.hideKeyboard
-import com.example.call_mapbox_api.util.itemDataConverter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 
-@Suppress("COMPATIBILITY_WARNING")
 @AndroidEntryPoint
 class SearchListFragment : Fragment() {
 
@@ -34,16 +34,18 @@ class SearchListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentSearchListBinding.inflate(inflater, container, false)
-        val view = binding.root
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         val recyclerView = binding.recycleSearch
         recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 context?.let { hideKeyboard(view, it) }
             }
-        }
-        )
-        createAdapterObserver(viewModel, view, recyclerView, viewLifecycleOwner)
-        return view
+        })
+        createAdapterObserver(view, recyclerView, viewLifecycleOwner)
     }
 
     override fun onDestroyView() {
@@ -52,7 +54,6 @@ class SearchListFragment : Fragment() {
     }
 
     private fun createAdapterObserver(
-        viewModel: SearchListViewModel,
         view: View,
         recyclerView: RecyclerView,
         viewLifecycleOwner: LifecycleOwner
@@ -61,22 +62,29 @@ class SearchListFragment : Fragment() {
             .lifecycleScope
             .launch {
                 repeatOnLifecycle(Lifecycle.State.STARTED) {
-                    viewModel.listOfItems.observe(viewLifecycleOwner) {
-                        val adapter = createSearchRecycleAdapter(it, viewModel, ::itemDataConverter, view)
-                        recyclerView.layoutManager =
-                            StaggeredGridLayoutManager(
-                                SPAN_COUNT,
-                                StaggeredGridLayoutManager.VERTICAL
-                            )
-                        recyclerView.adapter = adapter
-                    }
+                    viewModel.listOfItems
+                        .observe(
+                            viewLifecycleOwner, Observer
+                            {
+                                val adapter = createSearchRecycleAdapter(
+                                    it,
+                                    ::itemDataConverter,
+                                    view,
+                                )
+                                recyclerView.layoutManager =
+                                    StaggeredGridLayoutManager(
+                                        SPAN_COUNT,
+                                        StaggeredGridLayoutManager.VERTICAL,
+                                    )
+                                recyclerView.adapter = adapter
+                            }
+                        )
                 }
             }
     }
 
     private fun createSearchRecycleAdapter(
         items: List<EvPointsEntity>,
-        viewModel: SearchListViewModel,
         itemDataConverter: (EvPointsEntity) -> ItemDataConverter,
         view: View
     ): SearchRecycleAdapter {
@@ -85,12 +93,16 @@ class SearchListFragment : Fragment() {
             object : SearchRecycleAdapter.OnAdapterListener {
                 override fun onClick(address: EvPointsEntity) {
                     viewModel.setDetailItems(itemDataConverter(address))
-                    val action =
-                        SearchListFragmentDirections
-                            .actionSearchlistFragmentToDetailFragment()
-                    view.findNavController().navigate(action)
+                    view.findNavController().navigate(createSearchListFragmentDirections())
                 }
             }
         )
     }
+
+    private fun createSearchListFragmentDirections(): NavDirections {
+        return SearchListFragmentDirections
+            .actionSearchlistFragmentToDetailFragment()
+    }
 }
+
+

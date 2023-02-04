@@ -1,6 +1,5 @@
 package com.example.call_mapbox_api.data.remote
 
-import com.example.call_mapbox_api.data.IEvPointRemoteDataSource
 import com.example.call_mapbox_api.data.OpenMapApi
 import com.example.call_mapbox_api.fakeData.fakeEvPointDetails
 import kotlinx.coroutines.flow.toList
@@ -17,22 +16,22 @@ import org.mockito.junit.MockitoJUnitRunner
 @RunWith(MockitoJUnitRunner::class)
 class EvPointRemoteDataSourceTestImpl {
 
-    private lateinit var evPointRemoteDataSource: IEvPointRemoteDataSource
+    private lateinit var evPointRemoteDataSource: EvPointRemoteDataSource
 
     @Mock
     lateinit var openMapApi: OpenMapApi
 
     @Before
     fun setUp() {
-        evPointRemoteDataSource = EvPointRemoteDataSourceImpl(openMapApi)
+        evPointRemoteDataSource = EvPointRemoteDataSource(openMapApi)
     }
 
     @Test
     fun `verify EvPointRemoteDataSource getLatestEvPoint() return value`(): Unit = runBlocking {
         val evPointDetails = listOf(fakeEvPointDetails())
-        `when`(openMapApi.getMaxResults()).thenReturn(evPointDetails)
-        val evPointRemoteDataSourceImpl = EvPointRemoteDataSourceImpl(openMapApi)
+        val evPointRemoteDataSourceImpl = EvPointRemoteDataSource(openMapApi)
 
+        `when`(openMapApi.getMaxResults()).thenReturn(evPointDetails)
         val result = evPointRemoteDataSourceImpl.getLatestEvPoint().toList().first()
 
         assertEquals(evPointDetails, result)

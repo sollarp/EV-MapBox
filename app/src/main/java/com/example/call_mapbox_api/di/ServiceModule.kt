@@ -2,7 +2,7 @@ package com.example.call_mapbox_api.di
 
 import com.example.call_mapbox_api.data.OpenMapApi
 import com.example.call_mapbox_api.data.RetrofitClient
-import com.example.call_mapbox_api.model.EvPointDetails
+import com.example.call_mapbox_api.domain.model.EvPointDetails
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -1,7 +1,5 @@
 package com.example.call_mapbox_api.fakeData
 
-import com.example.call_mapbox_api.data.remote.AddressInfo
-import com.example.call_mapbox_api.data.remote.Connections
 import com.example.call_mapbox_api.data.remote.EvPointsEntity
 
 fun fakeEvPointsEntity(): EvPointsEntity {

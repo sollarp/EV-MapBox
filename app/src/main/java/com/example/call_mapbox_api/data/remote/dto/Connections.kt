@@ -1,4 +1,4 @@
-package com.example.call_mapbox_api.data.remote
+package com.example.call_mapbox_api.data.remote.dto
 
 
 import androidx.annotation.Keep

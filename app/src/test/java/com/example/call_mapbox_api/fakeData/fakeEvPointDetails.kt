@@ -1,10 +1,8 @@
 package com.example.call_mapbox_api.fakeData
 
-import com.example.call_mapbox_api.data.remote.AddressInfo
-import com.example.call_mapbox_api.data.remote.Connections
-import com.example.call_mapbox_api.model.EvPointDetails
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.flow
+import com.example.call_mapbox_api.data.remote.dto.AddressInfo
+import com.example.call_mapbox_api.data.remote.dto.Connections
+import com.example.call_mapbox_api.domain.model.EvPointDetails
 
 fun fakeEvPointDetails(): EvPointDetails {
 
