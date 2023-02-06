@@ -1,6 +1,3 @@
-
-// Add git ignore look into it.
-
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
@@ -136,9 +133,6 @@ dependencies {
     testImplementation "org.hamcrest:hamcrest-all:$hamcrestVersion"
     // Mock final Class no interface
     testImplementation 'org.mockito:mockito-inline:4.0.0'
-
-
-
 
 }
 java {
