@@ -19,7 +19,7 @@ Other features:
 - Clean Architecture;
 - Google Maps Android SDK;
 - Retrofit2 for consuming RESTful Apis;
-- LiveData
+- LiveData, MediatorLiveData
 - JUnit4, Mockito-Kotlin.
 
 ## Development setup
