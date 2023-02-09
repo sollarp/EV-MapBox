@@ -23,7 +23,7 @@ class SearchListRepositoryImpl @Inject constructor(
         try {
             Resource.Loading<List<EvPointDetails>>()
             val getPoints = evPointDataSource.getLatestEvPoint()
-                getPoints.collect { items ->
+            getPoints.collect { items ->
                 localDataSource.updatePoints(items.toEvPointsBreakItems())
             }
             Resource.Success<List<EvPointDetails>>(getPoints)

@@ -6,21 +6,20 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.call_mapbox_api.data.local.EvPointsEntity
+import com.example.call_mapbox_api.data.remote.dto.AddressInfo
 import com.example.call_mapbox_api.databinding.FragmentSearchlistitemBinding
 
 class SearchRecycleAdapter(
-    private val address: List<EvPointsEntity>,
+    private val address: ArrayList<EvPointsEntity>,
     private val listener: OnAdapterListener
 ) :
     RecyclerView.Adapter<SearchRecycleAdapter.ViewHolder>() {
-    /**
-     * Provide a reference to the type of views that you are using
-     * (custom ViewHolder).
-     */
-    inner class ViewHolder(
-        val binding: FragmentSearchlistitemBinding
-    ) :
-        RecyclerView.ViewHolder(binding.root)
+
+    fun updateOrders( newEvPointsEntity: List<EvPointsEntity>) {
+        address.clear()
+        address.addAll(newEvPointsEntity)
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = FragmentSearchlistitemBinding.inflate(
@@ -33,21 +32,11 @@ class SearchRecycleAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val addressInfo = address[position].AddressInfo
-        val items = "" +
-                "${addressInfo.AddressLine1}, " +
-                "${addressInfo.AddressLine2}, " +
-                "${addressInfo.Town}, " +
-                "${addressInfo.Postcode}"
-        holder.binding.listView.text = items
+        holder.bind(addressInfo)
         holder.binding.buttonGo.setOnClickListener {
-            val navigationIntentUri =
-                Uri.parse(
-                    "google.navigation:q=" +
-                            "${addressInfo.Latitude}," +
-                            "${addressInfo.Longitude}"
-                )
+            val navigation = holder.navigationIntentUri(addressInfo)
             val context = holder.itemView.context
-            val intent = Intent(Intent.ACTION_VIEW, navigationIntentUri).apply {
+            val intent = Intent(Intent.ACTION_VIEW, navigation).apply {
                 setPackage("com.google.android.apps.maps")
             }
             context.startActivity(intent)
@@ -60,6 +49,29 @@ class SearchRecycleAdapter(
     }
 
     override fun getItemCount() = address.size
+
+    inner class ViewHolder(val binding: FragmentSearchlistitemBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+
+        fun bind(addressInfo: AddressInfo): String {
+            val items = "${addressInfo.AddressLine1}, " +
+                    "${addressInfo.AddressLine2}, " +
+                    "${addressInfo.Town}, " +
+                    "${addressInfo.Postcode}"
+            binding.listView.text = items
+            return items
+        }
+
+        fun navigationIntentUri(addressInfo: AddressInfo): Uri =
+            Uri.parse(
+                "google.navigation:q=" +
+                        "${addressInfo.Latitude}," +
+                        "${addressInfo.Longitude}"
+            )
+
+    }
+
+
 }
 
 

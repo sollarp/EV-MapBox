@@ -26,7 +26,7 @@
         app:layout_constraintTop_toTopOf="@+id/input_search"
         app:layout_constraintVertical_bias="0.0" />
 
-    <AutoCompleteTextView
+    <EditText
         android:id="@+id/input_search"
         android:layout_width="256dp"
         android:layout_height="46dp"
