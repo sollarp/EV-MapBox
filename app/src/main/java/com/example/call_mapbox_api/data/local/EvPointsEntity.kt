@@ -63,8 +63,7 @@ data class EvPointsEntity(
     val AddressInfo: AddressInfo
 )
 
-
-fun List<EvPointsEntity>.toEvPointDetails() : List<EvPointDetails> {
+fun List<EvPointsEntity>.toEvPointDetails(): List<EvPointDetails> {
     return this.map {
         EvPointDetails(
             AddressInfo = it.AddressInfo,

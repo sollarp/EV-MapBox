@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.*
@@ -45,6 +46,9 @@ class SearchListFragment : Fragment() {
                 context?.let { hideKeyboard(view, it) }
             }
         })
+        binding.searchbarFragment.inputSearch.doOnTextChanged { text, start, before, count ->
+            viewModel.onSearchQuery(text.toString())
+        }
         createAdapterObserver(view, recyclerView, viewLifecycleOwner)
     }
 
@@ -62,12 +66,12 @@ class SearchListFragment : Fragment() {
             .lifecycleScope
             .launch {
                 repeatOnLifecycle(Lifecycle.State.STARTED) {
-                    viewModel.listOfItems
+                    viewModel.pointsMediatorData
                         .observe(
                             viewLifecycleOwner, Observer
                             {
                                 val adapter = createSearchRecycleAdapter(
-                                    it,
+                                    it as ArrayList<EvPointsEntity>,
                                     ::itemDataConverter,
                                     view,
                                 )
@@ -84,7 +88,7 @@ class SearchListFragment : Fragment() {
     }
 
     private fun createSearchRecycleAdapter(
-        items: List<EvPointsEntity>,
+        items: ArrayList<EvPointsEntity>,
         itemDataConverter: (EvPointsEntity) -> ItemDataConverter,
         view: View
     ): SearchRecycleAdapter {
@@ -103,6 +107,7 @@ class SearchListFragment : Fragment() {
         return SearchListFragmentDirections
             .actionSearchlistFragmentToDetailFragment()
     }
+
 }
 
 
