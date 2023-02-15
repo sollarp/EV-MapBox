@@ -46,7 +46,7 @@ class SearchListFragment : Fragment() {
                 context?.let { hideKeyboard(view, it) }
             }
         })
-        binding.searchbarFragment.inputSearch.doOnTextChanged { text, start, before, count ->
+        binding.searchbarFragment.inputSearch.doOnTextChanged { text, _, _, _ ->
             viewModel.onSearchQuery(text.toString())
         }
         createAdapterObserver(view, recyclerView, viewLifecycleOwner)
@@ -61,12 +61,8 @@ class SearchListFragment : Fragment() {
         view: View,
         recyclerView: RecyclerView,
         viewLifecycleOwner: LifecycleOwner
-    ): Job {
-        return viewLifecycleOwner
-            .lifecycleScope
-            .launch {
-                repeatOnLifecycle(Lifecycle.State.STARTED) {
-                    viewModel.pointsMediatorData
+    ) {
+        return viewModel.pointsMediatorData
                         .observe(
                             viewLifecycleOwner, Observer
                             {
@@ -83,9 +79,8 @@ class SearchListFragment : Fragment() {
                                 recyclerView.adapter = adapter
                             }
                         )
-                }
+
             }
-    }
 
     private fun createSearchRecycleAdapter(
         items: ArrayList<EvPointsEntity>,

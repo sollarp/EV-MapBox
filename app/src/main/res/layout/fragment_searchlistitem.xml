@@ -10,11 +10,13 @@
 
     <TextView
         android:id="@+id/list_view"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="242dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/button_go"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="address" />
@@ -26,5 +28,18 @@
         android:layout_marginEnd="4dp"
         android:text="@string/go"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/distance_text"
+        android:layout_width="52dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:text="80 KM"
+        app:layout_constraintEnd_toStartOf="@+id/button_go"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/list_view"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

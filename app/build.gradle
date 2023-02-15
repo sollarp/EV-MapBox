@@ -133,6 +133,8 @@ dependencies {
     testImplementation "org.hamcrest:hamcrest-all:$hamcrestVersion"
     // Mock final Class no interface
     testImplementation 'org.mockito:mockito-inline:4.0.0'
+    // For developers using AndroidX in their applications
+    implementation 'pub.devrel:easypermissions:3.0.0'
 
 }
 java {
