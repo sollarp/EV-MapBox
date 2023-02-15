@@ -26,8 +26,8 @@ class SearchListViewModel
     private val _queryLiveData = MutableLiveData<String>()
     private var _searchPointsLiveData: LiveData<List<EvPointsEntity>>
     private var searchJob: Job? = null
-    private val debouncePeriod = 700L
-    val loadingStateLiveData = MutableLiveData<LoadingState>()
+    private val debouncePeriod = 800L
+    private val loadingStateLiveData = MutableLiveData<LoadingState>()
 
     init {
         _searchPointsLiveData = Transformations.switchMap(_queryLiveData) {
@@ -57,7 +57,7 @@ class SearchListViewModel
             } catch (e: Exception) {
                 loadingStateLiveData.postValue(LoadingState.ERROR)
             }
-        }
+       }
     }
 
     fun setDetailItems(item: ItemDataConverter) {
@@ -68,14 +68,15 @@ class SearchListViewModel
     fun getDetailItems(): MutableLiveData<ItemDataConverter> {
         return _connectionItems
     }
-
+    // BUG letter "Q"
+    // if character does not match anyting than getAllPoints() does not update recycleview.
     fun onSearchQuery(query: String) {
-        searchJob?.cancel()
         searchJob = viewModelScope.launch(Dispatchers.IO) {
-            delay(debouncePeriod)
             if (query.isEmpty()) {
                 getAllPoints()
             } else {
+                delay(debouncePeriod)
+                searchJob?.cancel()
                 _queryLiveData.postValue(query)
             }
         }

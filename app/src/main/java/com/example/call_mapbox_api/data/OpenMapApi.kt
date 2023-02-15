@@ -4,7 +4,6 @@ import com.example.call_mapbox_api.domain.model.EvPointDetails
 import com.example.call_mapbox_api.util.Constants.MOCK_RESOURCE_PATH
 import retrofit2.http.GET
 
-
 interface OpenMapApi {
     @GET(MOCK_RESOURCE_PATH)
     suspend fun getMaxResults(): List<EvPointDetails>
