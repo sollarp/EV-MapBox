@@ -32,7 +32,7 @@ openChargeMapKey=< Open Charge Map Api key goes here >
 ```
 
 ## APIs used
-- [Open Charge Map Api](https://openchargemap.org/site/develop#api) for fetching POI data;
+- [Google Map Api] for fetching POI data;
 
 ## License
 ```
