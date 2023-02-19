@@ -32,7 +32,8 @@ openChargeMapKey=< Open Charge Map Api key goes here >
 ```
 
 ## APIs used
-- [Google Map Api] for fetching POI data;
+- [Google Map Api] for Map presentation;
+- [Open Charge Map Api]  Ev Charging Points Api;
 
 ## License
 ```
