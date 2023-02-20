@@ -4,6 +4,7 @@ import android.content.pm.PackageManager
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.example.call_mapbox_api.BuildConfig
 import com.example.call_mapbox_api.R
 import com.example.call_mapbox_api.util.LocationPermission.checkAndRequestLocationPermissions
 import com.microsoft.appcenter.AppCenter
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         AppCenter.start(
-            application, "b963b324-5670-4a3a-8720-1317529ff65b",
+            application, BuildConfig.APP_SECRET_KEY,
             Analytics::class.java, Crashes::class.java
         )
         checkAndRequestLocationPermissions(this)
