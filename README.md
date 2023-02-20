@@ -1,3 +1,5 @@
+[![Build status](https://build.appcenter.ms/v0.1/apps/d791979b-c1a4-4049-994c-fc77f2a0637c/branches/master/badge)](https://appcenter.ms)
+
 # Ev MapBox
 
 ## About
