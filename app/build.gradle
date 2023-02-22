@@ -20,7 +20,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         // Define environment variable
-        buildConfigField("String", "APP_CENTER_SECRET", APP_CENTER_SECRET)
+        //buildConfigField("String", "APP_CENTER_SECRET", APP_CENTER_SECRET)
     }
 
     buildTypes {
