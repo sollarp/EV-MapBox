@@ -20,7 +20,6 @@ import com.example.ev_mapbox.domain.model.itemDataConverter
 import com.example.ev_mapbox.util.Constants.SPAN_COUNT
 import com.example.ev_mapbox.util.hideKeyboard
 import dagger.hilt.android.AndroidEntryPoint
-
 @AndroidEntryPoint
 class SearchListFragment : Fragment() {
 
