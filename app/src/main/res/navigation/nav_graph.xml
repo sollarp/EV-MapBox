@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/mapBarFragment"
-        android:name="com.example.call_mapbox_api.ui.homescreen.MapBarFragment"
+        android:name="com.example.ev_mapbox.ui.homescreen.MapBarFragment"
         android:label="fragment_searchMap"
         tools:layout="@layout/fragment_mapbar" >
         <action
@@ -18,7 +18,7 @@
 
     <fragment
         android:id="@+id/searchlistFragment"
-        android:name="com.example.call_mapbox_api.ui.searchscreen.SearchListFragment"
+        android:name="com.example.ev_mapbox.ui.searchscreen.SearchListFragment"
         android:label="fragment_searchMap"
         tools:layout="@layout/fragment_searchlistitem" >
         <action
@@ -28,7 +28,7 @@
 
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.example.call_mapbox_api.ui.detailscreen.DetailFragment"
+        android:name="com.example.ev_mapbox.ui.detailscreen.DetailFragment"
         android:label="fragment_searchMap"
         tools:layout="@layout/fragment_detail" />
 </navigation>
