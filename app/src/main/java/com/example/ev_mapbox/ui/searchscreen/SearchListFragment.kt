@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.*
@@ -14,17 +13,18 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.ev_mapbox.data.local.EvPointsEntity
 import com.example.call_mapbox_api.ui.searchscreen.SearchListViewModel
-import com.example.ev_mapbox.databinding.FragmentSearchListBinding
+import com.example.ev_mapbox.databinding.FragmentSearchlistBinding
 import com.example.ev_mapbox.domain.model.ItemDataConverter
 import com.example.ev_mapbox.domain.model.itemDataConverter
 import com.example.ev_mapbox.util.Constants.SPAN_COUNT
 import com.example.ev_mapbox.util.hideKeyboard
+import com.example.ev_mapbox.util.showKeyboard
 import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class SearchListFragment : Fragment() {
 
     private val viewModel: SearchListViewModel by activityViewModels()
-    private var _binding: FragmentSearchListBinding? = null
+    private var _binding: FragmentSearchlistBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -32,29 +32,25 @@ class SearchListFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentSearchListBinding.inflate(inflater, container, false)
+        _binding = FragmentSearchlistBinding.inflate(inflater, container, false)
         return binding.root
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val recyclerView = binding.recycleSearch
+        // This does'not work here investigate
+        context?.let { showKeyboard(view, it) }
         recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 context?.let { hideKeyboard(view, it) }
             }
         })
-        binding.searchbarFragment.inputSearch.doOnTextChanged { text, _, _, _ ->
-            viewModel.onSearchQuery(text.toString())
-        }
         createAdapterObserver(view, recyclerView, viewLifecycleOwner)
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
-
     private fun createAdapterObserver(
         view: View,
         recyclerView: RecyclerView,
@@ -79,7 +75,6 @@ class SearchListFragment : Fragment() {
                         )
 
             }
-
     private fun createSearchRecycleAdapter(
         items: ArrayList<EvPointsEntity>,
         itemDataConverter: (EvPointsEntity) -> ItemDataConverter,
@@ -95,12 +90,10 @@ class SearchListFragment : Fragment() {
             }
         )
     }
-
     private fun createSearchListFragmentDirections(): NavDirections {
         return SearchListFragmentDirections
             .actionSearchlistFragmentToDetailFragment()
     }
-
 }
 
 
