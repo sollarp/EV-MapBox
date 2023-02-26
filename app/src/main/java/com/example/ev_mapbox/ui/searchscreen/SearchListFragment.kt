@@ -18,6 +18,7 @@ import com.example.ev_mapbox.domain.model.ItemDataConverter
 import com.example.ev_mapbox.domain.model.itemDataConverter
 import com.example.ev_mapbox.util.Constants.SPAN_COUNT
 import com.example.ev_mapbox.util.hideKeyboard
+import com.example.ev_mapbox.util.showKeyboard
 import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class SearchListFragment : Fragment() {
@@ -37,10 +38,11 @@ class SearchListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val recyclerView = binding.recycleSearch
-        //context?.let { showKeyboard(view, it) }
+        // This does'not work here investigate
+        context?.let { showKeyboard(view, it) }
         recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-                //context?.let { hideKeyboard(view, it) }
+                context?.let { hideKeyboard(view, it) }
             }
         })
         createAdapterObserver(view, recyclerView, viewLifecycleOwner)
@@ -92,7 +94,6 @@ class SearchListFragment : Fragment() {
         return SearchListFragmentDirections
             .actionSearchlistFragmentToDetailFragment()
     }
-
 }
 
 

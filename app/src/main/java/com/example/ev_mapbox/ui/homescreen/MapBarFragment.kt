@@ -43,9 +43,8 @@ class MapBarFragment : Fragment() {
 
         val supportMapFragment =
             childFragmentManager.findFragmentById(R.id.googlemap_fragment) as SupportMapFragment
-        val backStackEntry = childFragmentManager.backStackEntryCount
-
         //binding.searchbarFragment.inputSearch.focusable = View.NOT_FOCUSABLE
+        binding.searchbarFragment.inputSearch.isFocusableInTouchMode = false
 
         viewLifecycleOwner.lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
@@ -70,11 +69,16 @@ class MapBarFragment : Fragment() {
             }
             setOnClickListener {
                 //context?.let { hideKeyboard(view, it) }
-                if(backStackEntry == 0){
+                val backStackPos = childFragmentManager.backStackEntryCount
+                binding.searchbarFragment.inputSearch.isFocusableInTouchMode = true
+                println("backstack entry = ${backStackPos}")
+                if(backStackPos == 0){
+                    println("backstack entry in if statement = ${backStackPos}")
                     childFragmentManager.commit {
                         replace<SearchListFragment>(R.id.googlemap_fragment)
                         setReorderingAllowed(true)
                         addToBackStack("name") // name can be null
+                        context?.let { showKeyboard(view, it) }
                     }
                 }
             }
