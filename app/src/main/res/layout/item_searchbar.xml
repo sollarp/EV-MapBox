@@ -24,12 +24,13 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/input_search"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="@string/magnify" />
 
     <EditText
         android:id="@+id/input_search"
         android:layout_width="256dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
         android:layout_toEndOf="@+id/ic_magnify"
         android:background="@null"
         android:hint="@string/enter_address_city_or_zip_code"
@@ -41,7 +42,9 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:autofillHints="postalAddress"
+        android:inputType="text" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

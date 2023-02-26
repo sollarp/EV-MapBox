@@ -12,8 +12,8 @@
         android:label="fragment_searchMap"
         tools:layout="@layout/fragment_mapbar" >
         <action
-            android:id="@+id/action_mapBarFragment_to_searchlistFragment"
-            app:destination="@id/searchlistFragment" />
+            android:id="@+id/action_searchlistFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
     </fragment>
 
     <fragment
