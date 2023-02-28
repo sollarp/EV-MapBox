@@ -20,10 +20,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        /*AppCenter.start(
-            application, "b963b324-5670-4a3a-8720-1317529ff65b",
-            Analytics::class.java, Crashes::class.java
-        )*/
         checkAndRequestLocationPermissions(this)
     }
 

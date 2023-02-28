@@ -12,8 +12,8 @@
         android:label="fragment_searchMap"
         tools:layout="@layout/fragment_mapbar" >
         <action
-            android:id="@+id/action_searchlistFragment_to_detailFragment"
-            app:destination="@id/detailFragment" />
+            android:id="@+id/action_mapBarFragment_to_searchlistFragment"
+            app:destination="@id/searchlistFragment" />
     </fragment>
 
     <fragment
@@ -30,5 +30,6 @@
         android:id="@+id/detailFragment"
         android:name="com.example.ev_mapbox.ui.detailscreen.DetailFragment"
         android:label="fragment_searchMap"
-        tools:layout="@layout/fragment_detail" />
+        tools:layout="@layout/fragment_detail" >
+    </fragment>
 </navigation>
