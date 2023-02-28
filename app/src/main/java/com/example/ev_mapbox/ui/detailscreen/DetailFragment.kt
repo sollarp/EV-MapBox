@@ -4,10 +4,15 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
+import androidx.activity.addCallback
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.NavDirections
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.call_mapbox_api.ui.searchscreen.SearchListViewModel
+import com.example.ev_mapbox.R
 import com.example.ev_mapbox.databinding.FragmentDetailBinding
 import com.example.ev_mapbox.util.Constants.SPAN_COUNT
 import dagger.hilt.android.AndroidEntryPoint
@@ -44,11 +49,13 @@ class DetailFragment : Fragment() {
             binding.dateLastStatusUpdate.text = detailItems.DateLastStatusUpdate
 
             binding.connectionRecycler.apply {
-                layoutManager = StaggeredGridLayoutManager(SPAN_COUNT, StaggeredGridLayoutManager.VERTICAL)
+                layoutManager =
+                    StaggeredGridLayoutManager(SPAN_COUNT, StaggeredGridLayoutManager.VERTICAL)
                 adapter = detailItems.Connection?.let { DetailRecycleAdapter(it) }
             }
         }
     }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

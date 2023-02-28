@@ -4,9 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/79345c1f861f99a88fc17a3c801bcf46/transformed/tiles-1.1.0-alpha04/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/79345c1f861f99a88fc17a3c801bcf46/transformed/tiles-1.1.0-alpha04/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/79345c1f861f99a88fc17a3c801bcf46/transformed/tiles-1.1.0-alpha04/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/79345c1f861f99a88fc17a3c801bcf46/transformed/tiles-1.1.0-alpha04/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/79345c1f861f99a88fc17a3c801bcf46/transformed/tiles-1.1.0-alpha04/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

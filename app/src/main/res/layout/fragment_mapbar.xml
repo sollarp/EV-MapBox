@@ -6,18 +6,22 @@
     android:layout_height="match_parent"
     android:background="#0000">
 
-    <androidx.fragment.app.FragmentContainerView
+    <include
         android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:id="@+id/googlemap_fragment"
+        android:id="@+id/map_fragment"
+        layout="@layout/item_map"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <include
         android:id="@+id/searchbar_fragment"
         layout="@layout/item_searchbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/googlemap_fragment"
+        app:layout_constraintBottom_toBottomOf="@+id/map_fragment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
