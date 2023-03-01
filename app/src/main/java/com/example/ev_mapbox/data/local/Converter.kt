@@ -2,6 +2,7 @@ package com.example.ev_mapbox.data.local
 
 import androidx.room.TypeConverter
 import com.example.ev_mapbox.data.remote.dto.AddressInfo
+import com.example.ev_mapbox.data.remote.dto.ConnectionType
 import com.example.ev_mapbox.data.remote.dto.Connections
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -16,6 +17,19 @@ object ConnectionConverter {
 
     @TypeConverter
     fun fromArrayList(list: List<Connections?>?): String {
+        val gson = Gson()
+        return gson.toJson(list)
+    }
+}
+object ConnectionTypeConverter {
+    @TypeConverter
+    fun fromString(value: String?): ConnectionType {
+        val listType: Type = object : TypeToken<ConnectionType?>() {}.type
+        return Gson().fromJson(value, listType)
+    }
+
+    @TypeConverter
+    fun fromArrayList(list: ConnectionType): String {
         val gson = Gson()
         return gson.toJson(list)
     }

@@ -1,7 +1,8 @@
-package com.example.call_mapbox_api.fakeData
+package com.example.ev_mapbox.fakeData
 
 import com.example.ev_mapbox.data.local.EvPointsEntity
 import com.example.ev_mapbox.data.remote.dto.AddressInfo
+import com.example.ev_mapbox.data.remote.dto.ConnectionType
 import com.example.ev_mapbox.data.remote.dto.Connections
 
 fun fakeEvPointsEntity(): EvPointsEntity {
@@ -20,9 +21,16 @@ fun fakeEvPointsEntity(): EvPointsEntity {
         Title = "title",
         Town = "town"
     )
+    val fakeConnectionTypeId = ConnectionType(
+        FormalName = "Formal",
+        IsDiscontinued = true,
+        IsObsolete = false,
+        ID = 3,
+        Title = "title",
+    )
 
     val fakeConnetion = Connections(
-        ConnectionTypeID = 3,
+        ConnectionType = listOf(fakeConnectionTypeId),
         CurrentTypeID = 4,
         ID = 7,
         Voltage = 7,
@@ -32,7 +40,7 @@ fun fakeEvPointsEntity(): EvPointsEntity {
         Quantity = 8,
         StatusTypeID = 8
     )
-    val fakeEvPointsEntity = EvPointsEntity(
+    return EvPointsEntity(
         ID = 4,
         DateLastVerified = "Datalast",
         DataProviderID = 5,
@@ -48,7 +56,7 @@ fun fakeEvPointsEntity(): EvPointsEntity {
         UsageCost = "usagecostmoney",
         UsageTypeID = 5,
         Connections = listOf(fakeConnetion),
-        AddressInfo = fakeAddressInfo
+        AddressInfo = fakeAddressInfo,
+        ConnectionType = listOf(fakeConnectionTypeId)
     )
-    return fakeEvPointsEntity
 }

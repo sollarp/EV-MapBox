@@ -1,6 +1,6 @@
 package com.example.call_mapbox_api.domain
 
-import com.example.call_mapbox_api.fakeData.fakeEvPointsEntity
+import com.example.ev_mapbox.fakeData.fakeEvPointsEntity
 import com.example.ev_mapbox.data.repository.ISearchListRepository
 import com.example.ev_mapbox.domain.ISearchListUseCase
 import com.example.ev_mapbox.domain.SearchListUseCaseImpl

@@ -6,6 +6,7 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.example.ev_mapbox.data.remote.dto.AddressInfo
+import com.example.ev_mapbox.data.remote.dto.ConnectionType
 import com.example.ev_mapbox.data.remote.dto.Connections
 import com.example.ev_mapbox.domain.model.EvPointDetails
 import kotlinx.serialization.Serializable
@@ -81,7 +82,7 @@ fun List<EvPointsEntity>.toEvPointDetails(): List<EvPointDetails> {
             DateLastStatusUpdate = it.DateLastStatusUpdate,
             DateLastVerified = it.DateLastVerified,
             UsageTypeID = it.UsageTypeID,
-            SubmissionStatusTypeID = it.SubmissionStatusTypeID
+            SubmissionStatusTypeID = it.SubmissionStatusTypeID,
         )
     }
 }
