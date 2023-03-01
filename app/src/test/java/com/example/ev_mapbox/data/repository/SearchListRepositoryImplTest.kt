@@ -1,7 +1,7 @@
 package com.example.call_mapbox_api.data.repository
 
 import com.example.call_mapbox_api.fakeData.fakeEvPointDetails
-import com.example.call_mapbox_api.fakeData.fakeEvPointsEntity
+import com.example.ev_mapbox.fakeData.fakeEvPointsEntity
 import com.example.ev_mapbox.data.local.EvPointLocalDataSource
 import com.example.ev_mapbox.data.remote.EvPointRemoteDataSource
 import com.example.ev_mapbox.data.repository.ISearchListRepository

@@ -50,8 +50,10 @@ class MapBarFragment : Fragment() {
                         googleMap.animateCamera(
                             CameraUpdateFactory.newLatLngZoom(
                                 LatLng(
-                                    pointItems[0].AddressInfo.Latitude!!.toDouble(),
-                                    pointItems[0].AddressInfo.Longitude!!.toDouble()
+                                    51.667683,
+                                    -1.327816
+                                    /*pointItems[0].AddressInfo.Latitude!!.toDouble(),
+                                    pointItems[0].AddressInfo.Longitude!!.toDouble()*/
                                 ), 10f
                             )
                         )

@@ -15,5 +15,6 @@ data class Connections(
     val LevelID: Int?,
     val PowerKW: Double?,
     val Quantity: Int?,
-    val StatusTypeID: Int?
+    val StatusTypeID: Int?,
+    val ConnectionType: ConnectionType,
 )

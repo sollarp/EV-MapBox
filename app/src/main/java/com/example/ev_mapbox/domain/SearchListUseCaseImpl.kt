@@ -14,8 +14,12 @@ class SearchListUseCaseImpl @Inject constructor(
 ) : ISearchListUseCase
 {
 
-    override suspend operator fun invoke(): Flow<List<EvPointsEntity>> =
-        withContext(dispatcher) {
+    override suspend operator fun invoke(): Flow<List<EvPointsEntity>> {
+       val ret =  withContext(dispatcher) {
             searchListRepository.fetchList()
         }
+        println("nezz meg  $ret")
+        return ret
+    }
+
 }

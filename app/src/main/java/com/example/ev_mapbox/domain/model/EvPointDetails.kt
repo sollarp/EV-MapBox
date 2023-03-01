@@ -22,7 +22,7 @@ data class EvPointDetails(
     val UsageCost: String?,
     val UsageTypeID: Int?,
     val Connections: List<Connections>,
-    val AddressInfo: AddressInfo
+    val AddressInfo: AddressInfo,
 )
 
 fun List<EvPointDetails>.toEvPointsBreakItems() : List<EvPointsEntity> {
@@ -43,7 +43,7 @@ fun List<EvPointDetails>.toEvPointsBreakItems() : List<EvPointsEntity> {
             DateLastStatusUpdate = it.DateLastStatusUpdate,
             DateLastVerified = it.DateLastVerified,
             UsageTypeID = it.UsageTypeID,
-            SubmissionStatusTypeID = it.SubmissionStatusTypeID
+            SubmissionStatusTypeID = it.SubmissionStatusTypeID,
         )
     }
 }
