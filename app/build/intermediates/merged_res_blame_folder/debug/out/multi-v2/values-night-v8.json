@@ -1,0 +1,81 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.ev_mapbox.app-mergeDebugResources-59:/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "/home/peter/.gradle/caches/transforms-3/0f1d4be08d3d31bef77b272931287d41/transformed/appcompat-1.5.1/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "8,9,10,11,12,13,14,52",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "366,436,520,604,700,802,904,4258",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "431,515,599,695,797,899,993,4342"
+                    }
+                },
+                {
+                    "source": "/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/res/values-night/styles.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "2",
+                        "startOffsets": "51",
+                        "endLines": "9",
+                        "endColumns": "10",
+                        "endOffsets": "347"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "7",
+                        "endColumns": "10",
+                        "endOffsets": "361"
+                    }
+                },
+                {
+                    "source": "/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/res/values-night/themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "824"
+                    },
+                    "to": {
+                        "startLines": "15",
+                        "startColumns": "4",
+                        "startOffsets": "998",
+                        "endLines": "27",
+                        "endColumns": "12",
+                        "endOffsets": "1599"
+                    }
+                },
+                {
+                    "source": "/home/peter/.gradle/caches/transforms-3/3f7632a8f51b35393b46c86fb6bfa5a4/transformed/material-1.7.0/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,130,241,330,431,538,645,744,847,935,1059,1161,1263,1379,1481,1595,1723,1839,1961,2097,2217,2351,2471,2583,2709,2826,2950,3080,3202,3340,3474,3590",
+                        "endColumns": "74,110,88,100,106,106,98,102,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
+                        "endOffsets": "125,236,325,426,533,640,739,842,930,1054,1156,1258,1374,1476,1590,1718,1834,1956,2092,2212,2346,2466,2578,2704,2821,2945,3075,3197,3335,3469,3585,3705"
+                    },
+                    "to": {
+                        "startLines": "28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,53,54,55,56,57,58,59,60",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1604,1679,1790,1879,1980,2087,2194,2293,2396,2484,2608,2710,2812,2928,3030,3144,3272,3388,3510,3646,3766,3900,4020,4132,4347,4464,4588,4718,4840,4978,5112,5228",
+                        "endColumns": "74,110,88,100,106,106,98,102,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
+                        "endOffsets": "1674,1785,1874,1975,2082,2189,2288,2391,2479,2603,2705,2807,2923,3025,3139,3267,3383,3505,3641,3761,3895,4015,4127,4253,4459,4583,4713,4835,4973,5107,5223,5343"
+                    }
+                }
+            ]
+        }
+    ]
+}
