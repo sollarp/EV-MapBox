@@ -76,157 +76,156 @@
 43-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:17:9-41
 44        android:supportsRtl="true"
 44-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:18:9-35
-45        android:testOnly="true"
-46        android:theme="@style/Theme.Call_Mapbox_API" >
-46-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:19:9-53
-47        <meta-data
-48            android:name="com.google.android.geo.API_KEY"
-48-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:22:13-58
-49            android:value="Google Key" />
-49-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:23:13-44
-50
-51        <activity
-51-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:24:9-32:20
-52            android:name="com.example.ev_mapbox.ui.MainActivity"
-52-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:25:13-65
-53            android:exported="true" >
-53-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:26:13-36
-54            <intent-filter>
-54-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:27:13-31:29
-55                <action android:name="android.intent.action.MAIN" />
-55-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:28:17-69
-55-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:28:25-66
-56
-57                <category android:name="android.intent.category.LAUNCHER" />
-57-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:30:17-77
-57-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:30:27-74
-58            </intent-filter>
-59        </activity>
-60        <activity
-60-->[pub.devrel:easypermissions:3.0.0] /home/peter/.gradle/caches/transforms-3/14eaa6033e6b3b9a0516f475292cce72/transformed/easypermissions-3.0.0/AndroidManifest.xml:12:9-16:66
-61            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
-61-->[pub.devrel:easypermissions:3.0.0] /home/peter/.gradle/caches/transforms-3/14eaa6033e6b3b9a0516f475292cce72/transformed/easypermissions-3.0.0/AndroidManifest.xml:13:13-86
-62            android:exported="false"
-62-->[pub.devrel:easypermissions:3.0.0] /home/peter/.gradle/caches/transforms-3/14eaa6033e6b3b9a0516f475292cce72/transformed/easypermissions-3.0.0/AndroidManifest.xml:14:13-37
-63            android:label=""
-63-->[pub.devrel:easypermissions:3.0.0] /home/peter/.gradle/caches/transforms-3/14eaa6033e6b3b9a0516f475292cce72/transformed/easypermissions-3.0.0/AndroidManifest.xml:15:13-29
-64            android:theme="@style/EasyPermissions.Transparent" /> <!-- Needs to be explicitly declared on P+ -->
-64-->[pub.devrel:easypermissions:3.0.0] /home/peter/.gradle/caches/transforms-3/14eaa6033e6b3b9a0516f475292cce72/transformed/easypermissions-3.0.0/AndroidManifest.xml:16:13-63
-65        <uses-library
-65-->[com.google.android.gms:play-services-maps:18.1.0] /home/peter/.gradle/caches/transforms-3/d24ca485af1da8a415648302d103f7f7/transformed/play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
-66            android:name="org.apache.http.legacy"
-66-->[com.google.android.gms:play-services-maps:18.1.0] /home/peter/.gradle/caches/transforms-3/d24ca485af1da8a415648302d103f7f7/transformed/play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
-67            android:required="false" />
-67-->[com.google.android.gms:play-services-maps:18.1.0] /home/peter/.gradle/caches/transforms-3/d24ca485af1da8a415648302d103f7f7/transformed/play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
-68
-69        <activity
-69-->[com.google.android.gms:play-services-base:18.0.1] /home/peter/.gradle/caches/transforms-3/ee0e16ea5d91aa56487d2cdd9172a8d5/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-70            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-70-->[com.google.android.gms:play-services-base:18.0.1] /home/peter/.gradle/caches/transforms-3/ee0e16ea5d91aa56487d2cdd9172a8d5/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-71            android:exported="false"
-71-->[com.google.android.gms:play-services-base:18.0.1] /home/peter/.gradle/caches/transforms-3/ee0e16ea5d91aa56487d2cdd9172a8d5/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-72            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-72-->[com.google.android.gms:play-services-base:18.0.1] /home/peter/.gradle/caches/transforms-3/ee0e16ea5d91aa56487d2cdd9172a8d5/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-73
-74        <meta-data
-74-->[com.google.android.gms:play-services-basement:18.0.0] /home/peter/.gradle/caches/transforms-3/d1db3bfd764c153a13e281eb19619c59/transformed/play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
-75            android:name="com.google.android.gms.version"
-75-->[com.google.android.gms:play-services-basement:18.0.0] /home/peter/.gradle/caches/transforms-3/d1db3bfd764c153a13e281eb19619c59/transformed/play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
-76            android:value="@integer/google_play_services_version" />
-76-->[com.google.android.gms:play-services-basement:18.0.0] /home/peter/.gradle/caches/transforms-3/d1db3bfd764c153a13e281eb19619c59/transformed/play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
-77
-78        <uses-library
-78-->[androidx.window:window:1.0.0] /home/peter/.gradle/caches/transforms-3/a102dd16af99a9ba0218afb8f01db898/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
-79            android:name="androidx.window.extensions"
-79-->[androidx.window:window:1.0.0] /home/peter/.gradle/caches/transforms-3/a102dd16af99a9ba0218afb8f01db898/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
-80            android:required="false" />
-80-->[androidx.window:window:1.0.0] /home/peter/.gradle/caches/transforms-3/a102dd16af99a9ba0218afb8f01db898/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
-81        <uses-library
-81-->[androidx.window:window:1.0.0] /home/peter/.gradle/caches/transforms-3/a102dd16af99a9ba0218afb8f01db898/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
-82            android:name="androidx.window.sidecar"
-82-->[androidx.window:window:1.0.0] /home/peter/.gradle/caches/transforms-3/a102dd16af99a9ba0218afb8f01db898/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
-83            android:required="false" />
-83-->[androidx.window:window:1.0.0] /home/peter/.gradle/caches/transforms-3/a102dd16af99a9ba0218afb8f01db898/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
-84
-85        <service
-85-->[androidx.room:room-runtime:2.4.3] /home/peter/.gradle/caches/transforms-3/29f631c1a052a6614df0032329fac05a/transformed/room-runtime-2.4.3/AndroidManifest.xml:25:9-28:40
-86            android:name="androidx.room.MultiInstanceInvalidationService"
-86-->[androidx.room:room-runtime:2.4.3] /home/peter/.gradle/caches/transforms-3/29f631c1a052a6614df0032329fac05a/transformed/room-runtime-2.4.3/AndroidManifest.xml:26:13-74
-87            android:directBootAware="true"
-87-->[androidx.room:room-runtime:2.4.3] /home/peter/.gradle/caches/transforms-3/29f631c1a052a6614df0032329fac05a/transformed/room-runtime-2.4.3/AndroidManifest.xml:27:13-43
-88            android:exported="false" />
-88-->[androidx.room:room-runtime:2.4.3] /home/peter/.gradle/caches/transforms-3/29f631c1a052a6614df0032329fac05a/transformed/room-runtime-2.4.3/AndroidManifest.xml:28:13-37
-89
-90        <provider
-90-->[androidx.emoji2:emoji2:1.2.0] /home/peter/.gradle/caches/transforms-3/a86029251fef8ffce4a8736664aadd9f/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-91            android:name="androidx.startup.InitializationProvider"
-91-->[androidx.emoji2:emoji2:1.2.0] /home/peter/.gradle/caches/transforms-3/a86029251fef8ffce4a8736664aadd9f/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-92            android:authorities="com.example.ev_mapbox.androidx-startup"
-92-->[androidx.emoji2:emoji2:1.2.0] /home/peter/.gradle/caches/transforms-3/a86029251fef8ffce4a8736664aadd9f/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-93            android:exported="false" >
-93-->[androidx.emoji2:emoji2:1.2.0] /home/peter/.gradle/caches/transforms-3/a86029251fef8ffce4a8736664aadd9f/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-94            <meta-data
-94-->[androidx.emoji2:emoji2:1.2.0] /home/peter/.gradle/caches/transforms-3/a86029251fef8ffce4a8736664aadd9f/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-95                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-95-->[androidx.emoji2:emoji2:1.2.0] /home/peter/.gradle/caches/transforms-3/a86029251fef8ffce4a8736664aadd9f/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-96                android:value="androidx.startup" />
-96-->[androidx.emoji2:emoji2:1.2.0] /home/peter/.gradle/caches/transforms-3/a86029251fef8ffce4a8736664aadd9f/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-97            <meta-data
-97-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/peter/.gradle/caches/transforms-3/a706d69916a804a06a8b7ac78c888400/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-98                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-98-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/peter/.gradle/caches/transforms-3/a706d69916a804a06a8b7ac78c888400/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
-99                android:value="androidx.startup" />
-99-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/peter/.gradle/caches/transforms-3/a706d69916a804a06a8b7ac78c888400/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-100        </provider>
-101
-102        <activity
-102-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:27:9-34:20
-103            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
-103-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:28:13-99
-104            android:exported="true"
-104-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:29:13-36
-105            android:theme="@style/WhiteBackgroundTheme" >
-105-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:30:13-56
-106            <intent-filter android:priority="-100" >
-106-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:31:13-33:29
-106-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:31:28-51
-107                <category android:name="android.intent.category.LAUNCHER" />
-107-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:30:17-77
-107-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:30:27-74
-108            </intent-filter>
-109        </activity>
-110        <activity
-110-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:35:9-42:20
-111            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
-111-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:36:13-95
-112            android:exported="true"
-112-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:37:13-36
-113            android:theme="@style/WhiteBackgroundTheme" >
-113-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:38:13-56
-114            <intent-filter android:priority="-100" >
-114-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:31:13-33:29
-114-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:31:28-51
-115                <category android:name="android.intent.category.LAUNCHER" />
-115-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:30:17-77
-115-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:30:27-74
-116            </intent-filter>
-117        </activity>
-118        <activity
-118-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:43:9-50:20
-119            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
-119-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:44:13-103
-120            android:exported="true"
-120-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:45:13-36
-121            android:theme="@style/WhiteBackgroundDialogTheme" >
-121-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:46:13-62
-122            <intent-filter android:priority="-100" >
-122-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:31:13-33:29
-122-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:31:28-51
-123                <category android:name="android.intent.category.LAUNCHER" />
-123-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:30:17-77
-123-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:30:27-74
-124            </intent-filter>
-125        </activity>
-126    </application>
-127
-128</manifest>
+45        android:theme="@style/Theme.Call_Mapbox_API" >
+45-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:19:9-53
+46        <meta-data
+47            android:name="com.google.android.geo.API_KEY"
+47-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:22:13-58
+48            android:value="Google Key" />
+48-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:23:13-44
+49
+50        <activity
+50-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:24:9-32:20
+51            android:name="com.example.ev_mapbox.ui.MainActivity"
+51-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:25:13-65
+52            android:exported="true" >
+52-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:26:13-36
+53            <intent-filter>
+53-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:27:13-31:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:28:17-69
+54-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:28:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:30:17-77
+56-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:30:27-74
+57            </intent-filter>
+58        </activity>
+59        <activity
+59-->[pub.devrel:easypermissions:3.0.0] /home/peter/.gradle/caches/transforms-3/14eaa6033e6b3b9a0516f475292cce72/transformed/easypermissions-3.0.0/AndroidManifest.xml:12:9-16:66
+60            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+60-->[pub.devrel:easypermissions:3.0.0] /home/peter/.gradle/caches/transforms-3/14eaa6033e6b3b9a0516f475292cce72/transformed/easypermissions-3.0.0/AndroidManifest.xml:13:13-86
+61            android:exported="false"
+61-->[pub.devrel:easypermissions:3.0.0] /home/peter/.gradle/caches/transforms-3/14eaa6033e6b3b9a0516f475292cce72/transformed/easypermissions-3.0.0/AndroidManifest.xml:14:13-37
+62            android:label=""
+62-->[pub.devrel:easypermissions:3.0.0] /home/peter/.gradle/caches/transforms-3/14eaa6033e6b3b9a0516f475292cce72/transformed/easypermissions-3.0.0/AndroidManifest.xml:15:13-29
+63            android:theme="@style/EasyPermissions.Transparent" /> <!-- Needs to be explicitly declared on P+ -->
+63-->[pub.devrel:easypermissions:3.0.0] /home/peter/.gradle/caches/transforms-3/14eaa6033e6b3b9a0516f475292cce72/transformed/easypermissions-3.0.0/AndroidManifest.xml:16:13-63
+64        <uses-library
+64-->[com.google.android.gms:play-services-maps:18.1.0] /home/peter/.gradle/caches/transforms-3/d24ca485af1da8a415648302d103f7f7/transformed/play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
+65            android:name="org.apache.http.legacy"
+65-->[com.google.android.gms:play-services-maps:18.1.0] /home/peter/.gradle/caches/transforms-3/d24ca485af1da8a415648302d103f7f7/transformed/play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
+66            android:required="false" />
+66-->[com.google.android.gms:play-services-maps:18.1.0] /home/peter/.gradle/caches/transforms-3/d24ca485af1da8a415648302d103f7f7/transformed/play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
+67
+68        <activity
+68-->[com.google.android.gms:play-services-base:18.0.1] /home/peter/.gradle/caches/transforms-3/ee0e16ea5d91aa56487d2cdd9172a8d5/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+69            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+69-->[com.google.android.gms:play-services-base:18.0.1] /home/peter/.gradle/caches/transforms-3/ee0e16ea5d91aa56487d2cdd9172a8d5/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+70            android:exported="false"
+70-->[com.google.android.gms:play-services-base:18.0.1] /home/peter/.gradle/caches/transforms-3/ee0e16ea5d91aa56487d2cdd9172a8d5/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+71            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+71-->[com.google.android.gms:play-services-base:18.0.1] /home/peter/.gradle/caches/transforms-3/ee0e16ea5d91aa56487d2cdd9172a8d5/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+72
+73        <meta-data
+73-->[com.google.android.gms:play-services-basement:18.0.0] /home/peter/.gradle/caches/transforms-3/d1db3bfd764c153a13e281eb19619c59/transformed/play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+74            android:name="com.google.android.gms.version"
+74-->[com.google.android.gms:play-services-basement:18.0.0] /home/peter/.gradle/caches/transforms-3/d1db3bfd764c153a13e281eb19619c59/transformed/play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+75            android:value="@integer/google_play_services_version" />
+75-->[com.google.android.gms:play-services-basement:18.0.0] /home/peter/.gradle/caches/transforms-3/d1db3bfd764c153a13e281eb19619c59/transformed/play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+76
+77        <uses-library
+77-->[androidx.window:window:1.0.0] /home/peter/.gradle/caches/transforms-3/a102dd16af99a9ba0218afb8f01db898/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+78            android:name="androidx.window.extensions"
+78-->[androidx.window:window:1.0.0] /home/peter/.gradle/caches/transforms-3/a102dd16af99a9ba0218afb8f01db898/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+79            android:required="false" />
+79-->[androidx.window:window:1.0.0] /home/peter/.gradle/caches/transforms-3/a102dd16af99a9ba0218afb8f01db898/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+80        <uses-library
+80-->[androidx.window:window:1.0.0] /home/peter/.gradle/caches/transforms-3/a102dd16af99a9ba0218afb8f01db898/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+81            android:name="androidx.window.sidecar"
+81-->[androidx.window:window:1.0.0] /home/peter/.gradle/caches/transforms-3/a102dd16af99a9ba0218afb8f01db898/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+82            android:required="false" />
+82-->[androidx.window:window:1.0.0] /home/peter/.gradle/caches/transforms-3/a102dd16af99a9ba0218afb8f01db898/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+83
+84        <service
+84-->[androidx.room:room-runtime:2.4.3] /home/peter/.gradle/caches/transforms-3/29f631c1a052a6614df0032329fac05a/transformed/room-runtime-2.4.3/AndroidManifest.xml:25:9-28:40
+85            android:name="androidx.room.MultiInstanceInvalidationService"
+85-->[androidx.room:room-runtime:2.4.3] /home/peter/.gradle/caches/transforms-3/29f631c1a052a6614df0032329fac05a/transformed/room-runtime-2.4.3/AndroidManifest.xml:26:13-74
+86            android:directBootAware="true"
+86-->[androidx.room:room-runtime:2.4.3] /home/peter/.gradle/caches/transforms-3/29f631c1a052a6614df0032329fac05a/transformed/room-runtime-2.4.3/AndroidManifest.xml:27:13-43
+87            android:exported="false" />
+87-->[androidx.room:room-runtime:2.4.3] /home/peter/.gradle/caches/transforms-3/29f631c1a052a6614df0032329fac05a/transformed/room-runtime-2.4.3/AndroidManifest.xml:28:13-37
+88
+89        <provider
+89-->[androidx.emoji2:emoji2:1.2.0] /home/peter/.gradle/caches/transforms-3/a86029251fef8ffce4a8736664aadd9f/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+90            android:name="androidx.startup.InitializationProvider"
+90-->[androidx.emoji2:emoji2:1.2.0] /home/peter/.gradle/caches/transforms-3/a86029251fef8ffce4a8736664aadd9f/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+91            android:authorities="com.example.ev_mapbox.androidx-startup"
+91-->[androidx.emoji2:emoji2:1.2.0] /home/peter/.gradle/caches/transforms-3/a86029251fef8ffce4a8736664aadd9f/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+92            android:exported="false" >
+92-->[androidx.emoji2:emoji2:1.2.0] /home/peter/.gradle/caches/transforms-3/a86029251fef8ffce4a8736664aadd9f/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+93            <meta-data
+93-->[androidx.emoji2:emoji2:1.2.0] /home/peter/.gradle/caches/transforms-3/a86029251fef8ffce4a8736664aadd9f/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+94                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+94-->[androidx.emoji2:emoji2:1.2.0] /home/peter/.gradle/caches/transforms-3/a86029251fef8ffce4a8736664aadd9f/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+95                android:value="androidx.startup" />
+95-->[androidx.emoji2:emoji2:1.2.0] /home/peter/.gradle/caches/transforms-3/a86029251fef8ffce4a8736664aadd9f/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+96            <meta-data
+96-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/peter/.gradle/caches/transforms-3/a706d69916a804a06a8b7ac78c888400/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+97                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+97-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/peter/.gradle/caches/transforms-3/a706d69916a804a06a8b7ac78c888400/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+98                android:value="androidx.startup" />
+98-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/peter/.gradle/caches/transforms-3/a706d69916a804a06a8b7ac78c888400/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+99        </provider>
+100
+101        <activity
+101-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:27:9-34:20
+102            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+102-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:28:13-99
+103            android:exported="true"
+103-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:29:13-36
+104            android:theme="@style/WhiteBackgroundTheme" >
+104-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:30:13-56
+105            <intent-filter android:priority="-100" >
+105-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:31:13-33:29
+105-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:31:28-51
+106                <category android:name="android.intent.category.LAUNCHER" />
+106-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:30:17-77
+106-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:30:27-74
+107            </intent-filter>
+108        </activity>
+109        <activity
+109-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:35:9-42:20
+110            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+110-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:36:13-95
+111            android:exported="true"
+111-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:37:13-36
+112            android:theme="@style/WhiteBackgroundTheme" >
+112-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:38:13-56
+113            <intent-filter android:priority="-100" >
+113-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:31:13-33:29
+113-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:31:28-51
+114                <category android:name="android.intent.category.LAUNCHER" />
+114-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:30:17-77
+114-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:30:27-74
+115            </intent-filter>
+116        </activity>
+117        <activity
+117-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:43:9-50:20
+118            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+118-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:44:13-103
+119            android:exported="true"
+119-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:45:13-36
+120            android:theme="@style/WhiteBackgroundDialogTheme" >
+120-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:46:13-62
+121            <intent-filter android:priority="-100" >
+121-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:31:13-33:29
+121-->[androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:31:28-51
+122                <category android:name="android.intent.category.LAUNCHER" />
+122-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:30:17-77
+122-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:30:27-74
+123            </intent-filter>
+124        </activity>
+125    </application>
+126
+127</manifest>

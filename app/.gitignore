@@ -1,2 +1,10 @@
+# Created by https://www.toptal.com/developers/gitignore/api/android
+# Edit at https://www.toptal.com/developers/gitignore?templates=android
+
+### Android ###
+# Gradle files
+.gradle/
+build/
+
 # Local configuration file (sdk path, etc)
-local.properties
+local.properties/
