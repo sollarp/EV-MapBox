@@ -1,138 +1,138 @@
 [
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/layout_item_map.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/layout/item_map.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/layout_loading.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/layout/loading.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/layout_item_searchbar.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/layout/item_searchbar.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/layout_fragment_detail.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/layout/fragment_detail.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/drawable/ic_launcher_background.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/layout_item_searchbar.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/layout/item_searchbar.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/layout_fragment_searchlistitem.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/layout/fragment_searchlistitem.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/layout_fragment_mapbar.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/layout/fragment_mapbar.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/xml_backup_rules.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/drawable_ic_magnify.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/drawable/ic_magnify.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/navigation_nav_graph.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/navigation/nav_graph.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/layout_fragment_list_connections.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/layout/fragment_list_connections.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/layout_fragment_list_connections.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/layout/fragment_list_connections.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/layout_cardview.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/layout/cardview.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/layout_activity_main.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/layout/activity_main.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/layout_fragment_searchlist.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/layout/fragment_searchlist.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/layout_marker_info_contents.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/layout/marker_info_contents.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/layout_fragment_mapbar.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/layout/fragment_mapbar.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/layout_fragment_searchlistitem.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/layout/fragment_searchlistitem.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/layout_marker_info_contents.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/layout/marker_info_contents.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/layout_fragment_main.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/layout/fragment_main.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/layout_fragment_searchlist.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/layout/fragment_searchlist.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/drawable_ic_directions_bike_black_24dp.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/drawable/ic_directions_bike_black_24dp.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/layout_activity_main.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/drawable_white_border.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/drawable/white_border.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/navigation_nav_graph.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/navigation/nav_graph.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/drawable_white_border.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/drawable/white_border.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/layout_fragment_main.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/layout/fragment_main.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/xml_backup_rules.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/xml/backup_rules.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/mipmap-anydpi-v33/ic_launcher.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/layout_loading.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/layout/loading.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/drawable_ic_magnify.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/drawable/ic_magnify.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/layout_item_map.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/layout/item_map.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/mipmap-anydpi-v33_ic_launcher.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/mipmap-anydpi-v33/ic_launcher.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/layout_fragment_listid.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/layout/fragment_listid.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/xml/data_extraction_rules.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/layout_fragment_listid.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/layout/fragment_listid.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/layout_fragment_detail.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/layout/fragment_detail.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/layout_cardview.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/layout/cardview.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/drawable_ic_directions_bike_black_24dp.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/drawable/ic_directions_bike_black_24dp.xml"
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/mipmap-anydpi-v26/ic_launcher_round.xml"
     }
 ]

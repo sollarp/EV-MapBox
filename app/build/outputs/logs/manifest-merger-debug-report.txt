@@ -11,6 +11,9 @@ ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidM
 INJECTED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:2:1-35:12
 INJECTED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:2:1-35:12
 INJECTED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:2:1-35:12
+MERGED from [androidx.databinding:databinding-adapters:7.2.0] /home/peter/.gradle/caches/transforms-3/16e5a02b8ae008c381231b32c704eb7f/transformed/databinding-adapters-7.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-ktx:7.2.0] /home/peter/.gradle/caches/transforms-3/805402c00ccc177be721319efd03c635/transformed/databinding-ktx-7.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-runtime:7.2.0] /home/peter/.gradle/caches/transforms-3/ebcb29fb28f1f3ea14ca7be6de3c377d/transformed/databinding-runtime-7.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:viewbinding:7.2.0] /home/peter/.gradle/caches/transforms-3/fa9fbf67725c8f8f682446d4666f03bc/transformed/viewbinding-7.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.room:room-paging:2.4.3] /home/peter/.gradle/caches/transforms-3/a71bb3f65871f7392c74a7c110bac08f/transformed/room-paging-2.4.3/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.room:room-ktx:2.4.3] /home/peter/.gradle/caches/transforms-3/253941949acdd88c9a65456226ff6bb0/transformed/room-ktx-2.4.3/AndroidManifest.xml:17:1-24:12
@@ -78,12 +81,12 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/peter/.
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/peter/.gradle/caches/transforms-3/6ebaeb5451de147f7dcab16fc4fa48d8/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.4.1] /home/peter/.gradle/caches/transforms-3/ca5f5ffe2cd0a3a33ac86347f3a462b6/transformed/transition-1.4.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.8.0] /home/peter/.gradle/caches/transforms-3/65253c4f1a5e349137893c87e4f11344/transformed/core-1.8.0/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] /home/peter/.gradle/caches/transforms-3/77e0c725f2f8928af16fa636ccc14c76/transformed/savedstate-ktx-1.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.2.0] /home/peter/.gradle/caches/transforms-3/45b5f944f83c6b5313a2ef2d6c5efec2/transformed/savedstate-1.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/peter/.gradle/caches/transforms-3/1e5410b5433f04ed47243690d8116ecc/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /home/peter/.gradle/caches/transforms-3/1abe0ac0a5e8f2a0313b3afeb9c4d9eb/transformed/lifecycle-service-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /home/peter/.gradle/caches/transforms-3/a706d69916a804a06a8b7ac78c888400/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:17:1-37:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /home/peter/.gradle/caches/transforms-3/00d6db4ac9c430aa73d90cec30a9e854/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] /home/peter/.gradle/caches/transforms-3/77e0c725f2f8928af16fa636ccc14c76/transformed/savedstate-ktx-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] /home/peter/.gradle/caches/transforms-3/45b5f944f83c6b5313a2ef2d6c5efec2/transformed/savedstate-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/peter/.gradle/caches/transforms-3/1e5410b5433f04ed47243690d8116ecc/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:17:1-53:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.5.1] /home/peter/.gradle/caches/transforms-3/d5dba1cd0cf91018fc30f4e0b05c8b88/transformed/lifecycle-livedata-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /home/peter/.gradle/caches/transforms-3/f5f3e813e9b129925083149520636548/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:17:1-24:12
@@ -232,6 +235,12 @@ uses-sdk
 INJECTED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml
 INJECTED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:databinding-adapters:7.2.0] /home/peter/.gradle/caches/transforms-3/16e5a02b8ae008c381231b32c704eb7f/transformed/databinding-adapters-7.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:databinding-adapters:7.2.0] /home/peter/.gradle/caches/transforms-3/16e5a02b8ae008c381231b32c704eb7f/transformed/databinding-adapters-7.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:databinding-ktx:7.2.0] /home/peter/.gradle/caches/transforms-3/805402c00ccc177be721319efd03c635/transformed/databinding-ktx-7.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:databinding-ktx:7.2.0] /home/peter/.gradle/caches/transforms-3/805402c00ccc177be721319efd03c635/transformed/databinding-ktx-7.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:databinding-runtime:7.2.0] /home/peter/.gradle/caches/transforms-3/ebcb29fb28f1f3ea14ca7be6de3c377d/transformed/databinding-runtime-7.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:databinding-runtime:7.2.0] /home/peter/.gradle/caches/transforms-3/ebcb29fb28f1f3ea14ca7be6de3c377d/transformed/databinding-runtime-7.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.databinding:viewbinding:7.2.0] /home/peter/.gradle/caches/transforms-3/fa9fbf67725c8f8f682446d4666f03bc/transformed/viewbinding-7.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.databinding:viewbinding:7.2.0] /home/peter/.gradle/caches/transforms-3/fa9fbf67725c8f8f682446d4666f03bc/transformed/viewbinding-7.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.room:room-paging:2.4.3] /home/peter/.gradle/caches/transforms-3/a71bb3f65871f7392c74a7c110bac08f/transformed/room-paging-2.4.3/AndroidManifest.xml:20:5-22:41
@@ -366,18 +375,18 @@ MERGED from [androidx.transition:transition:1.4.1] /home/peter/.gradle/caches/tr
 MERGED from [androidx.transition:transition:1.4.1] /home/peter/.gradle/caches/transforms-3/ca5f5ffe2cd0a3a33ac86347f3a462b6/transformed/transition-1.4.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.8.0] /home/peter/.gradle/caches/transforms-3/65253c4f1a5e349137893c87e4f11344/transformed/core-1.8.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.8.0] /home/peter/.gradle/caches/transforms-3/65253c4f1a5e349137893c87e4f11344/transformed/core-1.8.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] /home/peter/.gradle/caches/transforms-3/77e0c725f2f8928af16fa636ccc14c76/transformed/savedstate-ktx-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] /home/peter/.gradle/caches/transforms-3/77e0c725f2f8928af16fa636ccc14c76/transformed/savedstate-ktx-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.2.0] /home/peter/.gradle/caches/transforms-3/45b5f944f83c6b5313a2ef2d6c5efec2/transformed/savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.2.0] /home/peter/.gradle/caches/transforms-3/45b5f944f83c6b5313a2ef2d6c5efec2/transformed/savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/peter/.gradle/caches/transforms-3/1e5410b5433f04ed47243690d8116ecc/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/peter/.gradle/caches/transforms-3/1e5410b5433f04ed47243690d8116ecc/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /home/peter/.gradle/caches/transforms-3/1abe0ac0a5e8f2a0313b3afeb9c4d9eb/transformed/lifecycle-service-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /home/peter/.gradle/caches/transforms-3/1abe0ac0a5e8f2a0313b3afeb9c4d9eb/transformed/lifecycle-service-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /home/peter/.gradle/caches/transforms-3/a706d69916a804a06a8b7ac78c888400/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /home/peter/.gradle/caches/transforms-3/a706d69916a804a06a8b7ac78c888400/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /home/peter/.gradle/caches/transforms-3/00d6db4ac9c430aa73d90cec30a9e854/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /home/peter/.gradle/caches/transforms-3/00d6db4ac9c430aa73d90cec30a9e854/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] /home/peter/.gradle/caches/transforms-3/77e0c725f2f8928af16fa636ccc14c76/transformed/savedstate-ktx-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] /home/peter/.gradle/caches/transforms-3/77e0c725f2f8928af16fa636ccc14c76/transformed/savedstate-ktx-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] /home/peter/.gradle/caches/transforms-3/45b5f944f83c6b5313a2ef2d6c5efec2/transformed/savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] /home/peter/.gradle/caches/transforms-3/45b5f944f83c6b5313a2ef2d6c5efec2/transformed/savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/peter/.gradle/caches/transforms-3/1e5410b5433f04ed47243690d8116ecc/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/peter/.gradle/caches/transforms-3/1e5410b5433f04ed47243690d8116ecc/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.5.1] /home/peter/.gradle/caches/transforms-3/d5dba1cd0cf91018fc30f4e0b05c8b88/transformed/lifecycle-livedata-2.5.1/AndroidManifest.xml:20:5-22:41

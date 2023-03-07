@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ev_mapbox.app-mergeDebugResources-59:/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "com.example.ev_mapbox.app-mergeDebugResources-61:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
                     "source": "/home/peter/.gradle/caches/transforms-3/0f1d4be08d3d31bef77b272931287d41/transformed/appcompat-1.5.1/res/values-hdpi-v4/values-hdpi-v4.xml",

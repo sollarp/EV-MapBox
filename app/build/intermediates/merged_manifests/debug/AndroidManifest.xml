@@ -45,7 +45,7 @@
         android:theme="@style/Theme.Call_Mapbox_API" >
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="Google Key" />
+            android:value="map key" />
 
         <activity
             android:name="com.example.ev_mapbox.ui.MainActivity"

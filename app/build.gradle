@@ -39,6 +39,9 @@ android {
     buildFeatures {
         viewBinding true
     }
+    buildFeatures {
+        dataBinding true
+    }
     // Allow references to generated code Hilt.
     kapt {
         correctErrorTypes = true
