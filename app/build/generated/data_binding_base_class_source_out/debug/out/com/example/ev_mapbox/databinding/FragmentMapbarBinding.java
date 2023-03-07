@@ -19,16 +19,26 @@ public final class FragmentMapbarBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ItemCardviewBinding cardviewFragment;
+
+  @NonNull
   public final ItemMapBinding mapFragment;
 
   @NonNull
-  public final ItemSearchbarBinding searchbarFragment;
+  public final ItemSearchbarnewBinding searchbarFragment;
+
+  @NonNull
+  public final ItemToolbarBinding toolbarFragment;
 
   private FragmentMapbarBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ItemMapBinding mapFragment, @NonNull ItemSearchbarBinding searchbarFragment) {
+      @NonNull ItemCardviewBinding cardviewFragment, @NonNull ItemMapBinding mapFragment,
+      @NonNull ItemSearchbarnewBinding searchbarFragment,
+      @NonNull ItemToolbarBinding toolbarFragment) {
     this.rootView = rootView;
+    this.cardviewFragment = cardviewFragment;
     this.mapFragment = mapFragment;
     this.searchbarFragment = searchbarFragment;
+    this.toolbarFragment = toolbarFragment;
   }
 
   @Override
@@ -58,6 +68,13 @@ public final class FragmentMapbarBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.cardview_fragment;
+      View cardviewFragment = ViewBindings.findChildViewById(rootView, id);
+      if (cardviewFragment == null) {
+        break missingId;
+      }
+      ItemCardviewBinding binding_cardviewFragment = ItemCardviewBinding.bind(cardviewFragment);
+
       id = R.id.map_fragment;
       View mapFragment = ViewBindings.findChildViewById(rootView, id);
       if (mapFragment == null) {
@@ -70,10 +87,17 @@ public final class FragmentMapbarBinding implements ViewBinding {
       if (searchbarFragment == null) {
         break missingId;
       }
-      ItemSearchbarBinding binding_searchbarFragment = ItemSearchbarBinding.bind(searchbarFragment);
+      ItemSearchbarnewBinding binding_searchbarFragment = ItemSearchbarnewBinding.bind(searchbarFragment);
 
-      return new FragmentMapbarBinding((ConstraintLayout) rootView, binding_mapFragment,
-          binding_searchbarFragment);
+      id = R.id.toolbar_fragment;
+      View toolbarFragment = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarFragment == null) {
+        break missingId;
+      }
+      ItemToolbarBinding binding_toolbarFragment = ItemToolbarBinding.bind(toolbarFragment);
+
+      return new FragmentMapbarBinding((ConstraintLayout) rootView, binding_cardviewFragment,
+          binding_mapFragment, binding_searchbarFragment, binding_toolbarFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

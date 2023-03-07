@@ -11,4 +11,21 @@
     <color name="colorPrimaryTranslucent">#556200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="bluegray_300_88">#889ea8b0</color>
+    <color name="black_900_0a">#0a000000</color>
+    <color name="black_900_1a">#1a000000</color>
+    <color name="bluegray_200_68">#68adb4b6</color>
+    <color name="gray_101">#edf8f3</color>
+    <color name="gray_300">#dfe7e9</color>
+    <color name="green_A400">#20d57b</color>
+    <color name="white_A700_82">#82ffffff</color>
+    <color name="gray_100">#f1f9f5</color>
+    <color name="black_900_87">#87000000</color>
+    <color name="bluegray_800">#2b3f50</color>
+    <color name="white_A700_00">#00ffffff</color>
+    <color name="black_900">#000000</color>
+    <color name="bluegray_300">#9ea8b0</color>
+    <color name="bluegray_200">#adb4b6</color>
+    <color name="black_900_29">#29000000</color>
+    <color name="white_A700">#ffffff</color>
 </resources>

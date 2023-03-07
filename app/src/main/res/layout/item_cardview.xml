@@ -40,7 +40,7 @@
                 <LinearLayout
                     android:id="@+id/linearRowbusinesscenter"
                     android:layout_width="match_parent"
-                    android:layout_height="86dp"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center"
                     android:layout_marginStart="@dimen/_15pxh"
                     android:layout_marginTop="@dimen/_11pxv"
@@ -265,7 +265,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_43pxv"
                     android:layout_marginTop="@dimen/_25pxv"
-                    android:background="@drawable/rectangle_gradient_a700" />
+                    android:background="@drawable/rectangle_gradient_s_white_a700_e_white_a700_00" />
             </LinearLayout>
         </FrameLayout>
     </androidx.cardview.widget.CardView>

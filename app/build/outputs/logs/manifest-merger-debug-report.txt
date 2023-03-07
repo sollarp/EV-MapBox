@@ -198,21 +198,21 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/peter
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.8.0] /home/peter/.gradle/caches/transforms-3/65253c4f1a5e349137893c87e4f11344/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:18:9-35
+		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:19:9-35
 	android:label
-		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:17:9-41
+		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:18:9-41
 	android:fullBackupContent
-		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:15:9-54
+		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:16:9-54
 	tools:targetApi
 		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:20:9-29
 	android:icon
-		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:16:9-43
+		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:17:9-43
 	android:allowBackup
-		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:14:9-35
 	android:theme
-		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:19:9-53
+		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:13:9-40
 	android:dataExtractionRules
-		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:14:9-65
+		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:15:9-65
 	android:name
 		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:12:9-38
 activity#com.example.ev_mapbox.ui.MainActivity
