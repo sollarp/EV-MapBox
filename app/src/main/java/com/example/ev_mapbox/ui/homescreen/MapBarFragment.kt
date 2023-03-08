@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.DecelerateInterpolator
+import android.widget.Toast
 import androidx.fragment.app.*
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
@@ -18,6 +20,7 @@ import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
 import kotlinx.coroutines.launch
 
@@ -37,6 +40,9 @@ class MapBarFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val context = requireContext()
+
+         //val bottomCardView = childFragmentManager.findFragmentById(R.id.bottom_card_view)
 
         val supportMapFragment =
             childFragmentManager.findFragmentById(R.id.map_fragment) as SupportMapFragment
@@ -45,9 +51,16 @@ class MapBarFragment : Fragment() {
         viewLifecycleOwner.lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.pointsMediatorData.observe(viewLifecycleOwner) { pointItems ->
-                    supportMapFragment.getMapAsync { googleMap ->
-                        addMarkers(googleMap, pointItems)
-                        googleMap.animateCamera(
+                    supportMapFragment.getMapAsync {
+                        /*it.setOnMarkerClickListener { marker: Marker ->
+
+                            // on below line we are displaying a toast message on clicking on marker
+                            Toast.makeText(context, "Clicked location is " + marker.title, Toast.LENGTH_SHORT).show()
+
+                            false
+                        }*/
+                        addMarkers(it, pointItems)
+                        it.animateCamera(
                             CameraUpdateFactory.newLatLngZoom(
                                 LatLng(
                                     51.667683,
@@ -65,6 +78,7 @@ class MapBarFragment : Fragment() {
             view.findNavController().navigate(createMapBarFragmentDirections())
         }
     }
+
     private fun addMarkers(googleMap: GoogleMap, pointItems: List<EvPointsEntity>) {
         pointItems.forEach { point ->
             googleMap.addMarker(
@@ -79,6 +93,19 @@ class MapBarFragment : Fragment() {
             )
         }
     }
+/*
+
+    private fun slideUp(view: View) {
+        view.visibility = View.VISIBLE
+        view.translationY = view.height.toFloat()
+        view.animate()
+            .translationY(0f)
+            .setInterpolator(DecelerateInterpolator(2f))
+            .setDuration(400)
+            .start()
+    }
+*/
+
 
     override fun onDestroyView() {
         super.onDestroyView()

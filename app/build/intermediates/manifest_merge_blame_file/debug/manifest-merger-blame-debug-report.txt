@@ -77,8 +77,8 @@
 44        android:supportsRtl="true"
 44-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:19:9-35
 45        android:testOnly="true"
-46        android:theme="@style/AppTheme" >
-46-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:13:9-40
+46        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+46-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:13:9-68
 47        <meta-data
 48            android:name="com.google.android.geo.API_KEY"
 48-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:22:13-58

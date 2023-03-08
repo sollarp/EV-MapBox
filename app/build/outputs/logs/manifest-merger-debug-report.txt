@@ -210,7 +210,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/peter
 	android:allowBackup
 		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:14:9-35
 	android:theme
-		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:13:9-40
+		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:13:9-68
 	android:dataExtractionRules
 		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:15:9-65
 	android:name
