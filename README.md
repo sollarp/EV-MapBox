@@ -24,6 +24,11 @@ Other features:
 - LiveData, MediatorLiveData
 - JUnit4, Mockito-Kotlin.
 
+## Current Screens:
+![Screenshot from 2023-03-09 17-04-07](https://user-images.githubusercontent.com/74240451/224102280-6a52cf9f-9009-4074-adf6-c7ddb3fe83cf.png)
+![Screenshot from 2023-03-09 17-04-59](https://user-images.githubusercontent.com/74240451/224102330-a636e0b2-879a-4f77-9f26-da2b07f8425e.png)
+
+
 ## Development setup
 In order to clone and be able to run the code you will need to supply API Keys for the Google Maps SDK and Open Charge Map API:
 - [Open Charge Map instructions](https://openchargemap.org/site/develop/api)
