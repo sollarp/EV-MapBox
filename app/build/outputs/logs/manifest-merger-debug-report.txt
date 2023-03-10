@@ -30,7 +30,7 @@ MERGED from [androidx.navigation:navigation-common:2.5.3] /home/peter/.gradle/ca
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] /home/peter/.gradle/caches/transforms-3/db23eb0917ad3e13d6a61a036dcdaf18/transformed/lifecycle-viewmodel-ktx-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.5.1] /home/peter/.gradle/caches/transforms-3/a76ef1d5555e30e91ff2f8d09b1d6d4b/transformed/lifecycle-livedata-ktx-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.dagger:hilt-android:2.44] /home/peter/.gradle/caches/transforms-3/52c03c0b64f80f2cc7895e2b10147519/transformed/hilt-android-2.44/AndroidManifest.xml:16:1-19:12
-MERGED from [com.google.android.material:material:1.7.0] /home/peter/.gradle/caches/transforms-3/3f7632a8f51b35393b46c86fb6bfa5a4/transformed/material-1.7.0/AndroidManifest.xml:17:1-26:12
+MERGED from [com.google.android.material:material:1.8.0] /home/peter/.gradle/caches/transforms-3/8d4a1ca8624fa70e1b2ffffc71c4acb8/transformed/material-1.8.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/peter/.gradle/caches/transforms-3/75da1e5017f64e5c8c788428add84938/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [pub.devrel:easypermissions:3.0.0] /home/peter/.gradle/caches/transforms-3/14eaa6033e6b3b9a0516f475292cce72/transformed/easypermissions-3.0.0/AndroidManifest.xml:2:1-19:12
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] /home/peter/.gradle/caches/transforms-3/6b75e7dfe8563469628f5553fcfb04dc/transformed/appcompat-resources-1.5.1/AndroidManifest.xml:17:1-22:12
@@ -66,14 +66,14 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.1] /home/peter/.
 MERGED from [androidx.cardview:cardview:1.0.0] /home/peter/.gradle/caches/transforms-3/ff2671edc570fa62343f35f18999c701/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.maps.android:android-maps-utils:2.2.0] /home/peter/.gradle/caches/transforms-3/56b62284244ba4a79467866ead22e990/transformed/android-maps-utils-2.2.0/AndroidManifest.xml:2:1-17:12
 MERGED from [androidx.wear.tiles:tiles:1.1.0-alpha04] /home/peter/.gradle/caches/transforms-3/79345c1f861f99a88fc17a3c801bcf46/transformed/tiles-1.1.0-alpha04/AndroidManifest.xml:2:1-15:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/peter/.gradle/caches/transforms-3/c08a35e7ca14c5ccc76d012a83a3a3e2/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/peter/.gradle/caches/transforms-3/33a185cca461db1e3362493c30d7725e/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/peter/.gradle/caches/transforms-3/dd323b9e967414a014eb4e1a04ffb0a5/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/peter/.gradle/caches/transforms-3/2cf17e6fabb4ac6526a04e51fd21a962/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /home/peter/.gradle/caches/transforms-3/e45e24ee57f693835e8e2e7a98e12b8a/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.sqlite:sqlite:2.2.0] /home/peter/.gradle/caches/transforms-3/3f2b1333a15738fcfc7763f30dbb76ec/transformed/sqlite-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/peter/.gradle/caches/transforms-3/16d8fba771208f48a34b0972ab64df60/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.2.0] /home/peter/.gradle/caches/transforms-3/a86029251fef8ffce4a8736664aadd9f/transformed/emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/peter/.gradle/caches/transforms-3/33a185cca461db1e3362493c30d7725e/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/peter/.gradle/caches/transforms-3/c08a35e7ca14c5ccc76d012a83a3a3e2/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/peter/.gradle/caches/transforms-3/dd323b9e967414a014eb4e1a04ffb0a5/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/peter/.gradle/caches/transforms-3/2cf17e6fabb4ac6526a04e51fd21a962/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.media:media:1.0.0] /home/peter/.gradle/caches/transforms-3/5f03afbef4c0fd9ed482f0b5fa9d837a/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/peter/.gradle/caches/transforms-3/03ca68258b9c83cd93738f375f735519/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.1.0] /home/peter/.gradle/caches/transforms-3/3d62b030642f2674d9b3f8d8007039db/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -91,11 +91,11 @@ MERGED from [androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.5.1] /home/peter/.gradle/caches/transforms-3/d5dba1cd0cf91018fc30f4e0b05c8b88/transformed/lifecycle-livedata-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /home/peter/.gradle/caches/transforms-3/f5f3e813e9b129925083149520636548/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/peter/.gradle/caches/transforms-3/c4f10dadbc0344a92f0794310578a6e1/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/peter/.gradle/caches/transforms-3/a56d5764f97dc7020b681ec7be6a4b77/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.test.services:storage:1.4.2] /home/peter/.gradle/caches/transforms-3/2c3b693f88569dff5245a1857e7553b6/transformed/storage-1.4.2/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.test:monitor:1.6.0] /home/peter/.gradle/caches/transforms-3/a83af1ddb5558b3aa4ccc0634a621930/transformed/monitor-1.6.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] /home/peter/.gradle/caches/transforms-3/8d24afdaa943128ff3ad9a9cfe8a1973/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] /home/peter/.gradle/caches/transforms-3/7d73efe9a926216acb43a981168815ea/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/peter/.gradle/caches/transforms-3/a56d5764f97dc7020b681ec7be6a4b77/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/peter/.gradle/caches/transforms-3/3528f12e0ea03a58da4dee8767514102/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/peter/.gradle/caches/transforms-3/6e586aa937070a29db1f722f46c4301b/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/peter/.gradle/caches/transforms-3/5ce105c0308b8054ea439ad8e890b06b/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -157,8 +157,8 @@ ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidM
 		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:9:22-82
 application
 ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:11:5-33:19
-MERGED from [com.google.android.material:material:1.7.0] /home/peter/.gradle/caches/transforms-3/3f7632a8f51b35393b46c86fb6bfa5a4/transformed/material-1.7.0/AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.material:material:1.7.0] /home/peter/.gradle/caches/transforms-3/3f7632a8f51b35393b46c86fb6bfa5a4/transformed/material-1.7.0/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.8.0] /home/peter/.gradle/caches/transforms-3/8d4a1ca8624fa70e1b2ffffc71c4acb8/transformed/material-1.8.0/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.8.0] /home/peter/.gradle/caches/transforms-3/8d4a1ca8624fa70e1b2ffffc71c4acb8/transformed/material-1.8.0/AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/peter/.gradle/caches/transforms-3/75da1e5017f64e5c8c788428add84938/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/peter/.gradle/caches/transforms-3/75da1e5017f64e5c8c788428add84938/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
 MERGED from [pub.devrel:easypermissions:3.0.0] /home/peter/.gradle/caches/transforms-3/14eaa6033e6b3b9a0516f475292cce72/transformed/easypermissions-3.0.0/AndroidManifest.xml:11:5-17:19
@@ -191,10 +191,10 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /home/peter/.gradle/cac
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /home/peter/.gradle/caches/transforms-3/a706d69916a804a06a8b7ac78c888400/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:26:5-51:19
 MERGED from [androidx.test:core:1.5.0] /home/peter/.gradle/caches/transforms-3/b525d4f530831d1dd52e042feefc6730/transformed/core-1.5.0/AndroidManifest.xml:26:5-51:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/peter/.gradle/caches/transforms-3/8d24afdaa943128ff3ad9a9cfe8a1973/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/peter/.gradle/caches/transforms-3/8d24afdaa943128ff3ad9a9cfe8a1973/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/peter/.gradle/caches/transforms-3/a56d5764f97dc7020b681ec7be6a4b77/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/peter/.gradle/caches/transforms-3/a56d5764f97dc7020b681ec7be6a4b77/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/peter/.gradle/caches/transforms-3/8d24afdaa943128ff3ad9a9cfe8a1973/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/peter/.gradle/caches/transforms-3/8d24afdaa943128ff3ad9a9cfe8a1973/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.8.0] /home/peter/.gradle/caches/transforms-3/65253c4f1a5e349137893c87e4f11344/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
@@ -273,8 +273,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.5.1] /home/peter/.gradl
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.5.1] /home/peter/.gradle/caches/transforms-3/a76ef1d5555e30e91ff2f8d09b1d6d4b/transformed/lifecycle-livedata-ktx-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.dagger:hilt-android:2.44] /home/peter/.gradle/caches/transforms-3/52c03c0b64f80f2cc7895e2b10147519/transformed/hilt-android-2.44/AndroidManifest.xml:18:3-42
 MERGED from [com.google.dagger:hilt-android:2.44] /home/peter/.gradle/caches/transforms-3/52c03c0b64f80f2cc7895e2b10147519/transformed/hilt-android-2.44/AndroidManifest.xml:18:3-42
-MERGED from [com.google.android.material:material:1.7.0] /home/peter/.gradle/caches/transforms-3/3f7632a8f51b35393b46c86fb6bfa5a4/transformed/material-1.7.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.material:material:1.7.0] /home/peter/.gradle/caches/transforms-3/3f7632a8f51b35393b46c86fb6bfa5a4/transformed/material-1.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.8.0] /home/peter/.gradle/caches/transforms-3/8d4a1ca8624fa70e1b2ffffc71c4acb8/transformed/material-1.8.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.8.0] /home/peter/.gradle/caches/transforms-3/8d4a1ca8624fa70e1b2ffffc71c4acb8/transformed/material-1.8.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/peter/.gradle/caches/transforms-3/75da1e5017f64e5c8c788428add84938/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/peter/.gradle/caches/transforms-3/75da1e5017f64e5c8c788428add84938/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
 MERGED from [pub.devrel:easypermissions:3.0.0] /home/peter/.gradle/caches/transforms-3/14eaa6033e6b3b9a0516f475292cce72/transformed/easypermissions-3.0.0/AndroidManifest.xml:7:5-9:41
@@ -345,6 +345,14 @@ MERGED from [com.google.maps.android:android-maps-utils:2.2.0] /home/peter/.grad
 MERGED from [com.google.maps.android:android-maps-utils:2.2.0] /home/peter/.gradle/caches/transforms-3/56b62284244ba4a79467866ead22e990/transformed/android-maps-utils-2.2.0/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.wear.tiles:tiles:1.1.0-alpha04] /home/peter/.gradle/caches/transforms-3/79345c1f861f99a88fc17a3c801bcf46/transformed/tiles-1.1.0-alpha04/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.wear.tiles:tiles:1.1.0-alpha04] /home/peter/.gradle/caches/transforms-3/79345c1f861f99a88fc17a3c801bcf46/transformed/tiles-1.1.0-alpha04/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/peter/.gradle/caches/transforms-3/c08a35e7ca14c5ccc76d012a83a3a3e2/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/peter/.gradle/caches/transforms-3/c08a35e7ca14c5ccc76d012a83a3a3e2/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/peter/.gradle/caches/transforms-3/33a185cca461db1e3362493c30d7725e/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/peter/.gradle/caches/transforms-3/33a185cca461db1e3362493c30d7725e/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/peter/.gradle/caches/transforms-3/dd323b9e967414a014eb4e1a04ffb0a5/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/peter/.gradle/caches/transforms-3/dd323b9e967414a014eb4e1a04ffb0a5/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/peter/.gradle/caches/transforms-3/2cf17e6fabb4ac6526a04e51fd21a962/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/peter/.gradle/caches/transforms-3/2cf17e6fabb4ac6526a04e51fd21a962/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /home/peter/.gradle/caches/transforms-3/e45e24ee57f693835e8e2e7a98e12b8a/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /home/peter/.gradle/caches/transforms-3/e45e24ee57f693835e8e2e7a98e12b8a/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.sqlite:sqlite:2.2.0] /home/peter/.gradle/caches/transforms-3/3f2b1333a15738fcfc7763f30dbb76ec/transformed/sqlite-2.2.0/AndroidManifest.xml:20:5-22:41
@@ -353,14 +361,6 @@ MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/peter/.gradle/cach
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/peter/.gradle/caches/transforms-3/16d8fba771208f48a34b0972ab64df60/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] /home/peter/.gradle/caches/transforms-3/a86029251fef8ffce4a8736664aadd9f/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] /home/peter/.gradle/caches/transforms-3/a86029251fef8ffce4a8736664aadd9f/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/peter/.gradle/caches/transforms-3/33a185cca461db1e3362493c30d7725e/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/peter/.gradle/caches/transforms-3/33a185cca461db1e3362493c30d7725e/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/peter/.gradle/caches/transforms-3/c08a35e7ca14c5ccc76d012a83a3a3e2/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/peter/.gradle/caches/transforms-3/c08a35e7ca14c5ccc76d012a83a3a3e2/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/peter/.gradle/caches/transforms-3/dd323b9e967414a014eb4e1a04ffb0a5/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/peter/.gradle/caches/transforms-3/dd323b9e967414a014eb4e1a04ffb0a5/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/peter/.gradle/caches/transforms-3/2cf17e6fabb4ac6526a04e51fd21a962/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/peter/.gradle/caches/transforms-3/2cf17e6fabb4ac6526a04e51fd21a962/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.media:media:1.0.0] /home/peter/.gradle/caches/transforms-3/5f03afbef4c0fd9ed482f0b5fa9d837a/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] /home/peter/.gradle/caches/transforms-3/5f03afbef4c0fd9ed482f0b5fa9d837a/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/peter/.gradle/caches/transforms-3/03ca68258b9c83cd93738f375f735519/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
@@ -395,6 +395,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /home/peter/.grad
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /home/peter/.gradle/caches/transforms-3/f5f3e813e9b129925083149520636548/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/peter/.gradle/caches/transforms-3/c4f10dadbc0344a92f0794310578a6e1/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/peter/.gradle/caches/transforms-3/c4f10dadbc0344a92f0794310578a6e1/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/peter/.gradle/caches/transforms-3/a56d5764f97dc7020b681ec7be6a4b77/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/peter/.gradle/caches/transforms-3/a56d5764f97dc7020b681ec7be6a4b77/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.test.services:storage:1.4.2] /home/peter/.gradle/caches/transforms-3/2c3b693f88569dff5245a1857e7553b6/transformed/storage-1.4.2/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.test.services:storage:1.4.2] /home/peter/.gradle/caches/transforms-3/2c3b693f88569dff5245a1857e7553b6/transformed/storage-1.4.2/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.test:monitor:1.6.0] /home/peter/.gradle/caches/transforms-3/a83af1ddb5558b3aa4ccc0634a621930/transformed/monitor-1.6.0/AndroidManifest.xml:20:5-22:41
@@ -403,8 +405,6 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/peter/.gradle/caches/
 MERGED from [androidx.startup:startup-runtime:1.1.1] /home/peter/.gradle/caches/transforms-3/8d24afdaa943128ff3ad9a9cfe8a1973/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] /home/peter/.gradle/caches/transforms-3/7d73efe9a926216acb43a981168815ea/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] /home/peter/.gradle/caches/transforms-3/7d73efe9a926216acb43a981168815ea/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/peter/.gradle/caches/transforms-3/a56d5764f97dc7020b681ec7be6a4b77/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/peter/.gradle/caches/transforms-3/a56d5764f97dc7020b681ec7be6a4b77/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/peter/.gradle/caches/transforms-3/3528f12e0ea03a58da4dee8767514102/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/peter/.gradle/caches/transforms-3/3528f12e0ea03a58da4dee8767514102/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/peter/.gradle/caches/transforms-3/6e586aa937070a29db1f722f46c4301b/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44

@@ -79,10 +79,13 @@ id action_mapBarFragment_to_searchlistFragment
 id action_searchlistFragment_to_detailFragment
 id addressline1
 id addressline2
-id bottom_card_view
+id bottomSheet
 id btnContrast
+id button1
+id button2
 id button_go
-id cardview_fragment
+id city_name
+id conlayout
 id connection_recycler
 id connection_type_id
 id dateLastStatusUpdate
@@ -104,8 +107,11 @@ id imageMenu
 id imagePathFour
 id input_search
 id item_cardview
+id item_cardviewLin
 id item_searchbar
 id latitude
+id latitude_label
+id layout_cardview
 id level_id
 id linearColumnbusinesscenter
 id linearColumngroupthree
@@ -118,6 +124,7 @@ id linearRowmenu
 id linearRowpointscounter
 id list_view
 id longitude
+id longitude_label
 id main_nav
 id mapBarFragment
 id map_fragment
@@ -145,6 +152,7 @@ id usage_cost
 id viewRectangleEight
 id voltage
 layout activity_main
+layout bottom_sheet
 layout fragment_detail
 layout fragment_list_connections
 layout fragment_mapbar

@@ -4,9 +4,11 @@ package com.example.ev_mapbox.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.ev_mapbox.R;
@@ -16,10 +18,16 @@ import java.lang.String;
 
 public final class FragmentMapbarBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final CoordinatorLayout rootView;
 
   @NonNull
-  public final ItemCardviewBinding cardviewFragment;
+  public final Button button1;
+
+  @NonNull
+  public final Button button2;
+
+  @NonNull
+  public final ConstraintLayout conlayout;
 
   @NonNull
   public final ItemMapBinding mapFragment;
@@ -30,12 +38,14 @@ public final class FragmentMapbarBinding implements ViewBinding {
   @NonNull
   public final ItemToolbarBinding toolbarFragment;
 
-  private FragmentMapbarBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ItemCardviewBinding cardviewFragment, @NonNull ItemMapBinding mapFragment,
-      @NonNull ItemSearchbarnewBinding searchbarFragment,
+  private FragmentMapbarBinding(@NonNull CoordinatorLayout rootView, @NonNull Button button1,
+      @NonNull Button button2, @NonNull ConstraintLayout conlayout,
+      @NonNull ItemMapBinding mapFragment, @NonNull ItemSearchbarnewBinding searchbarFragment,
       @NonNull ItemToolbarBinding toolbarFragment) {
     this.rootView = rootView;
-    this.cardviewFragment = cardviewFragment;
+    this.button1 = button1;
+    this.button2 = button2;
+    this.conlayout = conlayout;
     this.mapFragment = mapFragment;
     this.searchbarFragment = searchbarFragment;
     this.toolbarFragment = toolbarFragment;
@@ -43,7 +53,7 @@ public final class FragmentMapbarBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -68,12 +78,23 @@ public final class FragmentMapbarBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.cardview_fragment;
-      View cardviewFragment = ViewBindings.findChildViewById(rootView, id);
-      if (cardviewFragment == null) {
+      id = R.id.button1;
+      Button button1 = ViewBindings.findChildViewById(rootView, id);
+      if (button1 == null) {
         break missingId;
       }
-      ItemCardviewBinding binding_cardviewFragment = ItemCardviewBinding.bind(cardviewFragment);
+
+      id = R.id.button2;
+      Button button2 = ViewBindings.findChildViewById(rootView, id);
+      if (button2 == null) {
+        break missingId;
+      }
+
+      id = R.id.conlayout;
+      ConstraintLayout conlayout = ViewBindings.findChildViewById(rootView, id);
+      if (conlayout == null) {
+        break missingId;
+      }
 
       id = R.id.map_fragment;
       View mapFragment = ViewBindings.findChildViewById(rootView, id);
@@ -96,7 +117,7 @@ public final class FragmentMapbarBinding implements ViewBinding {
       }
       ItemToolbarBinding binding_toolbarFragment = ItemToolbarBinding.bind(toolbarFragment);
 
-      return new FragmentMapbarBinding((ConstraintLayout) rootView, binding_cardviewFragment,
+      return new FragmentMapbarBinding((CoordinatorLayout) rootView, button1, button2, conlayout,
           binding_mapFragment, binding_searchbarFragment, binding_toolbarFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
