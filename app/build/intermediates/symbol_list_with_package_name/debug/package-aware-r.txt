@@ -3538,6 +3538,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id txtA233WorldTrad
+id txtAddress
 id txtAmenities
 id txtBusinessCenter
 id txtConnections
@@ -3545,6 +3546,7 @@ id txtEV
 id txtGroupThree
 id txtPointsCounter
 id txtSpot
+id txtTitle
 id unchecked
 id uniform
 id unlabeled
@@ -3814,6 +3816,7 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string address
+string address_and_town
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -3968,6 +3971,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string points_counter
 string rationale_ask
 string rationale_ask_again
 string search_menu_title

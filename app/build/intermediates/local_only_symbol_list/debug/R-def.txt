@@ -134,6 +134,7 @@ id toolbarToolbar
 id toolbar_layout
 id town
 id txtA233WorldTrad
+id txtAddress
 id txtAmenities
 id txtBusinessCenter
 id txtConnections
@@ -141,6 +142,7 @@ id txtEV
 id txtGroupThree
 id txtPointsCounter
 id txtSpot
+id txtTitle
 id usage_cost
 id viewRectangleEight
 id voltage
@@ -159,6 +161,7 @@ layout layout_toolbar
 mipmap ic_launcher
 navigation nav_graph
 string address
+string address_and_town
 string app_name
 string datelaststatusupdate
 string enter_address_city_or_zip_code
@@ -173,6 +176,7 @@ string lbl_spot
 string location_details
 string magnify
 string msg_a233_world_trad
+string points_counter
 style AppTheme
 style etSolidRounded
 style txtPoppinsbold20

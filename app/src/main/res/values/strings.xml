@@ -15,4 +15,7 @@
     <string name="lbl_8_points">8 Points</string>
     <string name="lbl_open">Open</string>
     <string name="lbl_business_center">Business Center</string>
+    <string name="points_counter">%d Points</string>
+    <string name="address_and_town">%1$s, %2$s</string>
+
 </resources>

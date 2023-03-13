@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.RelativeLayout
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Lifecycle
@@ -28,7 +29,6 @@ import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import kotlinx.coroutines.launch
 
-
 class MapBarFragment : Fragment(), OnMarkerClickListener, OnMapReadyCallback {
 
     private var _binding: FragmentMapbarBinding? = null
@@ -40,6 +40,9 @@ class MapBarFragment : Fragment(), OnMarkerClickListener, OnMapReadyCallback {
     private lateinit var pointsEntity: List<EvPointsEntity>
     private var lastClickedMarker: Marker? = null
 
+    private var textAddress: TextView? = null
+    private var textPointsCounter: TextView? = null
+    private var textTitle: TextView? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
@@ -53,6 +56,10 @@ class MapBarFragment : Fragment(), OnMarkerClickListener, OnMapReadyCallback {
 
         bottomSheetView = binding.root.findViewById(R.id.layout_cardview)
         bottomSheetBehavior = BottomSheetBehavior.from(bottomSheetView)
+
+        textAddress = binding.root.findViewById(R.id.txtAddress)
+        textPointsCounter = binding.root.findViewById(R.id.txtPointsCounter)
+        textTitle = binding.root.findViewById(R.id.txtTitle)
         
         val supportMapFragment =
             childFragmentManager.findFragmentById(R.id.map_fragment) as SupportMapFragment
@@ -96,20 +103,32 @@ class MapBarFragment : Fragment(), OnMarkerClickListener, OnMapReadyCallback {
             // Marker is already selected, toggle bottom sheet state
             if (bottomSheetBehavior.state == BottomSheetBehavior.STATE_EXPANDED) {
                 bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
-                println("bottomSheet Collapsed ${marker.tag}")
             } else {
                 bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+                setCardViewTexts(marker)
             }
         } else {
             // New marker selected, expand bottom sheet
             bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
             Handler().postDelayed({
                 bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
-                println("bottomSheet Expanded ${marker.tag}")
+                setCardViewTexts(marker)
             }, 250)
             lastClickedMarker = marker
         }
         return false
+    }
+    private fun setCardViewTexts(marker: Marker) {
+        val pointId: EvPointsEntity = marker.tag as EvPointsEntity
+        val numberOfPoints = pointId.NumberOfPoints
+        val address = pointId.AddressInfo.AddressLine1
+        val town = pointId.AddressInfo.Town
+        val title = pointId.AddressInfo.Title
+        val pointsCounterText = resources.getString(R.string.points_counter, numberOfPoints)
+        val addressAndTownText = resources.getString(R.string.address_and_town, address, town)
+        textAddress?.text = addressAndTownText
+        textPointsCounter?.text = pointsCounterText
+        textTitle?.text = title
     }
 
     private fun addMarkers(googleMap: GoogleMap) {
@@ -122,15 +141,8 @@ class MapBarFragment : Fragment(), OnMarkerClickListener, OnMapReadyCallback {
                             )
                         )
                 )
-            marker?.tag = point.ID
+            marker?.tag = point
         }
-    }
-
-    private fun setBottomSheetVisibility(isVisible: Boolean) {
-        val updatedState =
-            if (isVisible) BottomSheetBehavior.STATE_EXPANDED else BottomSheetBehavior.STATE_COLLAPSED
-        bottomSheetBehavior.state = updatedState
-
     }
 
     override fun onDestroyView() {

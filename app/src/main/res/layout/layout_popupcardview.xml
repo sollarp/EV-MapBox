@@ -61,7 +61,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/txtBusinessCenter"
+                            android:id="@+id/txtTitle"
                             style="@style/txtPoppinssemibold18"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
                             android:text="@string/lbl_business_center" />
 
                         <TextView
-                            android:id="@+id/txtA233WorldTrad"
+                            android:id="@+id/txtAddress"
                             style="@style/txtPoppinsmedium12"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

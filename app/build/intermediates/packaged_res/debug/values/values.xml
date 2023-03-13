@@ -50,6 +50,7 @@
     <dimen name="_97pxh">97.0dp</dimen>
     <dimen name="_9pxv">9.0dp</dimen>
     <string name="address">address</string>
+    <string name="address_and_town">%1$s, %2$s</string>
     <string name="app_name">Call_Mapbox_API</string>
     <string name="datelaststatusupdate">DateLastStatusUpdate</string>
     <string name="enter_address_city_or_zip_code">entrer_address</string>
@@ -64,4 +65,5 @@
     <string name="location_details">location details</string>
     <string name="magnify">magnify</string>
     <string name="msg_a233_world_trad">A233 World Trade Park, New York</string>
+    <string name="points_counter">%d Points</string>
 </resources>
