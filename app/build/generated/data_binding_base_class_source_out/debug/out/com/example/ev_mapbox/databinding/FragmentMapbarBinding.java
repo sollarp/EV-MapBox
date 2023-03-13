@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.ev_mapbox.R;
@@ -16,24 +17,34 @@ import java.lang.String;
 
 public final class FragmentMapbarBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final CoordinatorLayout rootView;
+
+  @NonNull
+  public final ConstraintLayout conlayout;
 
   @NonNull
   public final ItemMapBinding mapFragment;
 
   @NonNull
-  public final ItemSearchbarBinding searchbarFragment;
+  public final LayoutSearchbarBinding searchbarLayout;
 
-  private FragmentMapbarBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ItemMapBinding mapFragment, @NonNull ItemSearchbarBinding searchbarFragment) {
+  @NonNull
+  public final LayoutToolbarBinding toolbarLayout;
+
+  private FragmentMapbarBinding(@NonNull CoordinatorLayout rootView,
+      @NonNull ConstraintLayout conlayout, @NonNull ItemMapBinding mapFragment,
+      @NonNull LayoutSearchbarBinding searchbarLayout,
+      @NonNull LayoutToolbarBinding toolbarLayout) {
     this.rootView = rootView;
+    this.conlayout = conlayout;
     this.mapFragment = mapFragment;
-    this.searchbarFragment = searchbarFragment;
+    this.searchbarLayout = searchbarLayout;
+    this.toolbarLayout = toolbarLayout;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -58,6 +69,12 @@ public final class FragmentMapbarBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.conlayout;
+      ConstraintLayout conlayout = ViewBindings.findChildViewById(rootView, id);
+      if (conlayout == null) {
+        break missingId;
+      }
+
       id = R.id.map_fragment;
       View mapFragment = ViewBindings.findChildViewById(rootView, id);
       if (mapFragment == null) {
@@ -65,15 +82,22 @@ public final class FragmentMapbarBinding implements ViewBinding {
       }
       ItemMapBinding binding_mapFragment = ItemMapBinding.bind(mapFragment);
 
-      id = R.id.searchbar_fragment;
-      View searchbarFragment = ViewBindings.findChildViewById(rootView, id);
-      if (searchbarFragment == null) {
+      id = R.id.searchbar_layout;
+      View searchbarLayout = ViewBindings.findChildViewById(rootView, id);
+      if (searchbarLayout == null) {
         break missingId;
       }
-      ItemSearchbarBinding binding_searchbarFragment = ItemSearchbarBinding.bind(searchbarFragment);
+      LayoutSearchbarBinding binding_searchbarLayout = LayoutSearchbarBinding.bind(searchbarLayout);
 
-      return new FragmentMapbarBinding((ConstraintLayout) rootView, binding_mapFragment,
-          binding_searchbarFragment);
+      id = R.id.toolbar_layout;
+      View toolbarLayout = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarLayout == null) {
+        break missingId;
+      }
+      LayoutToolbarBinding binding_toolbarLayout = LayoutToolbarBinding.bind(toolbarLayout);
+
+      return new FragmentMapbarBinding((CoordinatorLayout) rootView, conlayout, binding_mapFragment,
+          binding_searchbarLayout, binding_toolbarLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

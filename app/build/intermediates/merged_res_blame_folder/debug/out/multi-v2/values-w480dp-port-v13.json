@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ev_mapbox.app-mergeDebugResources-59:/values-w480dp-port-v13/values-w480dp-port-v13.xml",
+            "outputFile": "com.example.ev_mapbox.app-mergeDebugResources-61:/values-w480dp-port-v13/values-w480dp-port-v13.xml",
             "map": [
                 {
-                    "source": "/home/peter/.gradle/caches/transforms-3/3f7632a8f51b35393b46c86fb6bfa5a4/transformed/material-1.7.0/res/values-w480dp-port-v13/values-w480dp-port-v13.xml",
+                    "source": "/home/peter/.gradle/caches/transforms-3/8d4a1ca8624fa70e1b2ffffc71c4acb8/transformed/material-1.8.0/res/values-w480dp-port-v13/values-w480dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

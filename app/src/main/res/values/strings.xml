@@ -1,20 +1,21 @@
 <resources>
     <string name="app_name">Call_Mapbox_API</string>
-    <string name="semmi_nem_add_hozza">semmi nem add hozza</string>
-    <string name="todo">TODO</string>
-    <string name="close_approach_data_title">close_approach_data_title</string>
-    <string name="absolute_magnitude_title">absolute_magnitude_title</string>
-    <string name="relative_velocity_title">relative_velocity_title</string>
-    <string name="distance_from_earth_title">distance_from_earth_title</string>
-    <string name="estimated_diameter_title">estimated_diameter_title</string>
     <string name="location_details">location details</string>
     <string name="address">address</string>
-    <string name="number_of_bays">Number of Bays</string>
     <string name="datelaststatusupdate">DateLastStatusUpdate</string>
     <string name="enter_address_city_or_zip_code">entrer_address</string>
-    <string name="mapholder">mapholder</string>
     <string name="go">Go</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="magnify">magnify</string>
+    <string name="lbl_spot">Spot</string>
+    <string name="lbl_ev">EV</string>
+    <string name="lbl_connections">Connections</string>
+    <string name="msg_a233_world_trad">A233 World Trade Park, New York</string>
+    <string name="lbl_amenities">Amenities</string>
+    <string name="lbl_8_points">8 Points</string>
+    <string name="lbl_open">Open</string>
+    <string name="lbl_business_center">Business Center</string>
+    <string name="points_counter">%d Points</string>
+    <string name="address_and_town">%1$s, %2$s</string>
+
 </resources>

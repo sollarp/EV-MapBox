@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <dimen name="_2pxh">2.0dp</dimen>
+    <dimen name="_7pxh">7.0dp</dimen>
+    <dimen name="_10pxh">10.0dp</dimen>
+    <dimen name="_12pxh">12.0dp</dimen>
+    <dimen name="_13pxh">13.0dp</dimen>
+    <dimen name="_14pxh">14.0dp</dimen>
+    <dimen name="_15pxh">15.0dp</dimen>
+    <dimen name="_16pxh">16.0dp</dimen>
+    <dimen name="_17pxh">17.0dp</dimen>
+    <dimen name="_18pxh">18.0dp</dimen>
+    <dimen name="_20pxh">20.0dp</dimen>
+    <dimen name="_24pxh">24.0dp</dimen>
+    <dimen name="_25pxh">25.0dp</dimen>
+    <dimen name="_28pxh">28.0dp</dimen>
+    <dimen name="_40pxh">40.0dp</dimen>
+    <dimen name="_41pxh">41.0dp</dimen>
+    <dimen name="_52pxh">52.0dp</dimen>
+    <dimen name="_79pxh">79.0dp</dimen>
+    <dimen name="_97pxh">97.0dp</dimen>
+    <dimen name="_217pxh">217.0dp</dimen>
+    <dimen name="_1pxv">1.0dp</dimen>
+    <dimen name="_2pxv">2.0dp</dimen>
+    <dimen name="_3pxv">3.0dp</dimen>
+    <dimen name="_4pxv">4.0dp</dimen>
+    <dimen name="_5pxv">5.0dp</dimen>
+    <dimen name="_6pxv">6.0dp</dimen>
+    <dimen name="_7pxv">7.0dp</dimen>
+    <dimen name="_9pxv">9.0dp</dimen>
+    <dimen name="_10pxv">10.0dp</dimen>
+    <dimen name="_11pxv">11.0dp</dimen>
+    <dimen name="_13pxv">13.0dp</dimen>
+    <dimen name="_15pxv">15.0dp</dimen>
+    <dimen name="_17pxv">17.0dp</dimen>
+    <dimen name="_25pxv">25.0dp</dimen>
+    <dimen name="_43pxv">43.0dp</dimen>
+    <dimen name="_63pxv">63.0dp</dimen>
+    <dimen name="_88pxv">88.0dp</dimen>
+</resources>
