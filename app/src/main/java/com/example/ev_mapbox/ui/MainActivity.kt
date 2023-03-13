@@ -5,11 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ev_mapbox.util.LocationPermission.checkAndRequestLocationPermissions
-import com.example.ev_mapbox.BuildConfig
 import com.example.ev_mapbox.R
-import com.microsoft.appcenter.AppCenter
-import com.microsoft.appcenter.analytics.Analytics
-import com.microsoft.appcenter.crashes.Crashes
 import dagger.hilt.android.AndroidEntryPoint
 
 

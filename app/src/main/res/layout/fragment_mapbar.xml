@@ -24,44 +24,26 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="50dp"
-            android:layout_marginStart="76dp"
-            android:layout_marginTop="122dp"
-            android:text="Button2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <include
-            android:id="@+id/map_fragment"
-            android:name="com.google.android.gms.maps.SupportMapFragment"
-            layout="@layout/item_map"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <include
-            android:id="@+id/toolbar_fragment"
-            layout="@layout/item_toolbar"
+            android:id="@+id/toolbar_layout"
+            layout="@layout/layout_toolbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <include
-            android:id="@+id/searchbar_fragment"
-            layout="@layout/item_searchbarnew"
+            android:id="@+id/searchbar_layout"
+            layout="@layout/layout_searchbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/toolbar_fragment" />
+            app:layout_constraintTop_toBottomOf="@id/toolbar_layout" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
     <include
-        layout="@layout/item_popupcardview"
+        layout="@layout/layout_popupcardview"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

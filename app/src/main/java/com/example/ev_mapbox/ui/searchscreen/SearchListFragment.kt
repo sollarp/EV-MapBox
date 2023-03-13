@@ -46,10 +46,10 @@ class SearchListFragment : Fragment() {
                 context?.let { hideKeyboard(view, it) }
             }
         })
-        binding.searchbarFragment.inputSearch.doOnTextChanged { text, _, _, _ ->
+        binding.searchbarLayout.inputSearch.doOnTextChanged { text, _, _, _ ->
             viewModel.onSearchQuery(text.toString())
         }
-        val editText = binding.searchbarFragment.inputSearch
+        val editText = binding.searchbarLayout.inputSearch
         editText.requestFocus()
         editText.showKeyboardDelayed()
         createAdapterObserver(view, recyclerView, viewLifecycleOwner)

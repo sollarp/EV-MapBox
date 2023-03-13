@@ -9,7 +9,7 @@ import com.example.ev_mapbox.R
 
 class CustomInfoWindowAdapter(private val context: Context) : GoogleMap.InfoWindowAdapter {
 
-    private val view = LayoutInflater.from(context).inflate(R.layout.item_popupcardview, null)
+    private val view = LayoutInflater.from(context).inflate(R.layout.layout_popupcardview, null)
 
     override fun getInfoContents(p0: Marker): View? {
         // Return null to use the default info window.

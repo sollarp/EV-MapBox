@@ -3088,7 +3088,6 @@ id beginning
 id bestChoice
 id blocking
 id bottom
-id bottomSheet
 id bounce
 id bounceBoth
 id bounceEnd
@@ -3115,7 +3114,6 @@ id checkbox
 id checked
 id chronometer
 id circle_center
-id city_name
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -3224,7 +3222,6 @@ id homeAsUp
 id honorRequest
 id horizontal_only
 id hybrid
-id ic_magnify
 id icon
 id icon_group
 id icon_only
@@ -3259,7 +3256,6 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id latitude
-id latitude_label
 id layout
 id layout_cardview
 id left
@@ -3284,7 +3280,6 @@ id list_item
 id list_view
 id locale
 id longitude
-id longitude_label
 id ltr
 id m3_side_sheet
 id main_nav
@@ -3446,7 +3441,7 @@ id search_view_status_bar_spacer
 id search_view_toolbar
 id search_view_toolbar_container
 id search_voice_btn
-id searchbar_fragment
+id searchbar_layout
 id searchlistFragment
 id select_dialog_listview
 id selected
@@ -3531,7 +3526,7 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id toolbarToolbar
-id toolbar_fragment
+id toolbar_layout
 id top
 id topPanel
 id touch_outside
@@ -3693,7 +3688,6 @@ layout activity_main
 layout amu_info_window
 layout amu_text_bubble
 layout amu_webview
-layout bottom_sheet
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3717,10 +3711,10 @@ layout fragment_searchlist
 layout fragment_searchlistitem
 layout item_cardview
 layout item_map
-layout item_popupcardview
-layout item_searchbar
 layout item_searchbarnew
-layout item_toolbar
+layout layout_popupcardview
+layout layout_searchbar
+layout layout_toolbar
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

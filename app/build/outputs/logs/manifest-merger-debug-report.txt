@@ -64,7 +64,7 @@ MERGED from [androidx.recyclerview:recyclerview:1.2.1] /home/peter/.gradle/cache
 MERGED from [androidx.test:core-ktx:1.5.0] /home/peter/.gradle/caches/transforms-3/404752410a8e444ca468085ded3ffa9b/transformed/core-ktx-1.5.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.1] /home/peter/.gradle/caches/transforms-3/79868e7e327267c78f70dc2c3f65b2d0/transformed/lifecycle-livedata-core-ktx-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] /home/peter/.gradle/caches/transforms-3/ff2671edc570fa62343f35f18999c701/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.maps.android:android-maps-utils:2.2.0] /home/peter/.gradle/caches/transforms-3/56b62284244ba4a79467866ead22e990/transformed/android-maps-utils-2.2.0/AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.maps.android:android-maps-utils:3.4.0] /home/peter/.gradle/caches/transforms-3/f99b1effe9b98d5fb9c26b3453456c3a/transformed/android-maps-utils-3.4.0/AndroidManifest.xml:2:1-15:12
 MERGED from [androidx.wear.tiles:tiles:1.1.0-alpha04] /home/peter/.gradle/caches/transforms-3/79345c1f861f99a88fc17a3c801bcf46/transformed/tiles-1.1.0-alpha04/AndroidManifest.xml:2:1-15:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/peter/.gradle/caches/transforms-3/c08a35e7ca14c5ccc76d012a83a3a3e2/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/peter/.gradle/caches/transforms-3/33a185cca461db1e3362493c30d7725e/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
@@ -181,8 +181,8 @@ MERGED from [androidx.window:window:1.0.0] /home/peter/.gradle/caches/transforms
 MERGED from [androidx.window:window:1.0.0] /home/peter/.gradle/caches/transforms-3/a102dd16af99a9ba0218afb8f01db898/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.room:room-runtime:2.4.3] /home/peter/.gradle/caches/transforms-3/29f631c1a052a6614df0032329fac05a/transformed/room-runtime-2.4.3/AndroidManifest.xml:24:5-29:19
 MERGED from [androidx.room:room-runtime:2.4.3] /home/peter/.gradle/caches/transforms-3/29f631c1a052a6614df0032329fac05a/transformed/room-runtime-2.4.3/AndroidManifest.xml:24:5-29:19
-MERGED from [com.google.maps.android:android-maps-utils:2.2.0] /home/peter/.gradle/caches/transforms-3/56b62284244ba4a79467866ead22e990/transformed/android-maps-utils-2.2.0/AndroidManifest.xml:11:5-15:19
-MERGED from [com.google.maps.android:android-maps-utils:2.2.0] /home/peter/.gradle/caches/transforms-3/56b62284244ba4a79467866ead22e990/transformed/android-maps-utils-2.2.0/AndroidManifest.xml:11:5-15:19
+MERGED from [com.google.maps.android:android-maps-utils:3.4.0] /home/peter/.gradle/caches/transforms-3/f99b1effe9b98d5fb9c26b3453456c3a/transformed/android-maps-utils-3.4.0/AndroidManifest.xml:9:5-13:19
+MERGED from [com.google.maps.android:android-maps-utils:3.4.0] /home/peter/.gradle/caches/transforms-3/f99b1effe9b98d5fb9c26b3453456c3a/transformed/android-maps-utils-3.4.0/AndroidManifest.xml:9:5-13:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] /home/peter/.gradle/caches/transforms-3/a86029251fef8ffce4a8736664aadd9f/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] /home/peter/.gradle/caches/transforms-3/a86029251fef8ffce4a8736664aadd9f/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.core:core:1.8.0] /home/peter/.gradle/caches/transforms-3/65253c4f1a5e349137893c87e4f11344/transformed/core-1.8.0/AndroidManifest.xml:24:5-89
@@ -341,8 +341,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.1] /home/peter/.
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.1] /home/peter/.gradle/caches/transforms-3/79868e7e327267c78f70dc2c3f65b2d0/transformed/lifecycle-livedata-core-ktx-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cardview:cardview:1.0.0] /home/peter/.gradle/caches/transforms-3/ff2671edc570fa62343f35f18999c701/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /home/peter/.gradle/caches/transforms-3/ff2671edc570fa62343f35f18999c701/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.maps.android:android-maps-utils:2.2.0] /home/peter/.gradle/caches/transforms-3/56b62284244ba4a79467866ead22e990/transformed/android-maps-utils-2.2.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.maps.android:android-maps-utils:2.2.0] /home/peter/.gradle/caches/transforms-3/56b62284244ba4a79467866ead22e990/transformed/android-maps-utils-2.2.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.maps.android:android-maps-utils:3.4.0] /home/peter/.gradle/caches/transforms-3/f99b1effe9b98d5fb9c26b3453456c3a/transformed/android-maps-utils-3.4.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.maps.android:android-maps-utils:3.4.0] /home/peter/.gradle/caches/transforms-3/f99b1effe9b98d5fb9c26b3453456c3a/transformed/android-maps-utils-3.4.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.wear.tiles:tiles:1.1.0-alpha04] /home/peter/.gradle/caches/transforms-3/79345c1f861f99a88fc17a3c801bcf46/transformed/tiles-1.1.0-alpha04/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.wear.tiles:tiles:1.1.0-alpha04] /home/peter/.gradle/caches/transforms-3/79345c1f861f99a88fc17a3c801bcf46/transformed/tiles-1.1.0-alpha04/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/peter/.gradle/caches/transforms-3/c08a35e7ca14c5ccc76d012a83a3a3e2/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -471,8 +471,8 @@ ADDED from [com.google.android.gms:play-services-base:18.0.1] /home/peter/.gradl
 		ADDED from [com.google.android.gms:play-services-base:18.0.1] /home/peter/.gradle/caches/transforms-3/ee0e16ea5d91aa56487d2cdd9172a8d5/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
 meta-data#com.google.android.gms.version
 ADDED from [com.google.android.gms:play-services-basement:18.0.0] /home/peter/.gradle/caches/transforms-3/d1db3bfd764c153a13e281eb19619c59/transformed/play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.maps.android:android-maps-utils:2.2.0] /home/peter/.gradle/caches/transforms-3/56b62284244ba4a79467866ead22e990/transformed/android-maps-utils-2.2.0/AndroidManifest.xml:12:9-14:69
-MERGED from [com.google.maps.android:android-maps-utils:2.2.0] /home/peter/.gradle/caches/transforms-3/56b62284244ba4a79467866ead22e990/transformed/android-maps-utils-2.2.0/AndroidManifest.xml:12:9-14:69
+MERGED from [com.google.maps.android:android-maps-utils:3.4.0] /home/peter/.gradle/caches/transforms-3/f99b1effe9b98d5fb9c26b3453456c3a/transformed/android-maps-utils-3.4.0/AndroidManifest.xml:10:9-12:69
+MERGED from [com.google.maps.android:android-maps-utils:3.4.0] /home/peter/.gradle/caches/transforms-3/f99b1effe9b98d5fb9c26b3453456c3a/transformed/android-maps-utils-3.4.0/AndroidManifest.xml:10:9-12:69
 	android:value
 		ADDED from [com.google.android.gms:play-services-basement:18.0.0] /home/peter/.gradle/caches/transforms-3/d1db3bfd764c153a13e281eb19619c59/transformed/play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
 	android:name

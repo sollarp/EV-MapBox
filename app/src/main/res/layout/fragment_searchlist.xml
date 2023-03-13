@@ -8,8 +8,8 @@
     android:background="#0000">
 
     <include
-        android:id="@+id/searchbar_fragment"
-        layout="@layout/item_searchbar"
+        android:id="@+id/searchbar_layout"
+        layout="@layout/layout_searchbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/recycle_search"

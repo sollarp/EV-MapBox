@@ -79,12 +79,10 @@ id action_mapBarFragment_to_searchlistFragment
 id action_searchlistFragment_to_detailFragment
 id addressline1
 id addressline2
-id bottomSheet
 id btnContrast
 id button1
 id button2
 id button_go
-id city_name
 id conlayout
 id connection_recycler
 id connection_type_id
@@ -93,7 +91,6 @@ id detailFragment
 id distance_text
 id frameStack
 id frameStackpathfour
-id ic_magnify
 id id
 id imageDownload
 id imageFavorite
@@ -110,7 +107,6 @@ id item_cardview
 id item_cardviewLin
 id item_searchbar
 id latitude
-id latitude_label
 id layout_cardview
 id level_id
 id linearColumnbusinesscenter
@@ -124,7 +120,6 @@ id linearRowmenu
 id linearRowpointscounter
 id list_view
 id longitude
-id longitude_label
 id main_nav
 id mapBarFragment
 id map_fragment
@@ -133,12 +128,12 @@ id number_of_bays
 id postcode
 id power_KW
 id recycle_search
-id searchbar_fragment
+id searchbar_layout
 id searchlistFragment
 id state
 id title
 id toolbarToolbar
-id toolbar_fragment
+id toolbar_layout
 id town
 id txtA233WorldTrad
 id txtAmenities
@@ -152,7 +147,6 @@ id usage_cost
 id viewRectangleEight
 id voltage
 layout activity_main
-layout bottom_sheet
 layout fragment_detail
 layout fragment_list_connections
 layout fragment_mapbar
@@ -160,10 +154,10 @@ layout fragment_searchlist
 layout fragment_searchlistitem
 layout item_cardview
 layout item_map
-layout item_popupcardview
-layout item_searchbar
 layout item_searchbarnew
-layout item_toolbar
+layout layout_popupcardview
+layout layout_searchbar
+layout layout_toolbar
 mipmap ic_launcher
 navigation nav_graph
 string address

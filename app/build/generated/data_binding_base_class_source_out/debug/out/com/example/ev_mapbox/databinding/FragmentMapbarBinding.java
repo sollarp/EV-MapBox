@@ -33,22 +33,22 @@ public final class FragmentMapbarBinding implements ViewBinding {
   public final ItemMapBinding mapFragment;
 
   @NonNull
-  public final ItemSearchbarnewBinding searchbarFragment;
+  public final LayoutSearchbarBinding searchbarLayout;
 
   @NonNull
-  public final ItemToolbarBinding toolbarFragment;
+  public final LayoutToolbarBinding toolbarLayout;
 
   private FragmentMapbarBinding(@NonNull CoordinatorLayout rootView, @NonNull Button button1,
       @NonNull Button button2, @NonNull ConstraintLayout conlayout,
-      @NonNull ItemMapBinding mapFragment, @NonNull ItemSearchbarnewBinding searchbarFragment,
-      @NonNull ItemToolbarBinding toolbarFragment) {
+      @NonNull ItemMapBinding mapFragment, @NonNull LayoutSearchbarBinding searchbarLayout,
+      @NonNull LayoutToolbarBinding toolbarLayout) {
     this.rootView = rootView;
     this.button1 = button1;
     this.button2 = button2;
     this.conlayout = conlayout;
     this.mapFragment = mapFragment;
-    this.searchbarFragment = searchbarFragment;
-    this.toolbarFragment = toolbarFragment;
+    this.searchbarLayout = searchbarLayout;
+    this.toolbarLayout = toolbarLayout;
   }
 
   @Override
@@ -103,22 +103,22 @@ public final class FragmentMapbarBinding implements ViewBinding {
       }
       ItemMapBinding binding_mapFragment = ItemMapBinding.bind(mapFragment);
 
-      id = R.id.searchbar_fragment;
-      View searchbarFragment = ViewBindings.findChildViewById(rootView, id);
-      if (searchbarFragment == null) {
+      id = R.id.searchbar_layout;
+      View searchbarLayout = ViewBindings.findChildViewById(rootView, id);
+      if (searchbarLayout == null) {
         break missingId;
       }
-      ItemSearchbarnewBinding binding_searchbarFragment = ItemSearchbarnewBinding.bind(searchbarFragment);
+      LayoutSearchbarBinding binding_searchbarLayout = LayoutSearchbarBinding.bind(searchbarLayout);
 
-      id = R.id.toolbar_fragment;
-      View toolbarFragment = ViewBindings.findChildViewById(rootView, id);
-      if (toolbarFragment == null) {
+      id = R.id.toolbar_layout;
+      View toolbarLayout = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarLayout == null) {
         break missingId;
       }
-      ItemToolbarBinding binding_toolbarFragment = ItemToolbarBinding.bind(toolbarFragment);
+      LayoutToolbarBinding binding_toolbarLayout = LayoutToolbarBinding.bind(toolbarLayout);
 
       return new FragmentMapbarBinding((CoordinatorLayout) rootView, button1, button2, conlayout,
-          binding_mapFragment, binding_searchbarFragment, binding_toolbarFragment);
+          binding_mapFragment, binding_searchbarLayout, binding_toolbarLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

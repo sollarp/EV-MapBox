@@ -1,13 +1,11 @@
 package com.example.ev_mapbox.ui.homescreen
 
 import android.os.Bundle
+import android.os.Handler
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.RelativeLayout
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Lifecycle
@@ -21,13 +19,17 @@ import com.example.ev_mapbox.data.local.EvPointsEntity
 import com.example.ev_mapbox.databinding.FragmentMapbarBinding
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.GoogleMap.OnMarkerClickListener
+import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import kotlinx.coroutines.launch
 
-class MapBarFragment : Fragment() {
+
+class MapBarFragment : Fragment(), OnMarkerClickListener, OnMapReadyCallback {
 
     private var _binding: FragmentMapbarBinding? = null
     private val binding get() = _binding!!
@@ -35,65 +37,33 @@ class MapBarFragment : Fragment() {
 
     private lateinit var bottomSheetView: RelativeLayout
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<RelativeLayout>
+    private lateinit var pointsEntity: List<EvPointsEntity>
+    private var lastClickedMarker: Marker? = null
+
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
         _binding = FragmentMapbarBinding.inflate(inflater, container, false)
         return binding.root
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val button1 = binding.button1
-        val button2 = binding.button2
-        bottomSheetView = binding.root.findViewById(R.id.layout_cardview)
-        bottomSheetBehavior = BottomSheetBehavior.from(bottomSheetView)
-
-        button1.setOnClickListener {
-            println("button1 pressed")
-            bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
-        }
-
-        button2.setOnClickListener {
-            println("button2 pressed")
-            bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
-        }
-        /*bottomSheetView = binding.root.findViewById(R.id.layout_cardview)
-        bottomSheetBehavior = BottomSheetBehavior.from(bottomSheetView)*/
-
-
-        /* bottomSheetBehavior = BottomSheetBehavior.from(bottomSheetView)
-         bottomSheetBehavior.state = BottomSheetBehavior.STATE_HIDDEN*/
-/*
-
-        val bottomSheetBehavior = BottomSheetBehavior.from(bottomSheet)
-        bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
-        bottomSheetBehavior.isDraggable = false
-        bottomSheetBehavior.skipCollapsed = true
-        */
         val supportMapFragment =
             childFragmentManager.findFragmentById(R.id.map_fragment) as SupportMapFragment
 
-        binding.searchbarFragment.inputSearch.focusable = View.NOT_FOCUSABLE
+        binding.searchbarLayout.inputSearch.focusable = View.NOT_FOCUSABLE
         viewLifecycleOwner.lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.pointsMediatorData.observe(viewLifecycleOwner) { pointItems ->
                     supportMapFragment.getMapAsync {
-                        /*it.setOnMarkerClickListener { marker: Marker ->
-
-                            // on below line we are displaying a toast message on clicking on marker
-                            Toast.makeText(context, "Clicked location is " + marker.title, Toast.LENGTH_SHORT).show()
-
-                            false
-                        }*/
-                        addMarkers(it, pointItems)
+                        pointsEntity = pointItems
+                        onMapReady(it)
                         it.animateCamera(
                             CameraUpdateFactory.newLatLngZoom(
                                 LatLng(
-                                    51.667683,
-                                    -1.327816
+                                    51.667683, -1.327816
                                     /*pointItems[0].AddressInfo.Latitude!!.toDouble(),
                                     pointItems[0].AddressInfo.Longitude!!.toDouble()*/
                                 ), 10f
@@ -103,36 +73,69 @@ class MapBarFragment : Fragment() {
                 }
             }
         }
-        binding.searchbarFragment.inputSearch.setOnClickListener {
+        binding.searchbarLayout.inputSearch.setOnClickListener {
             view.findNavController().navigate(createMapBarFragmentDirections())
         }
     }
 
-   /* private fun setBottomSheetVisibility(isVisible: Boolean) {
-        val updatedState = if (isVisible) BottomSheetBehavior.STATE_EXPANDED else BottomSheetBehavior.STATE_COLLAPSED
-        bottomSheetBehavior.state = updatedState
-    }*/
+    override fun onMapReady(map: GoogleMap) {
+        addMarkers(map)
+        /*Using this method may override behaviors set by the Maps SDK for Android Utility Library.
+        If you are not using clustering, GeoJson, or KML, you can safely suppress this warning,
+        otherwise, refer to the utility library's migration guide: https://bit.ly/3kTpQmY*/
 
-    private fun addMarkers(googleMap: GoogleMap, pointItems: List<EvPointsEntity>) {
-        pointItems.forEach { point ->
-            googleMap.addMarker(
-                MarkerOptions()
-                    .title(point.AddressInfo.Title)
-                    .position(
-                        LatLng(
-                            point.AddressInfo.Latitude!!.toDouble(),
-                            point.AddressInfo.Longitude!!.toDouble()
-                        )
+        map.setOnMarkerClickListener(this)
+    }
+
+    override fun onMarkerClick(marker: Marker): Boolean {
+        if (lastClickedMarker == marker) {
+            // Marker is already selected, toggle bottom sheet state
+            if (bottomSheetBehavior.state == BottomSheetBehavior.STATE_EXPANDED) {
+                bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
+                println("bottomSheet Collapsed ${marker.tag}")
+            } else {
+                bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+            }
+        } else {
+            // New marker selected, expand bottom sheet
+            bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
+            Handler().postDelayed({
+                bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+                println("bottomSheet Expanded ${marker.tag}")
+            }, 250)
+            lastClickedMarker = marker
+        }
+        return false
+    }
+
+    private fun addMarkers(googleMap: GoogleMap) {
+        pointsEntity.forEach { point ->
+            val marker = googleMap.addMarker(
+                MarkerOptions().title(point.AddressInfo.Title).position(
+                    LatLng(
+                        point.AddressInfo.Latitude!!.toDouble(),
+                        point.AddressInfo.Longitude!!.toDouble()
                     )
+                )
             )
+            marker?.tag = point.ID
         }
     }
+
+    private fun setBottomSheetVisibility(isVisible: Boolean) {
+        val updatedState =
+            if (isVisible) BottomSheetBehavior.STATE_EXPANDED else BottomSheetBehavior.STATE_COLLAPSED
+        bottomSheetBehavior.state = updatedState
+
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+
     private fun createMapBarFragmentDirections(): NavDirections {
         return MapBarFragmentDirections.actionMapBarFragmentToSearchlistFragment()
     }
-}
 
+}
