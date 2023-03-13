@@ -80,8 +80,6 @@ id action_searchlistFragment_to_detailFragment
 id addressline1
 id addressline2
 id btnContrast
-id button1
-id button2
 id button_go
 id conlayout
 id connection_recycler

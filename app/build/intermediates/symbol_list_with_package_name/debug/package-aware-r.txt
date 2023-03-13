@@ -3093,8 +3093,6 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnContrast
-id button1
-id button2
 id buttonPanel
 id button_go
 id cache_measures

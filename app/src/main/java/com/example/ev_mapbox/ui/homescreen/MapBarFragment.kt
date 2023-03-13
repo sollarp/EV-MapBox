@@ -50,6 +50,10 @@ class MapBarFragment : Fragment(), OnMarkerClickListener, OnMapReadyCallback {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        bottomSheetView = binding.root.findViewById(R.id.layout_cardview)
+        bottomSheetBehavior = BottomSheetBehavior.from(bottomSheetView)
+        
         val supportMapFragment =
             childFragmentManager.findFragmentById(R.id.map_fragment) as SupportMapFragment
 
@@ -111,13 +115,13 @@ class MapBarFragment : Fragment(), OnMarkerClickListener, OnMapReadyCallback {
     private fun addMarkers(googleMap: GoogleMap) {
         pointsEntity.forEach { point ->
             val marker = googleMap.addMarker(
-                MarkerOptions().title(point.AddressInfo.Title).position(
-                    LatLng(
-                        point.AddressInfo.Latitude!!.toDouble(),
-                        point.AddressInfo.Longitude!!.toDouble()
-                    )
+                    MarkerOptions().title(point.AddressInfo.Title).position(
+                            LatLng(
+                                point.AddressInfo.Latitude!!.toDouble(),
+                                point.AddressInfo.Longitude!!.toDouble()
+                            )
+                        )
                 )
-            )
             marker?.tag = point.ID
         }
     }
