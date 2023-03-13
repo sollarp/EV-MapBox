@@ -154,7 +154,6 @@ layout fragment_searchlist
 layout fragment_searchlistitem
 layout item_cardview
 layout item_map
-layout item_searchbarnew
 layout layout_popupcardview
 layout layout_searchbar
 layout layout_toolbar

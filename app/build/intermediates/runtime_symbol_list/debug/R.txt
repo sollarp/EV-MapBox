@@ -3710,7 +3710,6 @@ int layout fragment_searchlist 0x7f0c0033
 int layout fragment_searchlistitem 0x7f0c0034
 int layout item_cardview 0x7f0c0035
 int layout item_map 0x7f0c0036
-int layout item_searchbarnew 0x7f0c0037
 int layout layout_popupcardview 0x7f0c0038
 int layout layout_searchbar 0x7f0c0039
 int layout layout_toolbar 0x7f0c003a
