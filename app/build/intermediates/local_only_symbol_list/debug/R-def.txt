@@ -79,6 +79,7 @@ id action_mapBarFragment_to_searchlistFragment
 id action_searchlistFragment_to_detailFragment
 id addressline1
 id addressline2
+id btnCard
 id btnContrast
 id button_go
 id conlayout
@@ -133,10 +134,11 @@ id title
 id toolbarToolbar
 id toolbar_layout
 id town
-id txtA233WorldTrad
 id txtAddress
 id txtAmenities
-id txtBusinessCenter
+id txtCardAddress
+id txtCardPointsCounter
+id txtCardTitle
 id txtConnections
 id txtEV
 id txtGroupThree

@@ -8,6 +8,10 @@
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/layout/fragment_list_connections.xml"
     },
     {
+        "merged": "com.example.ev_mapbox.app-mergeDebugResources-62:/layout/fragment_searchlistitem.xml",
+        "source": "com.example.ev_mapbox.app-main-65:/layout/fragment_searchlistitem.xml"
+    },
+    {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-62:/layout/item_cardview.xml",
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/layout/item_cardview.xml"
     },
@@ -20,10 +24,6 @@
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/layout/item_map.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-mergeDebugResources-62:/layout/layout_popupcardview.xml",
-        "source": "com.example.ev_mapbox.app-main-65:/layout/layout_popupcardview.xml"
-    },
-    {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-62:/layout/layout_searchbar.xml",
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/layout/layout_searchbar.xml"
     },
@@ -32,8 +32,8 @@
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/layout/layout_toolbar.xml"
     },
     {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-62:/layout/item_searchbarnew.xml",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/layout/item_searchbarnew.xml"
+        "merged": "com.example.ev_mapbox.app-mergeDebugResources-62:/layout/item_cardview.xml",
+        "source": "com.example.ev_mapbox.app-main-65:/layout/item_cardview.xml"
     },
     {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-62:/layout/fragment_searchlistitem.xml",
