@@ -1,7 +1,51 @@
 [
     {
+        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/drawable_img_icpharmacy_15x15.png.flat",
+        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/drawable/img_icpharmacy_15x15.png"
+    },
+    {
+        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/drawable_white_border.xml.flat",
+        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/drawable/white_border.xml"
+    },
+    {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/drawable_img_download.xml.flat",
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/drawable/img_download.xml"
+    },
+    {
+        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/drawable_rectangle_gradient_s_white_a700_e_white_a700_00.xml.flat",
+        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/drawable/rectangle_gradient_s_white_a700_e_white_a700_00.xml"
+    },
+    {
+        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/drawable_img_contrast.xml.flat",
+        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/drawable/img_contrast.xml"
+    },
+    {
+        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/font_poppins.xml.flat",
+        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/font/poppins.xml"
+    },
+    {
+        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/font_poppinsbold.ttf.flat",
+        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/font/poppinsbold.ttf"
+    },
+    {
+        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/layout_fragment_searchlistitem.xml.flat",
+        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/layout/fragment_searchlistitem.xml"
+    },
+    {
+        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/font_poppinsmedium.ttf.flat",
+        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/font/poppinsmedium.ttf"
+    },
+    {
+        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/drawable_img_icfood_15x16.png.flat",
+        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/drawable/img_icfood_15x16.png"
+    },
+    {
+        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/layout_layout_toolbar.xml.flat",
+        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/layout/layout_toolbar.xml"
+    },
+    {
+        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/drawable_rectangle_bg_black_900_87_radius_tl_14_bl_14.xml.flat",
+        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/drawable/rectangle_bg_black_900_87_radius_tl_14_bl_14.xml"
     },
     {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/xml_data_extraction_rules.xml.flat",
@@ -34,6 +78,10 @@
     {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/drawable_img_filter.xml.flat",
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/drawable/img_filter.xml"
+    },
+    {
+        "merged": "com.example.ev_mapbox.app-merged_res-63:/layout_fragment_searchlist.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-65:/layout/fragment_searchlist.xml"
     },
     {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/font_poppinssemibold.ttf.flat",
@@ -76,6 +124,10 @@
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/drawable/img_path4.xml"
     },
     {
+        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/font_poppinsregular.ttf.flat",
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/font/poppinsregular.ttf"
     },
@@ -92,6 +144,10 @@
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/drawable/rectangle_bg_green_a400_radius_10.xml"
     },
     {
+        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/drawable_img_layer0_140x375.png.flat",
+        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/drawable/img_layer0_140x375.png"
+    },
+    {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/mipmap-anydpi-v33_ic_launcher.xml.flat",
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/mipmap-anydpi-v33/ic_launcher.xml"
     },
@@ -100,8 +156,16 @@
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/drawable/img_favorite_white_a700_12x13.xml"
     },
     {
+        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/layout_fragment_searchlist.xml.flat",
+        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/layout/fragment_searchlist.xml"
+    },
+    {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/layout_fragment_mapbar.xml.flat",
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/layout/fragment_mapbar.xml"
+    },
+    {
+        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/xml_backup_rules.xml.flat",
+        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/xml/backup_rules.xml"
     },
     {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/layout_item_map.xml.flat",
@@ -112,83 +176,15 @@
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/drawable/ic_launcher_background.xml"
     },
     {
+        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/layout_activity_main.xml.flat",
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/layout/activity_main.xml"
-    },
-    {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/drawable_img_icpharmacy_15x15.png.flat",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/drawable/img_icpharmacy_15x15.png"
-    },
-    {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/drawable_white_border.xml.flat",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/drawable/white_border.xml"
-    },
-    {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/drawable_rectangle_gradient_s_white_a700_e_white_a700_00.xml.flat",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/drawable/rectangle_gradient_s_white_a700_e_white_a700_00.xml"
-    },
-    {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/drawable_img_contrast.xml.flat",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/drawable/img_contrast.xml"
-    },
-    {
-        "merged": "com.example.ev_mapbox.app-merged_res-63:/layout_fragment_searchlistitem.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-65:/layout/fragment_searchlistitem.xml"
-    },
-    {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/font_poppins.xml.flat",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/font/poppins.xml"
-    },
-    {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/font_poppinsbold.ttf.flat",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/font/poppinsbold.ttf"
-    },
-    {
-        "merged": "com.example.ev_mapbox.app-merged_res-63:/layout_item_cardview.xml.flat",
-        "source": "com.example.ev_mapbox.app-main-65:/layout/item_cardview.xml"
-    },
-    {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/layout_fragment_searchlistitem.xml.flat",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/layout/fragment_searchlistitem.xml"
-    },
-    {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/font_poppinsmedium.ttf.flat",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/font/poppinsmedium.ttf"
-    },
-    {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/drawable_img_icfood_15x16.png.flat",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/drawable/img_icfood_15x16.png"
-    },
-    {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/layout_layout_toolbar.xml.flat",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/layout/layout_toolbar.xml"
-    },
-    {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/drawable_rectangle_bg_black_900_87_radius_tl_14_bl_14.xml.flat",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/drawable/rectangle_bg_black_900_87_radius_tl_14_bl_14.xml"
-    },
-    {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/mipmap-mdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/drawable_img_layer0_140x375.png.flat",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/drawable/img_layer0_140x375.png"
-    },
-    {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/layout_fragment_searchlist.xml.flat",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/layout/fragment_searchlist.xml"
-    },
-    {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/xml_backup_rules.xml.flat",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/xml/backup_rules.xml"
-    },
-    {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-63:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-65:/mipmap-xhdpi/ic_launcher.webp"
     }
 ]

@@ -3,7 +3,7 @@
     <string name="location_details">location details</string>
     <string name="address">address</string>
     <string name="datelaststatusupdate">DateLastStatusUpdate</string>
-    <string name="enter_address_city_or_zip_code">entrer_address</string>
+    <string name="enter_address_city_or_zip_code">enter_address</string>
     <string name="go">Go</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="magnify">magnify</string>

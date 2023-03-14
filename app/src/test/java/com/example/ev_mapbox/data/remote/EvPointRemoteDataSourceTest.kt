@@ -1,8 +1,7 @@
-package com.example.call_mapbox_api.data.remote
+package com.example.ev_mapbox.data.remote
 
 import com.example.call_mapbox_api.fakeData.fakeEvPointDetails
 import com.example.ev_mapbox.data.OpenMapApi
-import com.example.ev_mapbox.data.remote.EvPointRemoteDataSource
 import kotlinx.coroutines.flow.toList
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.*

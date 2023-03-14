@@ -1,8 +1,6 @@
-package com.example.call_mapbox_api.data.local
+package com.example.ev_mapbox.data.local
 
 import com.example.ev_mapbox.fakeData.fakeEvPointsEntity
-import com.example.ev_mapbox.data.local.EvPointLocalDataSource
-import com.example.ev_mapbox.data.local.EvPointsDao
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.toList
 import kotlinx.coroutines.runBlocking

@@ -7,22 +7,22 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ev_mapbox.data.local.EvPointsEntity
 import com.example.ev_mapbox.data.remote.dto.AddressInfo
-import com.example.ev_mapbox.databinding.FragmentSearchlistitemBinding
+import com.example.ev_mapbox.databinding.ItemCardviewBinding
 
 class SearchRecycleAdapter(
-    private val address: ArrayList<EvPointsEntity>,
+    private val evPointsEntity: ArrayList<EvPointsEntity>,
     private val listener: OnAdapterListener
 ) :
     RecyclerView.Adapter<SearchRecycleAdapter.ViewHolder>() {
 
     fun updateOrders( newEvPointsEntity: List<EvPointsEntity>) {
-        address.clear()
-        address.addAll(newEvPointsEntity)
+        evPointsEntity.clear()
+        evPointsEntity.addAll(newEvPointsEntity)
         notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = FragmentSearchlistitemBinding.inflate(
+        val binding = ItemCardviewBinding.inflate(
             LayoutInflater.from(parent.context),
             parent,
             false
@@ -31,35 +31,37 @@ class SearchRecycleAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val addressInfo = address[position].AddressInfo
-        holder.bind(addressInfo)
-        holder.binding.buttonGo.setOnClickListener {
-            val navigation = holder.navigationIntentUri(addressInfo)
+        val evPoint = evPointsEntity[position]
+        holder.bind(evPoint)
+        holder.binding.btnCard.setOnClickListener {
+            val navigation = holder.navigationIntentUri(evPoint.AddressInfo)
             val context = holder.itemView.context
             val intent = Intent(Intent.ACTION_VIEW, navigation).apply {
                 setPackage("com.google.android.apps.maps")
             }
             context.startActivity(intent)
         }
-        holder.binding.listView.setOnClickListener { listener.onClick(address[position]) }
+        holder.binding.itemCardViewLinear.setOnClickListener { listener.onClick(evPointsEntity[position]) }
     }
 
     interface OnAdapterListener {
         fun onClick(address: EvPointsEntity)
     }
 
-    override fun getItemCount() = address.size
+    override fun getItemCount() = evPointsEntity.size
 
-    inner class ViewHolder(val binding: FragmentSearchlistitemBinding) :
+    inner class ViewHolder(val binding: ItemCardviewBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(addressInfo: AddressInfo): String {
-            val items = "${addressInfo.AddressLine1}, " +
-                    "${addressInfo.AddressLine2}, " +
-                    "${addressInfo.Town}, " +
-                    "${addressInfo.Postcode}"
-            binding.listView.text = items
-            return items
+        fun bind(selectedLocation: EvPointsEntity) {
+            val address = "${selectedLocation.AddressInfo.AddressLine1}, " +
+                    "${selectedLocation.AddressInfo.Town}, " +
+                    "${selectedLocation.AddressInfo.Postcode}"
+            val pointsCount = selectedLocation.NumberOfPoints
+            val title = selectedLocation.AddressInfo.Title
+            binding.txtCardAddress .text = address
+            binding.txtCardPointsCounter.text = pointsCount.toString()
+            binding.txtCardTitle.text = title
         }
 
         fun navigationIntentUri(addressInfo: AddressInfo): Uri =

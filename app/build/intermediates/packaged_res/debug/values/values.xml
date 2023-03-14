@@ -53,7 +53,7 @@
     <string name="address_and_town">%1$s, %2$s</string>
     <string name="app_name">Call_Mapbox_API</string>
     <string name="datelaststatusupdate">DateLastStatusUpdate</string>
-    <string name="enter_address_city_or_zip_code">entrer_address</string>
+    <string name="enter_address_city_or_zip_code">enter_address</string>
     <string name="go">Go</string>
     <string name="lbl_8_points">8 Points</string>
     <string name="lbl_amenities">Amenities</string>
