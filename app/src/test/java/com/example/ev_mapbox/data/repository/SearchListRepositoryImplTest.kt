@@ -1,4 +1,4 @@
-package com.example.call_mapbox_api.data.repository
+package com.example.ev_mapbox.data.repository
 
 import com.example.call_mapbox_api.fakeData.fakeEvPointDetails
 import com.example.ev_mapbox.fakeData.fakeEvPointsEntity

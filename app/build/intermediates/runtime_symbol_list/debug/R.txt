@@ -3246,8 +3246,8 @@ int id input_search 0x7f090103
 int id invisible 0x7f090104
 int id inward 0x7f090105
 int id italic 0x7f090106
-int id item_cardview 0x7f090107
-int id item_cardviewLin 0x7f090108
+int id item_cardViewLinear 0x7f090107
+int id item_cardview 0x7f090108
 int id item_searchbar 0x7f090109
 int id item_touch_helper_previous_elevation 0x7f09010a
 int id jumpToEnd 0x7f09010b

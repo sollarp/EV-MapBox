@@ -102,8 +102,8 @@ id imageLayerZero
 id imageMenu
 id imagePathFour
 id input_search
+id item_cardViewLinear
 id item_cardview
-id item_cardviewLin
 id item_searchbar
 id latitude
 id layout_cardview
