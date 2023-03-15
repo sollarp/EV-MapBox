@@ -23,13 +23,13 @@ public final class FragmentSearchlistBinding implements ViewBinding {
   public final RecyclerView recycleSearch;
 
   @NonNull
-  public final LayoutSearchbarBinding searchbarLayout;
+  public final LayoutSearchbarBinding searchlistLayout;
 
   private FragmentSearchlistBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView recycleSearch, @NonNull LayoutSearchbarBinding searchbarLayout) {
+      @NonNull RecyclerView recycleSearch, @NonNull LayoutSearchbarBinding searchlistLayout) {
     this.rootView = rootView;
     this.recycleSearch = recycleSearch;
-    this.searchbarLayout = searchbarLayout;
+    this.searchlistLayout = searchlistLayout;
   }
 
   @Override
@@ -65,15 +65,15 @@ public final class FragmentSearchlistBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.searchbar_layout;
-      View searchbarLayout = ViewBindings.findChildViewById(rootView, id);
-      if (searchbarLayout == null) {
+      id = R.id.searchlist_layout;
+      View searchlistLayout = ViewBindings.findChildViewById(rootView, id);
+      if (searchlistLayout == null) {
         break missingId;
       }
-      LayoutSearchbarBinding binding_searchbarLayout = LayoutSearchbarBinding.bind(searchbarLayout);
+      LayoutSearchbarBinding binding_searchlistLayout = LayoutSearchbarBinding.bind(searchlistLayout);
 
       return new FragmentSearchlistBinding((ConstraintLayout) rootView, recycleSearch,
-          binding_searchbarLayout);
+          binding_searchlistLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

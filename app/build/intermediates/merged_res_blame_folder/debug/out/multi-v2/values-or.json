@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ev_mapbox.app-mergeDebugResources-61:/values-or/values-or.xml",
+            "outputFile": "com.example.ev_mapbox.app-mergeDebugResources-59:/values-or/values-or.xml",
             "map": [
                 {
                     "source": "/home/peter/.gradle/caches/transforms-3/ee0e16ea5d91aa56487d2cdd9172a8d5/transformed/play-services-base-18.0.1/res/values-or/values.xml",

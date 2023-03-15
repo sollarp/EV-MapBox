@@ -1,5 +1,6 @@
 package com.example.ev_mapbox.ui.searchscreen
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -41,15 +42,19 @@ class SearchListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val recyclerView = binding.recycleSearch
+
         recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
-            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-                context?.let { hideKeyboard(view, it) }
+            override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
+                super.onScrollStateChanged(recyclerView, newState)
+                if (newState == RecyclerView.SCROLL_STATE_DRAGGING) {
+                    context?.let { hideKeyboard(view, it) }
+                }
             }
         })
-        binding.searchbarLayout.inputSearch.doOnTextChanged { text, _, _, _ ->
+        binding.searchlistLayout.inputSearch.doOnTextChanged { text, _, _, _ ->
             viewModel.onSearchQuery(text.toString())
         }
-        val editText = binding.searchbarLayout.inputSearch
+        val editText = binding.searchlistLayout.inputSearch
         editText.requestFocus()
         editText.showKeyboardDelayed()
         createAdapterObserver(view, recyclerView, viewLifecycleOwner)
@@ -97,9 +102,9 @@ class SearchListFragment : Fragment() {
                     view.findNavController().navigate(createSearchListFragmentDirections())
                 }
             }
+
         )
     }
-
     private fun createSearchListFragmentDirections(): NavDirections {
         return SearchListFragmentDirections
             .actionSearchlistFragmentToDetailFragment()

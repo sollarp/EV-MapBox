@@ -63,7 +63,9 @@ drawable img_icwashroom_15x15
 drawable img_layer0_140x375
 drawable img_location_bluegray_200
 drawable img_menu
+drawable img_mylocation
 drawable img_path4
+drawable img_power
 drawable rectangle_bg_black_900_87_radius_tl_14_bl_14
 drawable rectangle_bg_green_a400_radius_10
 drawable rectangle_bg_white_a700_radius_10
@@ -129,6 +131,7 @@ id power_KW
 id recycle_search
 id searchbar_layout
 id searchlistFragment
+id searchlist_layout
 id state
 id title
 id toolbarToolbar

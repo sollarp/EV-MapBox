@@ -11,9 +11,6 @@ ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidM
 INJECTED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:2:1-35:12
 INJECTED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:2:1-35:12
 INJECTED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:2:1-35:12
-MERGED from [androidx.databinding:databinding-adapters:7.2.0] /home/peter/.gradle/caches/transforms-3/16e5a02b8ae008c381231b32c704eb7f/transformed/databinding-adapters-7.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.databinding:databinding-ktx:7.2.0] /home/peter/.gradle/caches/transforms-3/805402c00ccc177be721319efd03c635/transformed/databinding-ktx-7.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.databinding:databinding-runtime:7.2.0] /home/peter/.gradle/caches/transforms-3/ebcb29fb28f1f3ea14ca7be6de3c377d/transformed/databinding-runtime-7.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:viewbinding:7.2.0] /home/peter/.gradle/caches/transforms-3/fa9fbf67725c8f8f682446d4666f03bc/transformed/viewbinding-7.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.room:room-paging:2.4.3] /home/peter/.gradle/caches/transforms-3/a71bb3f65871f7392c74a7c110bac08f/transformed/room-paging-2.4.3/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.room:room-ktx:2.4.3] /home/peter/.gradle/caches/transforms-3/253941949acdd88c9a65456226ff6bb0/transformed/room-ktx-2.4.3/AndroidManifest.xml:17:1-24:12
@@ -56,8 +53,6 @@ MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.1] /home/peter/.gradle
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /home/peter/.gradle/caches/transforms-3/6ab78a912256b045b539080f55a050bc/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.window:window:1.0.0] /home/peter/.gradle/caches/transforms-3/a102dd16af99a9ba0218afb8f01db898/transformed/window-1.0.0/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.wear.tiles:tiles-material:1.1.0-alpha04] /home/peter/.gradle/caches/transforms-3/0ef613f67eba0d9d36fe489623f904ba/transformed/tiles-material-1.1.0-alpha04/AndroidManifest.xml:17:1-24:12
-MERGED from [com.microsoft.appcenter:appcenter-analytics:5.0.0] /home/peter/.gradle/caches/transforms-3/ce8847c7cdfe33f5e7fab030691b3c32/transformed/appcenter-analytics-5.0.0/AndroidManifest.xml:6:1-13:12
-MERGED from [com.microsoft.appcenter:appcenter-crashes:5.0.0] /home/peter/.gradle/caches/transforms-3/8c125ea1f8598e40c1d15986d7d965fe/transformed/appcenter-crashes-5.0.0/AndroidManifest.xml:6:1-13:12
 MERGED from [androidx.room:room-runtime:2.4.3] /home/peter/.gradle/caches/transforms-3/29f631c1a052a6614df0032329fac05a/transformed/room-runtime-2.4.3/AndroidManifest.xml:17:1-31:12
 MERGED from [androidx.core:core-ktx:1.8.0] /home/peter/.gradle/caches/transforms-3/b6b1a8904d837296869e02a4ebe20c3a/transformed/core-ktx-1.8.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] /home/peter/.gradle/caches/transforms-3/4697ed4a635c990eb0050ef5635bdafb/transformed/recyclerview-1.2.1/AndroidManifest.xml:17:1-24:12
@@ -102,7 +97,6 @@ MERGED from [androidx.print:print:1.0.0] /home/peter/.gradle/caches/transforms-3
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/peter/.gradle/caches/transforms-3/91ecf590010b43e1462f3ce5c9fe83cf/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.test:annotation:1.0.1] /home/peter/.gradle/caches/transforms-3/c0a7b1927644b4525282a2095a7434cc/transformed/annotation-1.0.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.2.0] /home/peter/.gradle/caches/transforms-3/bcedc6c9c3fe2024acb337cb72708f0e/transformed/annotation-experimental-1.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.microsoft.appcenter:appcenter:5.0.0] /home/peter/.gradle/caches/transforms-3/99beb302bda189df73efebb385937ed7/transformed/appcenter-5.0.0/AndroidManifest.xml:6:1-16:12
 MERGED from [com.google.dagger:dagger-lint-aar:2.44] /home/peter/.gradle/caches/transforms-3/3e38e0c9889f202c6a874798d7757d9c/transformed/dagger-lint-aar-2.44/AndroidManifest.xml:16:1-19:12
 INJECTED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:2:1-35:12
 INJECTED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:2:1-35:12
@@ -127,16 +121,12 @@ uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:4:5-78
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/peter/.gradle/caches/transforms-3/d24ca485af1da8a415648302d103f7f7/transformed/play-services-maps-18.1.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/peter/.gradle/caches/transforms-3/d24ca485af1da8a415648302d103f7f7/transformed/play-services-maps-18.1.0/AndroidManifest.xml:23:5-79
-MERGED from [com.microsoft.appcenter:appcenter:5.0.0] /home/peter/.gradle/caches/transforms-3/99beb302bda189df73efebb385937ed7/transformed/appcenter-5.0.0/AndroidManifest.xml:14:5-79
-MERGED from [com.microsoft.appcenter:appcenter:5.0.0] /home/peter/.gradle/caches/transforms-3/99beb302bda189df73efebb385937ed7/transformed/appcenter-5.0.0/AndroidManifest.xml:14:5-79
 	android:name
 		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:4:22-76
 uses-permission#android.permission.INTERNET
 ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:5:5-66
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/peter/.gradle/caches/transforms-3/d24ca485af1da8a415648302d103f7f7/transformed/play-services-maps-18.1.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/peter/.gradle/caches/transforms-3/d24ca485af1da8a415648302d103f7f7/transformed/play-services-maps-18.1.0/AndroidManifest.xml:24:5-67
-MERGED from [com.microsoft.appcenter:appcenter:5.0.0] /home/peter/.gradle/caches/transforms-3/99beb302bda189df73efebb385937ed7/transformed/appcenter-5.0.0/AndroidManifest.xml:13:5-67
-MERGED from [com.microsoft.appcenter:appcenter:5.0.0] /home/peter/.gradle/caches/transforms-3/99beb302bda189df73efebb385937ed7/transformed/appcenter-5.0.0/AndroidManifest.xml:13:5-67
 	android:name
 		ADDED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
@@ -235,12 +225,6 @@ uses-sdk
 INJECTED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml
 INJECTED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml
-MERGED from [androidx.databinding:databinding-adapters:7.2.0] /home/peter/.gradle/caches/transforms-3/16e5a02b8ae008c381231b32c704eb7f/transformed/databinding-adapters-7.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.databinding:databinding-adapters:7.2.0] /home/peter/.gradle/caches/transforms-3/16e5a02b8ae008c381231b32c704eb7f/transformed/databinding-adapters-7.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.databinding:databinding-ktx:7.2.0] /home/peter/.gradle/caches/transforms-3/805402c00ccc177be721319efd03c635/transformed/databinding-ktx-7.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.databinding:databinding-ktx:7.2.0] /home/peter/.gradle/caches/transforms-3/805402c00ccc177be721319efd03c635/transformed/databinding-ktx-7.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.databinding:databinding-runtime:7.2.0] /home/peter/.gradle/caches/transforms-3/ebcb29fb28f1f3ea14ca7be6de3c377d/transformed/databinding-runtime-7.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.databinding:databinding-runtime:7.2.0] /home/peter/.gradle/caches/transforms-3/ebcb29fb28f1f3ea14ca7be6de3c377d/transformed/databinding-runtime-7.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.databinding:viewbinding:7.2.0] /home/peter/.gradle/caches/transforms-3/fa9fbf67725c8f8f682446d4666f03bc/transformed/viewbinding-7.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.databinding:viewbinding:7.2.0] /home/peter/.gradle/caches/transforms-3/fa9fbf67725c8f8f682446d4666f03bc/transformed/viewbinding-7.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.room:room-paging:2.4.3] /home/peter/.gradle/caches/transforms-3/a71bb3f65871f7392c74a7c110bac08f/transformed/room-paging-2.4.3/AndroidManifest.xml:20:5-22:41
@@ -325,10 +309,6 @@ MERGED from [androidx.window:window:1.0.0] /home/peter/.gradle/caches/transforms
 MERGED from [androidx.window:window:1.0.0] /home/peter/.gradle/caches/transforms-3/a102dd16af99a9ba0218afb8f01db898/transformed/window-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.wear.tiles:tiles-material:1.1.0-alpha04] /home/peter/.gradle/caches/transforms-3/0ef613f67eba0d9d36fe489623f904ba/transformed/tiles-material-1.1.0-alpha04/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.wear.tiles:tiles-material:1.1.0-alpha04] /home/peter/.gradle/caches/transforms-3/0ef613f67eba0d9d36fe489623f904ba/transformed/tiles-material-1.1.0-alpha04/AndroidManifest.xml:20:5-22:41
-MERGED from [com.microsoft.appcenter:appcenter-analytics:5.0.0] /home/peter/.gradle/caches/transforms-3/ce8847c7cdfe33f5e7fab030691b3c32/transformed/appcenter-analytics-5.0.0/AndroidManifest.xml:9:5-11:41
-MERGED from [com.microsoft.appcenter:appcenter-analytics:5.0.0] /home/peter/.gradle/caches/transforms-3/ce8847c7cdfe33f5e7fab030691b3c32/transformed/appcenter-analytics-5.0.0/AndroidManifest.xml:9:5-11:41
-MERGED from [com.microsoft.appcenter:appcenter-crashes:5.0.0] /home/peter/.gradle/caches/transforms-3/8c125ea1f8598e40c1d15986d7d965fe/transformed/appcenter-crashes-5.0.0/AndroidManifest.xml:9:5-11:41
-MERGED from [com.microsoft.appcenter:appcenter-crashes:5.0.0] /home/peter/.gradle/caches/transforms-3/8c125ea1f8598e40c1d15986d7d965fe/transformed/appcenter-crashes-5.0.0/AndroidManifest.xml:9:5-11:41
 MERGED from [androidx.room:room-runtime:2.4.3] /home/peter/.gradle/caches/transforms-3/29f631c1a052a6614df0032329fac05a/transformed/room-runtime-2.4.3/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.room:room-runtime:2.4.3] /home/peter/.gradle/caches/transforms-3/29f631c1a052a6614df0032329fac05a/transformed/room-runtime-2.4.3/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core-ktx:1.8.0] /home/peter/.gradle/caches/transforms-3/b6b1a8904d837296869e02a4ebe20c3a/transformed/core-ktx-1.8.0/AndroidManifest.xml:5:5-7:41
@@ -417,8 +397,6 @@ MERGED from [androidx.test:annotation:1.0.1] /home/peter/.gradle/caches/transfor
 MERGED from [androidx.test:annotation:1.0.1] /home/peter/.gradle/caches/transforms-3/c0a7b1927644b4525282a2095a7434cc/transformed/annotation-1.0.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.2.0] /home/peter/.gradle/caches/transforms-3/bcedc6c9c3fe2024acb337cb72708f0e/transformed/annotation-experimental-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.2.0] /home/peter/.gradle/caches/transforms-3/bcedc6c9c3fe2024acb337cb72708f0e/transformed/annotation-experimental-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.microsoft.appcenter:appcenter:5.0.0] /home/peter/.gradle/caches/transforms-3/99beb302bda189df73efebb385937ed7/transformed/appcenter-5.0.0/AndroidManifest.xml:9:5-11:41
-MERGED from [com.microsoft.appcenter:appcenter:5.0.0] /home/peter/.gradle/caches/transforms-3/99beb302bda189df73efebb385937ed7/transformed/appcenter-5.0.0/AndroidManifest.xml:9:5-11:41
 MERGED from [com.google.dagger:dagger-lint-aar:2.44] /home/peter/.gradle/caches/transforms-3/3e38e0c9889f202c6a874798d7757d9c/transformed/dagger-lint-aar-2.44/AndroidManifest.xml:18:3-42
 MERGED from [com.google.dagger:dagger-lint-aar:2.44] /home/peter/.gradle/caches/transforms-3/3e38e0c9889f202c6a874798d7757d9c/transformed/dagger-lint-aar-2.44/AndroidManifest.xml:18:3-42
 INJECTED from /home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml

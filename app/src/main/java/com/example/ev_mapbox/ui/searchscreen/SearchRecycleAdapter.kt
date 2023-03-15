@@ -70,9 +70,7 @@ class SearchRecycleAdapter(
                         "${addressInfo.Latitude}," +
                         "${addressInfo.Longitude}"
             )
-
     }
-
 }
 
 
