@@ -23,6 +23,7 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.GoogleMap.OnMarkerClickListener
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
@@ -133,8 +134,13 @@ class MapBarFragment : Fragment(), OnMarkerClickListener, OnMapReadyCallback {
 
     private fun addMarkers(googleMap: GoogleMap) {
         pointsEntity.forEach { point ->
-            val marker = googleMap.addMarker(
-                    MarkerOptions().title(point.AddressInfo.Title).position(
+            val marker = googleMap
+                .addMarker(
+                    MarkerOptions()
+                        .icon(BitmapDescriptorFactory.fromResource(R.drawable.map_marker48))
+                        //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))
+                        .title(point.AddressInfo.Title)
+                        .position(
                             LatLng(
                                 point.AddressInfo.Latitude!!.toDouble(),
                                 point.AddressInfo.Longitude!!.toDouble()
