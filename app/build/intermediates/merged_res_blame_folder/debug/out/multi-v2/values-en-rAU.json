@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ev_mapbox.app-mergeDebugResources-61:/values-en-rAU/values-en-rAU.xml",
+            "outputFile": "com.example.ev_mapbox.app-mergeDebugResources-59:/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
                     "source": "/home/peter/.gradle/caches/transforms-3/0f1d4be08d3d31bef77b272931287d41/transformed/appcompat-1.5.1/res/values-en-rAU/values-en-rAU.xml",

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ev_mapbox.app-mergeDebugResources-61:/values-sw/values-sw.xml",
+            "outputFile": "com.example.ev_mapbox.app-mergeDebugResources-59:/values-sw/values-sw.xml",
             "map": [
                 {
                     "source": "/home/peter/.gradle/caches/transforms-3/d1db3bfd764c153a13e281eb19619c59/transformed/play-services-basement-18.0.0/res/values-sw/values.xml",

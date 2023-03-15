@@ -48,7 +48,6 @@ class SearchListViewModel
     }
 
     private suspend fun getAllPoints() {
-        println("kint 1 ")
         if (_listOfItem.value.isNullOrEmpty()) {
             loadingStateLiveData.postValue(LoadingState.LOADING)
             try {

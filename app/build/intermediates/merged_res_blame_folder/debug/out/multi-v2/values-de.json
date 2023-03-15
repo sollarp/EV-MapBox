@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ev_mapbox.app-mergeDebugResources-61:/values-de/values-de.xml",
+            "outputFile": "com.example.ev_mapbox.app-mergeDebugResources-59:/values-de/values-de.xml",
             "map": [
                 {
                     "source": "/home/peter/.gradle/caches/transforms-3/65253c4f1a5e349137893c87e4f11344/transformed/core-1.8.0/res/values-de/values-de.xml",

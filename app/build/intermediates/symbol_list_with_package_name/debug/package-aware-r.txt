@@ -2899,7 +2899,9 @@ drawable img_icwashroom_15x15
 drawable img_layer0_140x375
 drawable img_location_bluegray_200
 drawable img_menu
+drawable img_mylocation
 drawable img_path4
+drawable img_power
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -2911,6 +2913,7 @@ drawable m3_tabs_background
 drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
+drawable map_marker48
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -3139,7 +3142,6 @@ id custom
 id customPanel
 id cut
 id dark
-id dataBinding
 id dateLastStatusUpdate
 id date_picker_actions
 id decelerate
@@ -3368,8 +3370,6 @@ id notification_main_column_container
 id number_of_bays
 id off
 id on
-id onAttachStateChangeListener
-id onDateChanged
 id onInterceptTouchReturnSwipe
 id outline
 id outward
@@ -3442,6 +3442,7 @@ id search_view_toolbar_container
 id search_voice_btn
 id searchbar_layout
 id searchlistFragment
+id searchlist_layout
 id select_dialog_listview
 id selected
 id selection_type
@@ -3509,7 +3510,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textWatcher
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon

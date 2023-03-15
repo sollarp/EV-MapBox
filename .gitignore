@@ -4,7 +4,7 @@
 *.ap_
 *.aab
 
-# Files for the ART/Dalvik VM
+# Files for the ART/Dalvik 
 *.dex
 
 # Java class files
