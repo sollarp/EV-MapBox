@@ -4,16 +4,20 @@
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/drawable/img_favorite_white_a700_12x13.xml"
     },
     {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-61:/layout_layout_popupcardview.xml.flat",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/layout/layout_popupcardview.xml"
-    },
-    {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-61:/mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
+        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-61:/layout_layout_popupcardview.xml.flat",
+        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/layout/layout_popupcardview.xml"
+    },
+    {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-61:/mipmap-hdpi_ic_launcher.webp.flat",
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.ev_mapbox.app-merged_res-61:/drawable_animation_loading.xml.flat",
+        "source": "com.example.ev_mapbox.app-main-63:/drawable/animation_loading.xml"
     },
     {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-61:/drawable-v24_ic_launcher_foreground.xml.flat",
@@ -32,12 +36,12 @@
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/drawable/ic_magnify.xml"
     },
     {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-61:/font_poppinsregular.ttf.flat",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/font/poppinsregular.ttf"
-    },
-    {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-61:/layout_fragment_detail.xml.flat",
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/layout/fragment_detail.xml"
+    },
+    {
+        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-61:/font_poppinsregular.ttf.flat",
+        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/font/poppinsregular.ttf"
     },
     {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-61:/drawable_img_power.png.flat",
@@ -64,12 +68,12 @@
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/font/poppinssemibold.ttf"
     },
     {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-61:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/mipmap-xxhdpi/ic_launcher.webp"
-    },
-    {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-61:/drawable_img_mylocation.xml.flat",
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/drawable/img_mylocation.xml"
+    },
+    {
+        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-61:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-61:/drawable_rectangle_bg_black_900_87_radius_tl_14_bl_14.xml.flat",
@@ -98,10 +102,6 @@
     {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-61:/navigation_nav_graph.xml.flat",
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/navigation/nav_graph.xml"
-    },
-    {
-        "merged": "com.example.ev_mapbox.app-merged_res-61:/drawable_map_marker48.png.flat",
-        "source": "com.example.ev_mapbox.app-main-63:/drawable/map_marker48.png"
     },
     {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-61:/mipmap-xhdpi_ic_launcher.webp.flat",
@@ -138,6 +138,10 @@
     {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-61:/drawable_img_icshopping_15x16.png.flat",
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/drawable/img_icshopping_15x16.png"
+    },
+    {
+        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-61:/drawable_map_marker48.png.flat",
+        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/drawable/map_marker48.png"
     },
     {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-61:/layout_fragment_mapbar.xml.flat",
@@ -186,10 +190,6 @@
     {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-61:/drawable_rectangle_bg_green_a400_radius_10.xml.flat",
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/drawable/rectangle_bg_green_a400_radius_10.xml"
-    },
-    {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-61:/drawable_map_marker_32x32.png.flat",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/drawable/map_marker_32x32.png"
     },
     {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-merged_res-61:/drawable_img_path4.xml.flat",

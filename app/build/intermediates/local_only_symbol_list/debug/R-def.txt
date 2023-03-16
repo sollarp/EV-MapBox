@@ -49,6 +49,7 @@ dimen _7pxv
 dimen _88pxv
 dimen _97pxh
 dimen _9pxv
+drawable animation_loading
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_magnify
