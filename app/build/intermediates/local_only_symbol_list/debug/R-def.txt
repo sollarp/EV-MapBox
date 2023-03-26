@@ -67,6 +67,7 @@ drawable img_menu
 drawable img_mylocation
 drawable img_path4
 drawable img_power
+drawable img_vectorcheckin
 drawable map_marker48
 drawable rectangle_bg_black_900_87_radius_tl_14_bl_14
 drawable rectangle_bg_green_a400_radius_10
@@ -81,6 +82,7 @@ font poppinssemibold
 id absolute_magnitude
 id action_mapBarFragment_to_searchlistFragment
 id action_searchlistFragment_to_detailFragment
+id action_splashFragment_to_mapBarFragment
 id addressline1
 id addressline2
 id btnCard
@@ -89,6 +91,7 @@ id button_go
 id conlayout
 id connection_recycler
 id connection_type_id
+id container_mapBar
 id dateLastStatusUpdate
 id detailFragment
 id distance_text
@@ -105,6 +108,7 @@ id imageIcwashroom
 id imageLayerZero
 id imageMenu
 id imagePathFour
+id imageView
 id input_search
 id item_cardViewLinear
 id item_cardview
@@ -130,10 +134,13 @@ id nav_host_fragment
 id number_of_bays
 id postcode
 id power_KW
+id progressBar
 id recycle_search
 id searchbar_layout
 id searchlistFragment
 id searchlist_layout
+id splashFragment
+id splash_fragment
 id state
 id title
 id toolbarToolbar
@@ -159,6 +166,7 @@ layout fragment_list_connections
 layout fragment_mapbar
 layout fragment_searchlist
 layout fragment_searchlistitem
+layout fragment_splash
 layout item_cardview
 layout item_map
 layout layout_popupcardview
@@ -179,10 +187,12 @@ string lbl_connections
 string lbl_ev
 string lbl_open
 string lbl_spot
+string locationPermissionMessage
 string location_details
 string magnify
 string msg_a233_world_trad
 string points_counter
+string splashScreenImage
 style AppTheme
 style etSolidRounded
 style txtPoppinsbold20

@@ -1,6 +1,5 @@
 package com.example.ev_mapbox.ui.searchscreen
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -14,7 +13,6 @@ import androidx.navigation.NavDirections
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.example.call_mapbox_api.ui.searchscreen.SearchListViewModel
 import com.example.ev_mapbox.data.local.EvPointsEntity
 import com.example.ev_mapbox.databinding.FragmentSearchlistBinding
 import com.example.ev_mapbox.domain.model.ItemDataConverter

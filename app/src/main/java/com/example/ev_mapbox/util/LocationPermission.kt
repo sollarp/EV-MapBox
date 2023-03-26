@@ -1,13 +1,13 @@
 package com.example.ev_mapbox.util
 
 import android.Manifest
-import android.app.Activity
 import android.content.pm.PackageManager
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.example.ev_mapbox.ui.MainActivity
 
 object LocationPermission{
-    fun checkAndRequestLocationPermissions(activity: Activity) {
+    fun checkAndRequestLocationPermissions(activity: MainActivity) {
         if (ContextCompat.checkSelfPermission(
                 activity,
                 Manifest.permission.ACCESS_FINE_LOCATION

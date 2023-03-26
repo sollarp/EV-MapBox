@@ -1,6 +1,5 @@
 package com.example.ev_mapbox;
 
-import com.example.call_mapbox_api.ui.searchscreen.SearchListViewModel_HiltModules;
 import com.example.ev_mapbox.di.DatabaseModule;
 import com.example.ev_mapbox.di.RepositoryModule;
 import com.example.ev_mapbox.di.ServiceModule;
@@ -8,6 +7,7 @@ import com.example.ev_mapbox.di.UseCaseModule;
 import com.example.ev_mapbox.ui.MainActivity_GeneratedInjector;
 import com.example.ev_mapbox.ui.detailscreen.DetailFragment_GeneratedInjector;
 import com.example.ev_mapbox.ui.searchscreen.SearchListFragment_GeneratedInjector;
+import com.example.ev_mapbox.ui.searchscreen.SearchListViewModel_HiltModules;
 import dagger.Binds;
 import dagger.Component;
 import dagger.Module;

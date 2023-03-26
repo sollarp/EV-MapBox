@@ -4,6 +4,18 @@
         "source": "com.example.ev_mapbox.app-main-63:/layout/fragment_searchlist.xml"
     },
     {
+        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/fragment_searchlistitem.xml",
+        "source": "com.example.ev_mapbox.app-main-63:/layout/fragment_searchlistitem.xml"
+    },
+    {
+        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/fragment_list_connections.xml",
+        "source": "com.example.ev_mapbox.app-main-63:/layout/fragment_list_connections.xml"
+    },
+    {
+        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/activity_main.xml",
+        "source": "com.example.ev_mapbox.app-main-63:/layout/activity_main.xml"
+    },
+    {
         "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/fragment_mapbar.xml",
         "source": "com.example.ev_mapbox.app-main-63:/layout/fragment_mapbar.xml"
     },
@@ -14,14 +26,6 @@
     {
         "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/layout_popupcardview.xml",
         "source": "com.example.ev_mapbox.app-main-63:/layout/layout_popupcardview.xml"
-    },
-    {
-        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/fragment_searchlistitem.xml",
-        "source": "com.example.ev_mapbox.app-main-63:/layout/fragment_searchlistitem.xml"
-    },
-    {
-        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/fragment_list_connections.xml",
-        "source": "com.example.ev_mapbox.app-main-63:/layout/fragment_list_connections.xml"
     },
     {
         "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/item_cardview.xml",
@@ -40,7 +44,7 @@
         "source": "com.example.ev_mapbox.app-main-63:/layout/item_map.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/activity_main.xml",
-        "source": "com.example.ev_mapbox.app-main-63:/layout/activity_main.xml"
+        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/fragment_splash.xml",
+        "source": "com.example.ev_mapbox.app-main-63:/layout/fragment_splash.xml"
     }
 ]

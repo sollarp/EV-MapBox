@@ -62,8 +62,10 @@
     <string name="lbl_ev">EV</string>
     <string name="lbl_open">Open</string>
     <string name="lbl_spot">Spot</string>
+    <string name="locationPermissionMessage">This app requires location permission to function properly.</string>
     <string name="location_details">location details</string>
     <string name="magnify">magnify</string>
     <string name="msg_a233_world_trad">A233 World Trade Park, New York</string>
     <string name="points_counter">%d Points</string>
+    <string name="splashScreenImage">splashScreenImage</string>
 </resources>

@@ -2903,6 +2903,7 @@ drawable img_menu
 drawable img_mylocation
 drawable img_path4
 drawable img_power
+drawable img_vectorcheckin
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3059,6 +3060,7 @@ id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
 id action_searchlistFragment_to_detailFragment
+id action_splashFragment_to_mapBarFragment
 id action_text
 id actions
 id activity_chooser_view_content
@@ -3130,6 +3132,7 @@ id connection_recycler
 id connection_type_id
 id constraint
 id container
+id container_mapBar
 id content
 id contentPanel
 id contiguous
@@ -3242,6 +3245,7 @@ id imageIcwashroom
 id imageLayerZero
 id imageMenu
 id imagePathFour
+id imageView
 id immediateStop
 id included
 id indeterminate
@@ -3392,6 +3396,7 @@ id postLayout
 id postcode
 id power_KW
 id pressed
+id progressBar
 id progress_circular
 id progress_horizontal
 id radio
@@ -3466,6 +3471,8 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id splashFragment
+id splash_fragment
 id spline
 id split_action_bar
 id spread
@@ -3712,6 +3719,7 @@ layout fragment_list_connections
 layout fragment_mapbar
 layout fragment_searchlist
 layout fragment_searchlistitem
+layout fragment_splash
 layout item_cardview
 layout item_map
 layout layout_popupcardview
@@ -3868,6 +3876,7 @@ string lbl_connections
 string lbl_ev
 string lbl_open
 string lbl_spot
+string locationPermissionMessage
 string location_details
 string m3_sys_motion_easing_emphasized
 string m3_sys_motion_easing_emphasized_accelerate
@@ -3982,6 +3991,7 @@ string searchview_clear_text_content_description
 string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
+string splashScreenImage
 string status_bar_notification_info_overflow
 string title_settings_dialog
 style AlertDialog_AppCompat

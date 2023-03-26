@@ -2,7 +2,6 @@ package com.example.ev_mapbox.domain;
 
 import com.example.ev_mapbox.data.local.EvPointsEntity;
 import com.example.ev_mapbox.data.repository.ISearchListRepository;
-import com.example.ev_mapbox.domain.ISearchListUseCase;
 import kotlinx.coroutines.CoroutineDispatcher;
 import kotlinx.coroutines.flow.Flow;
 import javax.inject.Inject;
