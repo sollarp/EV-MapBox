@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main_nav"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/mapBarFragment">
+    android:id="@+id/main_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.ev_mapbox.ui.splashscreen.SplashFragment"
+        android:label="fragment_splashScreen"
+        tools:layout="@layout/fragment_splash" />
+    <action
+        android:id="@+id/action_splashFragment_to_mapBarFragment"
+        app:popUpTo="@id/splashFragment"
+        app:destination="@id/mapBarFragment"
+        app:popUpToInclusive="true" />
 
     <fragment
         android:id="@+id/mapBarFragment"
         android:name="com.example.ev_mapbox.ui.homescreen.MapBarFragment"
         android:label="fragment_searchMap"
-        tools:layout="@layout/fragment_mapbar" >
+        tools:layout="@layout/fragment_mapbar">
         <action
             android:id="@+id/action_mapBarFragment_to_searchlistFragment"
             app:destination="@id/searchlistFragment" />
@@ -20,7 +30,7 @@
         android:id="@+id/searchlistFragment"
         android:name="com.example.ev_mapbox.ui.searchscreen.SearchListFragment"
         android:label="fragment_searchMap"
-        tools:layout="@layout/fragment_searchlistitem" >
+        tools:layout="@layout/fragment_searchlistitem">
         <action
             android:id="@+id/action_searchlistFragment_to_detailFragment"
             app:destination="@id/detailFragment" />
@@ -30,6 +40,7 @@
         android:id="@+id/detailFragment"
         android:name="com.example.ev_mapbox.ui.detailscreen.DetailFragment"
         android:label="fragment_searchMap"
-        tools:layout="@layout/fragment_detail" >
+        tools:layout="@layout/fragment_detail">
+
     </fragment>
 </navigation>

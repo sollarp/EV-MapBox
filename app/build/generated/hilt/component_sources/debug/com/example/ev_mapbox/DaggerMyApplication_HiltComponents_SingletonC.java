@@ -6,8 +6,6 @@ import android.view.View;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.SavedStateHandle;
 import androidx.lifecycle.ViewModel;
-import com.example.call_mapbox_api.ui.searchscreen.SearchListViewModel;
-import com.example.call_mapbox_api.ui.searchscreen.SearchListViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.example.ev_mapbox.data.OpenMapApi;
 import com.example.ev_mapbox.data.local.EvPointDataBase;
 import com.example.ev_mapbox.data.local.EvPointLocalDataSource;
@@ -26,6 +24,8 @@ import com.example.ev_mapbox.domain.SearchListUseCaseImpl;
 import com.example.ev_mapbox.ui.MainActivity;
 import com.example.ev_mapbox.ui.detailscreen.DetailFragment;
 import com.example.ev_mapbox.ui.searchscreen.SearchListFragment;
+import com.example.ev_mapbox.ui.searchscreen.SearchListViewModel;
+import com.example.ev_mapbox.ui.searchscreen.SearchListViewModel_HiltModules_KeyModule_ProvideFactory;
 import dagger.hilt.android.ActivityRetainedLifecycle;
 import dagger.hilt.android.ViewModelLifecycle;
 import dagger.hilt.android.flags.HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule;
@@ -453,7 +453,7 @@ public final class DaggerMyApplication_HiltComponents_SingletonC {
 
     @Override
     public Map<String, Provider<ViewModel>> getHiltViewModelMap() {
-      return Collections.<String, Provider<ViewModel>>singletonMap("com.example.call_mapbox_api.ui.searchscreen.SearchListViewModel", ((Provider) searchListViewModelProvider));
+      return Collections.<String, Provider<ViewModel>>singletonMap("com.example.ev_mapbox.ui.searchscreen.SearchListViewModel", ((Provider) searchListViewModelProvider));
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {
@@ -477,7 +477,7 @@ public final class DaggerMyApplication_HiltComponents_SingletonC {
       @Override
       public T get() {
         switch (id) {
-          case 0: // com.example.call_mapbox_api.ui.searchscreen.SearchListViewModel 
+          case 0: // com.example.ev_mapbox.ui.searchscreen.SearchListViewModel 
           return (T) new SearchListViewModel(singletonCImpl.bindSearchListUseCaseProvider.get());
 
           default: throw new AssertionError(id);

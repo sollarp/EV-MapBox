@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.example.call_mapbox_api.ui.searchscreen.SearchListViewModel
+import com.example.ev_mapbox.ui.searchscreen.SearchListViewModel
 import com.example.ev_mapbox.databinding.FragmentDetailBinding
 import com.example.ev_mapbox.util.Constants.SPAN_COUNT
 import dagger.hilt.android.AndroidEntryPoint

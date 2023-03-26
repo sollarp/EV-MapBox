@@ -23,6 +23,9 @@ public final class FragmentMapbarBinding implements ViewBinding {
   public final ConstraintLayout conlayout;
 
   @NonNull
+  public final CoordinatorLayout containerMapBar;
+
+  @NonNull
   public final ItemMapBinding mapFragment;
 
   @NonNull
@@ -32,11 +35,12 @@ public final class FragmentMapbarBinding implements ViewBinding {
   public final LayoutToolbarBinding toolbarLayout;
 
   private FragmentMapbarBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull ConstraintLayout conlayout, @NonNull ItemMapBinding mapFragment,
-      @NonNull LayoutSearchbarBinding searchbarLayout,
+      @NonNull ConstraintLayout conlayout, @NonNull CoordinatorLayout containerMapBar,
+      @NonNull ItemMapBinding mapFragment, @NonNull LayoutSearchbarBinding searchbarLayout,
       @NonNull LayoutToolbarBinding toolbarLayout) {
     this.rootView = rootView;
     this.conlayout = conlayout;
+    this.containerMapBar = containerMapBar;
     this.mapFragment = mapFragment;
     this.searchbarLayout = searchbarLayout;
     this.toolbarLayout = toolbarLayout;
@@ -75,6 +79,8 @@ public final class FragmentMapbarBinding implements ViewBinding {
         break missingId;
       }
 
+      CoordinatorLayout containerMapBar = (CoordinatorLayout) rootView;
+
       id = R.id.map_fragment;
       View mapFragment = ViewBindings.findChildViewById(rootView, id);
       if (mapFragment == null) {
@@ -96,8 +102,8 @@ public final class FragmentMapbarBinding implements ViewBinding {
       }
       LayoutToolbarBinding binding_toolbarLayout = LayoutToolbarBinding.bind(toolbarLayout);
 
-      return new FragmentMapbarBinding((CoordinatorLayout) rootView, conlayout, binding_mapFragment,
-          binding_searchbarLayout, binding_toolbarLayout);
+      return new FragmentMapbarBinding((CoordinatorLayout) rootView, conlayout, containerMapBar,
+          binding_mapFragment, binding_searchbarLayout, binding_toolbarLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

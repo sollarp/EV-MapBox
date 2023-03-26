@@ -14,7 +14,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.NavDirections
 import androidx.navigation.findNavController
-import com.example.call_mapbox_api.ui.searchscreen.SearchListViewModel
+import com.example.ev_mapbox.ui.searchscreen.SearchListViewModel
 import com.example.ev_mapbox.R
 import com.example.ev_mapbox.data.local.EvPointsEntity
 import com.example.ev_mapbox.databinding.FragmentMapbarBinding
@@ -138,7 +138,6 @@ class MapBarFragment : Fragment(), OnMarkerClickListener, OnMapReadyCallback {
                 .addMarker(
                     MarkerOptions()
                         .icon(BitmapDescriptorFactory.fromResource(R.drawable.map_marker48))
-                        //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))
                         .title(point.AddressInfo.Title)
                         .position(
                             LatLng(

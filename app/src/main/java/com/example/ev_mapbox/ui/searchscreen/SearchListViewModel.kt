@@ -1,4 +1,4 @@
-package com.example.call_mapbox_api.ui.searchscreen
+package com.example.ev_mapbox.ui.searchscreen
 
 import androidx.lifecycle.*
 import com.example.ev_mapbox.data.local.EvPointsEntity
@@ -27,7 +27,7 @@ class SearchListViewModel
     private var _searchPointsLiveData: LiveData<List<EvPointsEntity>>
     private var searchJob: Job? = null
     private val debouncePeriod = 800L
-    private val loadingStateLiveData = MutableLiveData<LoadingState>()
+    val loadingStateLiveData = MutableLiveData<LoadingState>()
 
     init {
         _searchPointsLiveData = Transformations.switchMap(_queryLiveData) {
@@ -41,23 +41,21 @@ class SearchListViewModel
         pointsMediatorData.addSource(_searchPointsLiveData) {
             pointsMediatorData.value = it
         }
-
-        viewModelScope.launch(Dispatchers.IO) {
-            getAllPoints()
-        }
     }
 
-    private suspend fun getAllPoints() {
-        if (_listOfItem.value.isNullOrEmpty()) {
-            loadingStateLiveData.postValue(LoadingState.LOADING)
-            try {
-                searchListUseCase().collect { items ->
-                    _listOfItem.postValue(items)
+    fun getAllPoints() {
+        viewModelScope.launch(Dispatchers.IO) {
+            if (_listOfItem.value.isNullOrEmpty()) {
+                try {
+                    searchListUseCase().collect { items ->
+                        _listOfItem.postValue(items)
+                        loadingStateLiveData.postValue(LoadingState.LOADING)
+                    }
+                } catch (e: Exception) {
+                    loadingStateLiveData.postValue(LoadingState.ERROR)
                 }
-            } catch (e: Exception) {
-                loadingStateLiveData.postValue(LoadingState.ERROR)
             }
-       }
+        }
     }
 
     fun setDetailItems(item: ItemDataConverter) {
@@ -68,6 +66,7 @@ class SearchListViewModel
     fun getDetailItems(): MutableLiveData<ItemDataConverter> {
         return _connectionItems
     }
+
     // BUG letter "Q"
     // if character does not match anyting than getAllPoints() does not update recycleview.
     fun onSearchQuery(query: String) {
@@ -88,9 +87,7 @@ class SearchListViewModel
             try {
                 val orders = listOfItems.value?.let { searchPoints(query, it) }
                 liveData.postValue(orders)
-                loadingStateLiveData.postValue(LoadingState.LOADED)
             } catch (_: Exception) {
-                loadingStateLiveData.postValue(LoadingState.ERROR)
             }
         }
         return liveData

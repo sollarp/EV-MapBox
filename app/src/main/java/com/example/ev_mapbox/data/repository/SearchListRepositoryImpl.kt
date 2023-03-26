@@ -26,7 +26,7 @@ class SearchListRepositoryImpl @Inject constructor(
             getPoints.collect { items ->
                 localDataSource.updatePoints(items.toEvPointsBreakItems())
             }
-            Resource.Success<List<EvPointDetails>>(getPoints)
+            Resource.Success<Flow<List<EvPointDetails>>>(getPoints)
         } catch (e: HttpException) {
             Resource.Error<EvPointDetails>(
                 e.localizedMessage ?: "An unexpected error occurred"
