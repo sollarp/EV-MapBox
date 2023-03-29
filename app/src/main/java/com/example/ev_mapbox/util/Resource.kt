@@ -10,7 +10,4 @@ sealed class Resource<T>(val data: Any? = null, val message: String? = null) {
     fun isDataAvailable(): Boolean {
         return data != null && data is Flow<*>
     }
-    /*fun isDataAvailable(): Boolean {
-        return data != null && data is Flow<*>
-    }*/
 }
