@@ -7,7 +7,6 @@ import android.widget.EditText
 import android.widget.Toast
 import com.example.ev_mapbox.data.local.EvPointsEntity
 
-
 fun hideKeyboard(view: View, context: Context) {
     val inputMethodManager =
         context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
