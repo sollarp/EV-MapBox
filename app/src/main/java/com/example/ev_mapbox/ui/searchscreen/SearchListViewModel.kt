@@ -9,7 +9,6 @@ import com.example.ev_mapbox.util.searchPoints
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.*
 import javax.inject.Inject
-
 @HiltViewModel
 class SearchListViewModel
 @Inject constructor(private val searchListUseCase: ISearchListUseCase) : ViewModel() {

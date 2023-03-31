@@ -1,5 +1,9 @@
 package com.example.ev_mapbox.ui.homescreen
 
+import android.Manifest
+import android.app.Activity
+import android.content.pm.PackageManager
+import android.location.Location
 import android.os.Bundle
 import android.os.Handler
 import android.view.LayoutInflater
@@ -7,6 +11,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.RelativeLayout
 import android.widget.TextView
+import android.widget.Toast
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Lifecycle
@@ -30,7 +37,11 @@ import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import kotlinx.coroutines.launch
 
-class MapBarFragment : Fragment(), OnMarkerClickListener, OnMapReadyCallback {
+class MapBarFragment : Fragment(),
+    OnMarkerClickListener,
+    OnMapReadyCallback,
+    GoogleMap.OnMyLocationClickListener,
+    GoogleMap.OnMyLocationButtonClickListener {
 
     private var _binding: FragmentMapbarBinding? = null
     private val binding get() = _binding!!
@@ -44,6 +55,10 @@ class MapBarFragment : Fragment(), OnMarkerClickListener, OnMapReadyCallback {
     private var textAddress: TextView? = null
     private var textPointsCounter: TextView? = null
     private var textTitle: TextView? = null
+
+    private val REQUEST_LOCATION_PERMISSION = 1
+    private lateinit var map: GoogleMap
+    private lateinit var locationButton: View
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
@@ -61,7 +76,7 @@ class MapBarFragment : Fragment(), OnMarkerClickListener, OnMapReadyCallback {
         textAddress = binding.root.findViewById(R.id.txtAddress)
         textPointsCounter = binding.root.findViewById(R.id.txtPointsCounter)
         textTitle = binding.root.findViewById(R.id.txtTitle)
-        
+
         val supportMapFragment =
             childFragmentManager.findFragmentById(R.id.map_fragment) as SupportMapFragment
 
@@ -71,6 +86,7 @@ class MapBarFragment : Fragment(), OnMarkerClickListener, OnMapReadyCallback {
                 viewModel.pointsMediatorData.observe(viewLifecycleOwner) { pointItems ->
                     supportMapFragment.getMapAsync {
                         pointsEntity = pointItems
+                        //it.isMyLocationEnabled
                         onMapReady(it)
                         it.animateCamera(
                             CameraUpdateFactory.newLatLngZoom(
@@ -90,13 +106,54 @@ class MapBarFragment : Fragment(), OnMarkerClickListener, OnMapReadyCallback {
         }
     }
 
-    override fun onMapReady(map: GoogleMap) {
+    private fun isPermissionGranted(): Boolean {
+        return context?.let {
+            ContextCompat.checkSelfPermission(
+                it,
+                Manifest.permission.ACCESS_FINE_LOCATION
+            )
+        } == PackageManager.PERMISSION_GRANTED
+    }
+
+    private fun enableMyLocation() {
+        if (isPermissionGranted()) {
+            if (context?.let {
+                    ActivityCompat.checkSelfPermission(
+                        it,
+                        Manifest.permission.ACCESS_FINE_LOCATION
+                    )
+                } != PackageManager.PERMISSION_GRANTED && context?.let {
+                    ActivityCompat.checkSelfPermission(
+                        it,
+                        Manifest.permission.ACCESS_COARSE_LOCATION
+                    )
+                } != PackageManager.PERMISSION_GRANTED
+            ) {
+                return
+            }
+            map.isMyLocationEnabled = true
+        } else {
+            ActivityCompat.requestPermissions(
+                context as Activity,
+                arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
+                REQUEST_LOCATION_PERMISSION
+            )
+        }
+    }
+
+    override fun onMapReady(googleMap: GoogleMap) {
+        map = googleMap
         addMarkers(map)
+        map.setOnMarkerClickListener(this)
+        map.setOnMyLocationButtonClickListener(this)
+        map.setOnMyLocationClickListener(this)
+        enableMyLocation()
+        /* map.uiSettings.isMyLocationButtonEnabled = true
+         locationButton = (binding.root.findViewById<View>(Integer.parseInt("1")).parent as View).findViewById(Integer.parseInt("2"))
+         locationButton.visibility = View.GONE*/
         /*Using this method may override behaviors set by the Maps SDK for Android Utility Library.
         If you are not using clustering, GeoJson, or KML, you can safely suppress this warning,
         otherwise, refer to the utility library's migration guide: https://bit.ly/3kTpQmY*/
-
-        map.setOnMarkerClickListener(this)
     }
 
     override fun onMarkerClick(marker: Marker): Boolean {
@@ -119,6 +176,7 @@ class MapBarFragment : Fragment(), OnMarkerClickListener, OnMapReadyCallback {
         }
         return false
     }
+
     private fun setCardViewTexts(marker: Marker) {
         val pointId: EvPointsEntity = marker.tag as EvPointsEntity
         val numberOfPoints = pointId.NumberOfPoints
@@ -157,6 +215,19 @@ class MapBarFragment : Fragment(), OnMarkerClickListener, OnMapReadyCallback {
 
     private fun createMapBarFragmentDirections(): NavDirections {
         return MapBarFragmentDirections.actionMapBarFragmentToSearchlistFragment()
+    }
+
+    override fun onMyLocationButtonClick(): Boolean {
+        Toast.makeText(context, "MyLocation button clicked", Toast.LENGTH_SHORT)
+            .show()
+        // Return false so that we don't consume the event and the default behavior still occurs
+        // (the camera animates to the user's current position).
+        return false
+    }
+
+    override fun onMyLocationClick(location: Location) {
+        Toast.makeText(context, "Current location:\n$location", Toast.LENGTH_LONG)
+            .show()
     }
 
 }
