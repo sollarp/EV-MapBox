@@ -58,7 +58,11 @@ class MapBarFragment : Fragment(),
 
     private val REQUEST_LOCATION_PERMISSION = 1
     private lateinit var map: GoogleMap
+<<<<<<< HEAD
     private lateinit var locationButton: View
+=======
+    val pulseMarkerBitmap = BitmapDescriptorFactory.fromResource(R.drawable.pulse_marker)
+>>>>>>> f5019a83a0aab9bb8a4ae62d2b533adc9407a059
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
@@ -86,7 +90,11 @@ class MapBarFragment : Fragment(),
                 viewModel.pointsMediatorData.observe(viewLifecycleOwner) { pointItems ->
                     supportMapFragment.getMapAsync {
                         pointsEntity = pointItems
+<<<<<<< HEAD
                         //it.isMyLocationEnabled
+=======
+                        it.isMyLocationEnabled
+>>>>>>> f5019a83a0aab9bb8a4ae62d2b533adc9407a059
                         onMapReady(it)
                         it.animateCamera(
                             CameraUpdateFactory.newLatLngZoom(
@@ -105,7 +113,15 @@ class MapBarFragment : Fragment(),
             view.findNavController().navigate(createMapBarFragmentDirections())
         }
     }
+    private fun isPermissionGranted() : Boolean {
+        return context?.let {
+            ContextCompat.checkSelfPermission(
+                it,
+                Manifest.permission.ACCESS_FINE_LOCATION)
+        } == PackageManager.PERMISSION_GRANTED
+    }
 
+<<<<<<< HEAD
     private fun isPermissionGranted(): Boolean {
         return context?.let {
             ContextCompat.checkSelfPermission(
@@ -115,6 +131,8 @@ class MapBarFragment : Fragment(),
         } == PackageManager.PERMISSION_GRANTED
     }
 
+=======
+>>>>>>> f5019a83a0aab9bb8a4ae62d2b533adc9407a059
     private fun enableMyLocation() {
         if (isPermissionGranted()) {
             if (context?.let {
@@ -132,7 +150,12 @@ class MapBarFragment : Fragment(),
                 return
             }
             map.isMyLocationEnabled = true
+<<<<<<< HEAD
         } else {
+=======
+        }
+        else {
+>>>>>>> f5019a83a0aab9bb8a4ae62d2b533adc9407a059
             ActivityCompat.requestPermissions(
                 context as Activity,
                 arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
@@ -140,6 +163,7 @@ class MapBarFragment : Fragment(),
             )
         }
     }
+<<<<<<< HEAD
 
     override fun onMapReady(googleMap: GoogleMap) {
         map = googleMap
@@ -151,6 +175,14 @@ class MapBarFragment : Fragment(),
         /* map.uiSettings.isMyLocationButtonEnabled = true
          locationButton = (binding.root.findViewById<View>(Integer.parseInt("1")).parent as View).findViewById(Integer.parseInt("2"))
          locationButton.visibility = View.GONE*/
+=======
+    override fun onMapReady(googleMap: GoogleMap) {
+        map = googleMap
+        addMarkers(map)
+        map.setOnMyLocationButtonClickListener(this)
+        map.setOnMyLocationClickListener(this)
+        enableMyLocation()
+>>>>>>> f5019a83a0aab9bb8a4ae62d2b533adc9407a059
         /*Using this method may override behaviors set by the Maps SDK for Android Utility Library.
         If you are not using clustering, GeoJson, or KML, you can safely suppress this warning,
         otherwise, refer to the utility library's migration guide: https://bit.ly/3kTpQmY*/
