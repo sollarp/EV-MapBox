@@ -2,7 +2,10 @@ package com.example.ev_mapbox.ui.splashscreen
 
 import android.Manifest
 import android.content.pm.PackageManager
+<<<<<<< HEAD
+=======
 import android.location.LocationManager
+>>>>>>> f5019a83a0aab9bb8a4ae62d2b533adc9407a059
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -57,7 +60,11 @@ class SplashFragment : Fragment() {
                 val latitude = location?.latitude
                 val longitude = location?.longitude
                 // TODO: Do something with the latitude and longitude values
+<<<<<<< HEAD
+                println("get location on: $latitude, $longitude")
+=======
                 println("get location on: ${latitude}, ${longitude}")
+>>>>>>> f5019a83a0aab9bb8a4ae62d2b533adc9407a059
             }
         } else {
             // Request location permission
