@@ -10,7 +10,6 @@
     <string name="lbl_ev">EV</string>
     <string name="lbl_connections">Connections</string>
     <string name="msg_a233_world_trad">A233 World Trade Park, New York</string>
-    <string name="lbl_amenities">Amenities</string>
     <string name="lbl_8_points">8 Points</string>
     <string name="lbl_open">Open</string>
     <string name="lbl_business_center">Business Center</string>
@@ -18,4 +17,37 @@
     <string name="address_and_town">%1$s, %2$s</string>
     <string name="splashScreenImage">splashScreenImage</string>
     <string name="locationPermissionMessage">This app requires location permission to function properly.</string>
+    <string name="loading">Loading?</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="lbl_speeds">Speeds</string>
+    <string name="msg_connection_avai">Connection Available</string>
+    <string name="lbl_favorite">Favorite</string>
+    <string name="lbl_shopping">Shopping</string>
+    <string name="lbl_logout">Logout</string>
+    <string name="lbl_samantha_smith">Samantha\u000bSmith</string>
+    <string name="lbl_english">English</string>
+    <string name="lbl_email_address">Email Address</string>
+    <string name="lbl_987_654_3210">987 654 3210</string>
+    <string name="msg_how_to_add_lore">How to add Lorem ipsum ?</string>
+    <string name="lbl_12_points">12 Points</string>
+    <string name="lbl_add_check_in">Add Check-in</string>
+    <string name="lbl_j_1772">J 1772</string>
+    <string name="lbl_washroom">Washroom</string>
+    <string name="lbl_mennekes">Mennekes</string>
+    <string name="lbl_ccd_basement">CCD Basement</string>
+    <string name="msg_34_kw_0_02_kw">34 kW ($0.02/kW)</string>
+    <string name="lbl_amenities">Amenities</string>
+    <string name="msg_lorem_ipsum_dol2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
+    <string name="lbl_phone_number">Phone Number</string>
+    <string name="msg_55_kw_0_05_kw">55 kW ($0.05/kW)</string>
+    <string name="lbl_2_points">2 points</string>
+    <string name="msg_08_00_am_20_0">08:00 am - 20:00 pm</string>
+    <string name="msg_recent_check_in" />
+    <string name="msg_emili_williamso" />
+    <string name="lbl_tesla_model_x" />
+    <string name="lbl_14_jun" />
+    <string name="msg_lorem_ipsum_dol">Desc</string>
+    <string name="lbl_get_direction" />
+    <string name="_80_km">80 KM</string>
+
 </resources>

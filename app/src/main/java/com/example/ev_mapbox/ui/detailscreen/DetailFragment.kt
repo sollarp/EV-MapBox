@@ -35,10 +35,10 @@ class DetailFragment : Fragment() {
             binding.addressline1.text = detailItems.AddressLine1
             binding.addressline2.text = detailItems.AddressLine2
             binding.town.text = detailItems.Town
-            binding.title.text = detailItems.Postcode
+            binding.title.text = detailItems.Title
             binding.usageCost.text = detailItems.UsageCost
             binding.numberOfBays.text = detailItems.NumberOfPoints.toString()
-            binding.postcode.text = detailItems.Title
+            binding.postcode.text = detailItems.Postcode
             binding.longitude.text = detailItems.Longitude.toString()
             binding.latitude.text = detailItems.Latitude.toString()
             binding.dateLastStatusUpdate.text = detailItems.DateLastStatusUpdate

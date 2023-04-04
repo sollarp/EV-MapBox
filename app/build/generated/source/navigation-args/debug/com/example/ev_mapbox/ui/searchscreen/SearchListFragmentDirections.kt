@@ -7,8 +7,8 @@ import com.example.ev_mapbox.R
 
 public class SearchListFragmentDirections private constructor() {
   public companion object {
-    public fun actionSearchlistFragmentToDetailFragment(): NavDirections =
-        ActionOnlyNavDirections(R.id.action_searchlistFragment_to_detailFragment)
+    public fun actionSearchlistFragmentToSpotinfoFragment(): NavDirections =
+        ActionOnlyNavDirections(R.id.action_searchlistFragment_to_spotinfoFragment)
 
     public fun actionSplashFragmentToMapBarFragment(): NavDirections =
         MainNavDirections.actionSplashFragmentToMapBarFragment()
