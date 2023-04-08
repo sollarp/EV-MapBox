@@ -65,7 +65,7 @@
         <item name="android:textFontWeight" tools:targetApi="p">500</item>
     </style>
     <style name="txtPoppinssemibold16">
-        <item name="android:textSize">@dimen/_16pxh</item>
+        <item name="android:textSize">@dimen/_15pxh</item>
         <item name="android:textColor">@color/bluegray_800</item>
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:textFontWeight" tools:targetApi="p">600</item>

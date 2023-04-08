@@ -112,7 +112,7 @@
                     tools:text="@string/lbl_business_center" />
 
                 <TextView
-                    android:id="@+id/txtAddress"
+                    android:id="@+id/txtSpotAddress"
                     style="@style/txtPoppinsmedium12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -380,19 +380,6 @@
                             android:ellipsize="end"
                             android:singleLine="true"
                             android:text="@string/msg_recent_check_in" />
-
-                        <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/recyclerListavat"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="1dp"
-                            android:layout_marginTop="18dp"
-                            android:gravity="center_horizontal"
-                            android:nestedScrollingEnabled="false"
-                            android:orientation="vertical"
-                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                            tools:itemCount="2"
-                            tools:listitem="@layout/row_listavat" />
 
                         <View
                             android:id="@+id/lineSaperator"

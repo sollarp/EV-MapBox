@@ -60,6 +60,7 @@
                         android:gravity="start"
                         android:orientation="vertical">
 
+
                         <TextView
                             android:id="@+id/txtTitle"
                             style="@style/txtPoppinssemibold18"
@@ -71,7 +72,7 @@
                             android:text="@string/lbl_business_center" />
 
                         <TextView
-                            android:id="@+id/txtAddress"
+                            android:id="@+id/txtSpoDistance"
                             style="@style/txtPoppinsmedium12"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -175,36 +176,58 @@
                                     android:src="@drawable/img_icshopping_15x16"
                                     tools:ignore="ContentDescription"
                                     tools:src="@drawable/img_icshopping_15x16" />
+
+                                <ImageView
+                                    android:id="@+id/imageIcpharmacy"
+                                    android:layout_width="@dimen/_15pxh"
+                                    android:layout_height="@dimen/_15pxh"
+                                    android:layout_marginStart="@dimen/_15pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_icpharmacy_15x15"
+                                    tools:ignore="ContentDescription"/>
+
                             </LinearLayout>
+
                         </LinearLayout>
+
                     </LinearLayout>
 
-                    <ImageView
-                        android:id="@+id/imageIcpharmacy"
-                        android:layout_width="@dimen/_15pxh"
-                        android:layout_height="@dimen/_15pxh"
-                        android:layout_marginTop="@dimen/_88pxv"
-                        android:layout_marginBottom="@dimen/_3pxv"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/img_icpharmacy_15x15"
-                        tools:ignore="ContentDescription"
-                        tools:src="@drawable/img_icpharmacy_15x15" />
+                    <LinearLayout
+                        android:id="@+id/linearolumnbusinesscenter"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:orientation="vertical">
 
-                    <ImageButton
-                        android:id="@+id/btnContrast"
-                        android:layout_width="@dimen/_41pxh"
-                        android:layout_height="@dimen/_41pxh"
-                        android:layout_marginStart="@dimen/_24pxh"
-                        android:layout_marginTop="@dimen/_63pxv"
-                        android:layout_marginBottom="@dimen/_2pxv"
-                        android:background="@drawable/rectangle_bg_green_a400_radius_10"
-                        android:paddingHorizontal="@dimen/_10pxh"
-                        android:paddingVertical="@dimen/_10pxv"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/img_contrast"
-                        tools:ignore="ContentDescription" />
+                        <TextView
+                            android:id="@+id/txtPopDistance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/txtPoppinsmedium14_1"
+                            android:layout_marginStart="@dimen/_5pxv"
+                            android:layout_marginTop="@dimen/_40pxv"
+                            android:text="@string/_80_Mile"
+                            tools:text="@string/_80_Mile"/>
+
+                        <ImageButton
+                            android:id="@+id/btnContrast"
+                            android:layout_width="@dimen/_41pxh"
+                            android:layout_height="@dimen/_41pxh"
+                            android:layout_marginStart="@dimen/_10pxv"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_marginBottom="@dimen/_2pxv"
+                            android:background="@drawable/rectangle_bg_green_a400_radius_10"
+                            android:paddingHorizontal="@dimen/_10pxh"
+                            android:paddingVertical="@dimen/_10pxv"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_contrast"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+
                 </LinearLayout>
+
             </FrameLayout>
+
 
             <ImageView
                 android:id="@+id/imageLayerZero"

@@ -40,10 +40,6 @@
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/layout/layout_popupcardview.xml"
     },
     {
-        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/row_gridjcounter.xml",
-        "source": "com.example.ev_mapbox.app-main-63:/layout/row_gridjcounter.xml"
-    },
-    {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-60:/layout/activity_main.xml",
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/layout/activity_main.xml"
     },
@@ -62,6 +58,10 @@
     {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-60:/layout/fragment_spot_info.xml",
         "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/layout/fragment_spot_info.xml"
+    },
+    {
+        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/fragment_spot_info.xml",
+        "source": "com.example.ev_mapbox.app-main-63:/layout/fragment_spot_info.xml"
     },
     {
         "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-60:/layout/fragment_mapbar.xml",

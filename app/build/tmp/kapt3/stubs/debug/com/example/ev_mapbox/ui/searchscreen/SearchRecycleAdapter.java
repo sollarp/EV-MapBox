@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import androidx.recyclerview.widget.RecyclerView;
+import com.example.ev_mapbox.R;
 import com.example.ev_mapbox.data.local.EvPointsEntity;
 import com.example.ev_mapbox.data.remote.dto.AddressInfo;
 import com.example.ev_mapbox.databinding.ItemCardviewBinding;

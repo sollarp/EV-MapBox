@@ -45,6 +45,7 @@ anim nav_default_enter_anim
 anim nav_default_exit_anim
 anim nav_default_pop_enter_anim
 anim nav_default_pop_exit_anim
+anim pulse_animation
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -5766,6 +5767,7 @@ drawable img_location_bluegray_200
 drawable img_menu
 drawable img_menu_white_a700
 drawable img_mylocation
+drawable img_mylocation_50
 drawable img_path4
 drawable img_power
 drawable img_vectorcheckin
@@ -5842,6 +5844,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable pulsing_location
 drawable rectangle_bg_black_900_87_radius_tl_14_bl_14
 drawable rectangle_bg_gray_100_radius_10
 drawable rectangle_bg_gray_101
@@ -6181,6 +6184,7 @@ id linearRowpointscounter
 id linearRowteslamodelx
 id linearRowwashroom
 id linearTimings
+id linearolumnbusinesscenter
 id listMode
 id list_item
 id list_view
@@ -6251,6 +6255,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id my_location_button
 id nav_controller_view_tag
 id nav_host_fragment
 id nav_host_fragment_container
@@ -6304,7 +6309,6 @@ id ratio
 id rectangles
 id recycle_search
 id recyclerGridjcounter
-id recyclerListavat
 id reverseSawtooth
 id right
 id rightToLeft
@@ -6450,8 +6454,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id txtAddress
 id txtAmenities
+id txtAmpVolt
 id txtBusinessCenter
 id txtCardAddress
 id txtCardPointsCounter
@@ -6469,13 +6473,17 @@ id txtJunCounter
 id txtOpen
 id txtPharmacy
 id txtPointsCounter
+id txtPopDistance
 id txtPrice
 id txtRecentCheckin
 id txtShopping
+id txtSpoDistance
 id txtSpot
+id txtSpotAddress
 id txtTeslaModelX
 id txtTime
 id txtTitle
+id txtType
 id txtWashroom
 id txtWiFi
 id unchecked
@@ -6724,7 +6732,9 @@ layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 navigation nav_graph
 plurals mtrl_badge_content_description
-string _80_km
+string KM
+string _80_KM
+string _80_Mile
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -6754,6 +6764,9 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string address
 string address_and_town
+string amp
+string amp_and_volt
+string amp_volt
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -6859,6 +6872,7 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string mile
 string msg_08_00_am_20_0
 string msg_34_kw_0_02_kw
 string msg_55_kw_0_05_kw
@@ -6939,6 +6953,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string points
 string points_counter
 string rationale_ask
 string rationale_ask_again
@@ -6951,6 +6966,8 @@ string side_sheet_behavior
 string splashScreenImage
 string status_bar_notification_info_overflow
 string title_settings_dialog
+string txt_kW
+string volt
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

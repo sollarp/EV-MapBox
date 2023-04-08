@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+anim pulse_animation
 color black
 color black_900
 color black_900_0a
@@ -2930,11 +2931,13 @@ drawable img_location_bluegray_200
 drawable img_menu
 drawable img_menu_white_a700
 drawable img_mylocation
+drawable img_mylocation_50
 drawable img_path4
 drawable img_power
 drawable img_vectorcheckin
 drawable layer_list_bg_white_a700_border_gray_300_radius_10
 drawable map_marker48
+drawable pulsing_location
 drawable rectangle_bg_black_900_87_radius_tl_14_bl_14
 drawable rectangle_bg_gray_100_radius_10
 drawable rectangle_bg_gray_101
@@ -3025,11 +3028,13 @@ id linearRowpointscounter
 id linearRowteslamodelx
 id linearRowwashroom
 id linearTimings
+id linearolumnbusinesscenter
 id list_view
 id longitude
 id main_nav
 id mapBarFragment
 id map_fragment
+id my_location_button
 id nav_host_fragment
 id number_of_bays
 id postcode
@@ -3037,7 +3042,6 @@ id power_KW
 id progressBar
 id recycle_search
 id recyclerGridjcounter
-id recyclerListavat
 id scrollViewScrollview
 id searchbar_layout
 id searchlistFragment
@@ -3050,8 +3054,8 @@ id title
 id toolbarToolbar
 id toolbar_layout
 id town
-id txtAddress
 id txtAmenities
+id txtAmpVolt
 id txtBusinessCenter
 id txtCardAddress
 id txtCardPointsCounter
@@ -3069,13 +3073,17 @@ id txtJunCounter
 id txtOpen
 id txtPharmacy
 id txtPointsCounter
+id txtPopDistance
 id txtPrice
 id txtRecentCheckin
 id txtShopping
+id txtSpoDistance
 id txtSpot
+id txtSpotAddress
 id txtTeslaModelX
 id txtTime
 id txtTitle
+id txtType
 id txtWashroom
 id txtWiFi
 id usage_cost
@@ -3100,9 +3108,14 @@ layout row_gridjcounter1
 layout row_listavat
 mipmap ic_launcher
 navigation nav_graph
-string _80_km
+string KM
+string _80_KM
+string _80_Mile
 string address
 string address_and_town
+string amp
+string amp_and_volt
+string amp_volt
 string app_name
 string datelaststatusupdate
 string enter_address_city_or_zip_code
@@ -3137,6 +3150,7 @@ string loading
 string locationPermissionMessage
 string location_details
 string magnify
+string mile
 string msg_08_00_am_20_0
 string msg_34_kw_0_02_kw
 string msg_55_kw_0_05_kw
@@ -3148,8 +3162,11 @@ string msg_lorem_ipsum_dol
 string msg_lorem_ipsum_dol2
 string msg_recent_check_in
 string no_internet_connection
+string points
 string points_counter
 string splashScreenImage
+string txt_kW
+string volt
 style AppTheme
 style btnSolidRounded
 style etSolid

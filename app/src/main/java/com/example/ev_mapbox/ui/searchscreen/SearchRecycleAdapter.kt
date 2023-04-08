@@ -5,9 +5,11 @@ import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.ev_mapbox.R
 import com.example.ev_mapbox.data.local.EvPointsEntity
 import com.example.ev_mapbox.data.remote.dto.AddressInfo
 import com.example.ev_mapbox.databinding.ItemCardviewBinding
+import kotlin.coroutines.coroutineContext
 
 class SearchRecycleAdapter(
     private val evPointsEntity: ArrayList<EvPointsEntity>,
@@ -57,10 +59,12 @@ class SearchRecycleAdapter(
             val address = "${selectedLocation.AddressInfo.AddressLine1}, " +
                     "${selectedLocation.AddressInfo.Town}, " +
                     "${selectedLocation.AddressInfo.Postcode}"
-            val pointsCount = selectedLocation.NumberOfPoints
             val title = selectedLocation.AddressInfo.Title
             binding.txtCardAddress .text = address
-            binding.txtCardPointsCounter.text = pointsCount.toString()
+            binding.txtCardPointsCounter.text = String.format(
+                itemView.context.getString(R.string.points),
+                selectedLocation.NumberOfPoints.toString()
+            )
             binding.txtCardTitle.text = title
         }
 

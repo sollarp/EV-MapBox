@@ -2898,9 +2898,14 @@
     <dimen name="_9pxh">9.0dp</dimen>
     <dimen name="_9pxv">9.0dp</dimen>
     <dimen name="_9sp">9.0sp</dimen>
-    <string name="_80_km">80 KM</string>
+    <string name="KM">KM</string>
+    <string name="_80_KM">80 KM</string>
+    <string name="_80_Mile">80 Mile</string>
     <string name="address">address</string>
     <string name="address_and_town">%1$s, %2$s</string>
+    <string name="amp">A</string>
+    <string name="amp_and_volt">%1$s, %2$s</string>
+    <string name="amp_volt">55A 400V</string>
     <string name="app_name">Call_Mapbox_API</string>
     <string name="datelaststatusupdate">DateLastStatusUpdate</string>
     <string name="enter_address_city_or_zip_code">enter_address</string>
@@ -2928,13 +2933,14 @@
     <string name="lbl_samantha_smith">Samantha\u000bSmith</string>
     <string name="lbl_shopping">Shopping</string>
     <string name="lbl_speeds">Speeds</string>
-    <string name="lbl_spot">Spot</string>
+    <string name="lbl_spot">MapBox</string>
     <string name="lbl_tesla_model_x"/>
     <string name="lbl_washroom">Washroom</string>
     <string name="loading">Loading?</string>
     <string name="locationPermissionMessage">This app requires location permission to function properly.</string>
     <string name="location_details">location details</string>
     <string name="magnify">magnify</string>
+    <string name="mile">Mile</string>
     <string name="msg_08_00_am_20_0">08:00 am - 20:00 pm</string>
     <string name="msg_34_kw_0_02_kw">34 kW ($0.02/kW)</string>
     <string name="msg_55_kw_0_05_kw">55 kW ($0.05/kW)</string>
@@ -2946,8 +2952,11 @@
     <string name="msg_lorem_ipsum_dol2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
     <string name="msg_recent_check_in"/>
     <string name="no_internet_connection">No internet connection!</string>
+    <string name="points">%s Points</string>
     <string name="points_counter">%d Points</string>
     <string name="splashScreenImage">splashScreenImage</string>
+    <string name="txt_kW">%s kW</string>
+    <string name="volt">V</string>
     <style name="btnSolidRounded">
         <item name="android:textSize">@dimen/_16pxh</item>
         <item name="android:textColor">@color/white_A700</item>
@@ -3073,7 +3082,7 @@
         <item name="android:textFontWeight" ns1:targetApi="p">600</item>
     </style>
     <style name="txtPoppinssemibold16">
-        <item name="android:textSize">@dimen/_16pxh</item>
+        <item name="android:textSize">@dimen/_15pxh</item>
         <item name="android:textColor">@color/bluegray_800</item>
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:textFontWeight" ns1:targetApi="p">600</item>

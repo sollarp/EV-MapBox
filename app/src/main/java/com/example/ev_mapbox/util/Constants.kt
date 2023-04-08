@@ -9,6 +9,7 @@ object Constants {
     const val API_KEY_ERROR =
         "You must specify an API Key, either in an X-API-Key header or key= query string parameter."
     const val SPAN_COUNT = 1
+    const val SPAN_COUNT_2 = 2
     const val LOCATION_MESSAGE = "This app requires location permission to function properly."
     const val AGREE = "Agree"
     const val REQUEST_CODE_LOCATION_PERMISSION = 0

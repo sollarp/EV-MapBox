@@ -11,6 +11,7 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.ev_mapbox.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -29,6 +30,9 @@ public final class FragmentMapbarBinding implements ViewBinding {
   public final ItemMapBinding mapFragment;
 
   @NonNull
+  public final FloatingActionButton myLocationButton;
+
+  @NonNull
   public final LayoutSearchbarBinding searchbarLayout;
 
   @NonNull
@@ -36,12 +40,14 @@ public final class FragmentMapbarBinding implements ViewBinding {
 
   private FragmentMapbarBinding(@NonNull CoordinatorLayout rootView,
       @NonNull ConstraintLayout conlayout, @NonNull CoordinatorLayout containerMapBar,
-      @NonNull ItemMapBinding mapFragment, @NonNull LayoutSearchbarBinding searchbarLayout,
+      @NonNull ItemMapBinding mapFragment, @NonNull FloatingActionButton myLocationButton,
+      @NonNull LayoutSearchbarBinding searchbarLayout,
       @NonNull LayoutToolbarBinding toolbarLayout) {
     this.rootView = rootView;
     this.conlayout = conlayout;
     this.containerMapBar = containerMapBar;
     this.mapFragment = mapFragment;
+    this.myLocationButton = myLocationButton;
     this.searchbarLayout = searchbarLayout;
     this.toolbarLayout = toolbarLayout;
   }
@@ -88,6 +94,12 @@ public final class FragmentMapbarBinding implements ViewBinding {
       }
       ItemMapBinding binding_mapFragment = ItemMapBinding.bind(mapFragment);
 
+      id = R.id.my_location_button;
+      FloatingActionButton myLocationButton = ViewBindings.findChildViewById(rootView, id);
+      if (myLocationButton == null) {
+        break missingId;
+      }
+
       id = R.id.searchbar_layout;
       View searchbarLayout = ViewBindings.findChildViewById(rootView, id);
       if (searchbarLayout == null) {
@@ -103,7 +115,7 @@ public final class FragmentMapbarBinding implements ViewBinding {
       LayoutToolbarBinding binding_toolbarLayout = LayoutToolbarBinding.bind(toolbarLayout);
 
       return new FragmentMapbarBinding((CoordinatorLayout) rootView, conlayout, containerMapBar,
-          binding_mapFragment, binding_searchbarLayout, binding_toolbarLayout);
+          binding_mapFragment, myLocationButton, binding_searchbarLayout, binding_toolbarLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

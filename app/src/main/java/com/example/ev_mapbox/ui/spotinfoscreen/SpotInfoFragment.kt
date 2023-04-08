@@ -36,7 +36,7 @@ class SpotInfoFragment: Fragment()  {
                     "${detailItems.Postcode}"
             val addressAndTownText = resources.getString(R.string.address_and_town, address, town)
 
-            binding.txtAddress.text = addressAndTownText
+            binding.txtSpotAddress.text = addressAndTownText
             /*binding.addressline2.text = detailItems.AddressLine2
             binding.town.text = detailItems.Town
             binding.title.text = detailItems.Postcode
@@ -49,8 +49,8 @@ class SpotInfoFragment: Fragment()  {
 
             binding.recyclerGridjcounter.apply {
                 layoutManager =
-                    StaggeredGridLayoutManager(Constants.SPAN_COUNT, StaggeredGridLayoutManager.HORIZONTAL)
-                adapter = detailItems.Connection?.let { SpotInfoRecycleAdapter(it) }
+                    StaggeredGridLayoutManager(Constants.SPAN_COUNT_2, StaggeredGridLayoutManager.HORIZONTAL)
+                adapter = detailItems.Connection?.let { SpotInfoRecycleAdapter(it, detailItems.UsageCost) }
             }
         }
     }

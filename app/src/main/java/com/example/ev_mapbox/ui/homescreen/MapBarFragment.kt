@@ -1,8 +1,11 @@
 package com.example.ev_mapbox.ui.homescreen
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.pm.PackageManager
+import android.graphics.Bitmap
+import android.graphics.Canvas
 import android.location.Location
 import android.os.Bundle
 import android.os.Handler
@@ -25,6 +28,8 @@ import com.example.ev_mapbox.ui.searchscreen.SearchListViewModel
 import com.example.ev_mapbox.R
 import com.example.ev_mapbox.data.local.EvPointsEntity
 import com.example.ev_mapbox.databinding.FragmentMapbarBinding
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.GoogleMap.OnMarkerClickListener
@@ -35,6 +40,7 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlinx.coroutines.launch
 
 class MapBarFragment : Fragment(),
@@ -55,15 +61,19 @@ class MapBarFragment : Fragment(),
     private var textAddress: TextView? = null
     private var textPointsCounter: TextView? = null
     private var textTitle: TextView? = null
+    private var textDistance: TextView? = null
 
     private val REQUEST_LOCATION_PERMISSION = 1
     private lateinit var map: GoogleMap
     private lateinit var locationButton: View
+    private lateinit var fusedLocationClient: FusedLocationProviderClient
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
         _binding = FragmentMapbarBinding.inflate(inflater, container, false)
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireActivity())
         return binding.root
     }
 
@@ -73,9 +83,14 @@ class MapBarFragment : Fragment(),
         bottomSheetView = binding.root.findViewById(R.id.layout_cardview)
         bottomSheetBehavior = BottomSheetBehavior.from(bottomSheetView)
 
-        textAddress = binding.root.findViewById(R.id.txtAddress)
+        textAddress = binding.root.findViewById(R.id.txtSpotAddress)
         textPointsCounter = binding.root.findViewById(R.id.txtPointsCounter)
         textTitle = binding.root.findViewById(R.id.txtTitle)
+        textDistance = binding.root.findViewById(R.id.txtPopDistance)
+        val btn = binding.root.findViewById<FloatingActionButton>(R.id.my_location_button)
+        btn.setOnClickListener {
+            getLastLocation()
+        }
 
         val supportMapFragment =
             childFragmentManager.findFragmentById(R.id.map_fragment) as SupportMapFragment
@@ -106,6 +121,35 @@ class MapBarFragment : Fragment(),
         }
     }
 
+    @SuppressLint("MissingPermission")
+    private fun getLastLocation() {
+        // Get the vector drawable resource
+        val vectorDrawable =
+            context?.let { ContextCompat.getDrawable(it, R.drawable.pulsing_location) }
+        val bitmap = Bitmap.createBitmap(
+            vectorDrawable!!.intrinsicWidth,
+            vectorDrawable.intrinsicHeight, Bitmap.Config.ARGB_8888
+        )
+        val canvas = Canvas(bitmap)
+        vectorDrawable.setBounds(0, 0, canvas.width, canvas.height)
+        vectorDrawable.draw(canvas)
+        // Create an animation that cycles through a set of images
+
+        fusedLocationClient.lastLocation.addOnSuccessListener(
+            requireActivity()
+        ) { location ->
+            val latitude = location.latitude
+            val longitude = location.longitude
+            val currentLocation = LatLng(latitude, longitude)
+            val markerOptions = MarkerOptions()
+                .icon(BitmapDescriptorFactory.fromBitmap(bitmap))
+                .position(currentLocation)
+            map.addMarker(markerOptions)
+            map.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 14F))
+
+        }
+    }
+
     private fun isPermissionGranted(): Boolean {
         return context?.let {
             ContextCompat.checkSelfPermission(
@@ -131,7 +175,7 @@ class MapBarFragment : Fragment(),
             ) {
                 return
             }
-            map.isMyLocationEnabled = true
+            //map.isMyLocationEnabled = true
         } else {
             ActivityCompat.requestPermissions(
                 context as Activity,
@@ -148,12 +192,7 @@ class MapBarFragment : Fragment(),
         map.setOnMyLocationButtonClickListener(this)
         map.setOnMyLocationClickListener(this)
         enableMyLocation()
-        /* map.uiSettings.isMyLocationButtonEnabled = true
-         locationButton = (binding.root.findViewById<View>(Integer.parseInt("1")).parent as View).findViewById(Integer.parseInt("2"))
-         locationButton.visibility = View.GONE*/
-        /*Using this method may override behaviors set by the Maps SDK for Android Utility Library.
-        If you are not using clustering, GeoJson, or KML, you can safely suppress this warning,
-        otherwise, refer to the utility library's migration guide: https://bit.ly/3kTpQmY*/
+        getLastLocation()
     }
 
     override fun onMarkerClick(marker: Marker): Boolean {
@@ -179,15 +218,21 @@ class MapBarFragment : Fragment(),
 
     private fun setCardViewTexts(marker: Marker) {
         val pointId: EvPointsEntity = marker.tag as EvPointsEntity
-        val numberOfPoints = pointId.NumberOfPoints
         val address = pointId.AddressInfo.AddressLine1
         val town = pointId.AddressInfo.Town
         val title = pointId.AddressInfo.Title
-        val pointsCounterText = resources.getString(R.string.points_counter, numberOfPoints)
+        val pointsCounterText = String.format(
+            resources.getString(R.string.points),
+            pointId.NumberOfPoints.toString()
+        )
         val addressAndTownText = resources.getString(R.string.address_and_town, address, town)
         textAddress?.text = addressAndTownText
         textPointsCounter?.text = pointsCounterText
         textTitle?.text = title
+        textDistance?.text = String.format(
+            "%.2f Miles",
+            pointId.AddressInfo.Distance
+        )
     }
 
     private fun addMarkers(googleMap: GoogleMap) {
