@@ -12,6 +12,7 @@ import android.os.Handler
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
@@ -28,6 +29,7 @@ import com.example.ev_mapbox.ui.searchscreen.SearchListViewModel
 import com.example.ev_mapbox.R
 import com.example.ev_mapbox.data.local.EvPointsEntity
 import com.example.ev_mapbox.databinding.FragmentMapbarBinding
+import com.example.ev_mapbox.util.getNavigationIntent
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -62,6 +64,7 @@ class MapBarFragment : Fragment(),
     private var textPointsCounter: TextView? = null
     private var textTitle: TextView? = null
     private var textDistance: TextView? = null
+    private var btnPosNav: ImageButton? = null
 
     private val REQUEST_LOCATION_PERMISSION = 1
     private lateinit var map: GoogleMap
@@ -82,11 +85,11 @@ class MapBarFragment : Fragment(),
 
         bottomSheetView = binding.root.findViewById(R.id.layout_cardview)
         bottomSheetBehavior = BottomSheetBehavior.from(bottomSheetView)
-
-        textAddress = binding.root.findViewById(R.id.txtSpotAddress)
+        textAddress = binding.root.findViewById(R.id.txtAddress)
         textPointsCounter = binding.root.findViewById(R.id.txtPointsCounter)
         textTitle = binding.root.findViewById(R.id.txtTitle)
-        textDistance = binding.root.findViewById(R.id.txtPopDistance)
+        textDistance = binding.root.findViewById(R.id.txtDistance)
+        btnPosNav = binding.root.findViewById(R.id.btnNav)
         val btn = binding.root.findViewById<FloatingActionButton>(R.id.my_location_button)
         btn.setOnClickListener {
             getLastLocation()
@@ -117,6 +120,7 @@ class MapBarFragment : Fragment(),
             }
         }
         binding.searchbarLayout.inputSearch.setOnClickListener {
+            bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
             view.findNavController().navigate(createMapBarFragmentDirections())
         }
     }
@@ -138,9 +142,11 @@ class MapBarFragment : Fragment(),
         fusedLocationClient.lastLocation.addOnSuccessListener(
             requireActivity()
         ) { location ->
-            val latitude = location.latitude
-            val longitude = location.longitude
-            val currentLocation = LatLng(latitude, longitude)
+            val currentLocation = LatLng(
+                51.5872529,-1.4423977
+                /*location.latitude,
+                location.longitude*/
+            )
             val markerOptions = MarkerOptions()
                 .icon(BitmapDescriptorFactory.fromBitmap(bitmap))
                 .position(currentLocation)
@@ -233,14 +239,35 @@ class MapBarFragment : Fragment(),
             "%.2f Miles",
             pointId.AddressInfo.Distance
         )
+        val latLng = pointId.AddressInfo.Latitude?.let {
+            pointId.AddressInfo.Longitude?.let { it1 ->
+                LatLng(
+                    it,
+                    it1
+                )
+            }
+        }
+        btnPosNav?.setOnClickListener {
+            val intent = getNavigationIntent(latLng)
+            context?.startActivity(intent)
+        }
     }
 
     private fun addMarkers(googleMap: GoogleMap) {
+        val vectorDrawable =
+            context?.let { ContextCompat.getDrawable(it, R.drawable.map_markers) }
+        val bitmap = Bitmap.createBitmap(
+            vectorDrawable!!.intrinsicWidth,
+            vectorDrawable.intrinsicHeight, Bitmap.Config.ARGB_8888
+        )
+        val canvas = Canvas(bitmap)
+        vectorDrawable.setBounds(0, 0, canvas.width, canvas.height)
+        vectorDrawable.draw(canvas)
         pointsEntity.forEach { point ->
             val marker = googleMap
                 .addMarker(
                     MarkerOptions()
-                        .icon(BitmapDescriptorFactory.fromResource(R.drawable.map_marker48))
+                        .icon(BitmapDescriptorFactory.fromBitmap(bitmap))
                         .title(point.AddressInfo.Title)
                         .position(
                             LatLng(

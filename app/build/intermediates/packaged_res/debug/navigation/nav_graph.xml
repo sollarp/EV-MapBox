@@ -41,7 +41,6 @@
         android:name="com.example.ev_mapbox.ui.spotinfoscreen.SpotInfoFragment"
         android:label="fragment_spotInfo"
         tools:layout="@layout/fragment_spot_info">
-
     </fragment>
 
 </navigation>

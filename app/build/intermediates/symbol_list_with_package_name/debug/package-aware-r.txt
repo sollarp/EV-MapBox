@@ -5783,7 +5783,7 @@ drawable m3_tabs_background
 drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
-drawable map_marker48
+drawable map_markers
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -5882,7 +5882,6 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
-id absolute_magnitude
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -5944,8 +5943,6 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id addressline1
-id addressline2
 id adjust_height
 id adjust_width
 id alertTitle
@@ -5978,7 +5975,9 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnCard
-id btnContrast
+id btnNav
+id btnSpotLeft
+id btnSpotNav
 id buttonPanel
 id button_go
 id cache_measures
@@ -6007,8 +6006,6 @@ id collapseActionView
 id compress
 id confirm_button
 id conlayout
-id connection_recycler
-id connection_type_id
 id constraint
 id container
 id container_mapBar
@@ -6025,7 +6022,6 @@ id custom
 id customPanel
 id cut
 id dark
-id dateLastStatusUpdate
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -6068,7 +6064,6 @@ id endToStart
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
-id etGroupFortyFour
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -6089,7 +6084,6 @@ id forever
 id fragment_container_view_tag
 id frameBanner
 id frameStack
-id frameStackpathfour
 id frameStackrecentcheckin
 id frost
 id fullscreen_header
@@ -6143,13 +6137,12 @@ id invisible
 id inward
 id italic
 id item_cardViewLinear
-id item_cardview
+id item_popcardview
 id item_searchbar
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
 id labeled
-id latitude
 id layout
 id layout_cardview
 id left
@@ -6159,7 +6152,6 @@ id level_id
 id light
 id line1
 id line3
-id lineSaperator
 id linear
 id linear8ChargeSpoti
 id linearColumnamenities
@@ -6171,7 +6163,6 @@ id linearColumnjcounter
 id linearColumnlayerzero
 id linearColumnmenu
 id linearFooterbuttons
-id linearRecentCheckins
 id linearRowavat
 id linearRowbusinesscenter
 id linearRowconnections
@@ -6184,12 +6175,10 @@ id linearRowpointscounter
 id linearRowteslamodelx
 id linearRowwashroom
 id linearTimings
-id linearolumnbusinesscenter
 id listMode
 id list_item
 id list_view
 id locale
-id longitude
 id ltr
 id m3_side_sheet
 id main_nav
@@ -6277,7 +6266,6 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
-id number_of_bays
 id off
 id on
 id onInterceptTouchReturnSwipe
@@ -6296,9 +6284,9 @@ id pathRelative
 id peekHeight
 id percent
 id pin
+id pop_distance
 id position
 id postLayout
-id postcode
 id power_KW
 id pressed
 id progressBar
@@ -6395,7 +6383,6 @@ id start
 id startHorizontal
 id startToEnd
 id startVertical
-id state
 id staticLayout
 id staticPostLayout
 id status_bar_latest_event_content
@@ -6445,7 +6432,6 @@ id toolbar_layout
 id top
 id topPanel
 id touch_outside
-id town
 id transitionToEnd
 id transitionToStart
 id transition_current_scene
@@ -6454,30 +6440,29 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txtAddress
 id txtAmenities
 id txtAmpVolt
 id txtBusinessCenter
 id txtCardAddress
+id txtCardDistance
 id txtCardPointsCounter
 id txtCardTitle
 id txtConnectionAvai
 id txtConnections
 id txtDescription
+id txtDistance
 id txtEV
 id txtEmiliWilliamso
 id txtFoods
-id txtGroupFortyFive
 id txtGroupThree
 id txtJCounter
 id txtJunCounter
 id txtOpen
 id txtPharmacy
 id txtPointsCounter
-id txtPopDistance
 id txtPrice
-id txtRecentCheckin
 id txtShopping
-id txtSpoDistance
 id txtSpot
 id txtSpotAddress
 id txtTeslaModelX
@@ -6490,7 +6475,6 @@ id unchecked
 id uniform
 id unlabeled
 id up
-id usage_cost
 id useLogo
 id vertical_only
 id viewEllipseEight
@@ -6644,7 +6628,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout fragment_detail
 layout fragment_list_connections
 layout fragment_mapbar
 layout fragment_searchlist
@@ -6805,6 +6788,7 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string food
 string go
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
@@ -6953,6 +6937,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string pharmacy
 string points
 string points_counter
 string rationale_ask
@@ -6968,6 +6953,7 @@ string status_bar_notification_info_overflow
 string title_settings_dialog
 string txt_kW
 string volt
+string wi_fi
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

@@ -51,14 +51,14 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <ImageView
-                            android:id="@+id/imageMenu"
+                        <Button
+                            android:id="@+id/btnSpotLeft"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
                             android:scaleType="fitXY"
-                            android:src="@drawable/img_menu_white_a700"
-                            tools:ignore="ContentDescription"
-                            tools:src="@drawable/img_menu_white_a700" />
+                            android:drawableStart="@drawable/img_menu_white_a700"
+                            tools:ignore="ContentDescription"/>
 
                         <ImageView
                             android:id="@+id/imageFavorite"
@@ -287,7 +287,7 @@
 
                         <LinearLayout
                             android:id="@+id/linearRowwashroom"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:layout_marginEnd="10dp"
@@ -301,7 +301,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="1dp"
                                 android:layout_marginBottom="1dp"
-                                android:layout_weight="0.27"
+                                android:layout_weight="0.20"
                                 android:ellipsize="end"
                                 android:singleLine="true"
                                 android:text="@string/lbl_washroom" />
@@ -311,22 +311,23 @@
                                 style="@style/txtPoppinsmedium12"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="27dp"
+                                android:layout_marginStart="25dp"
                                 android:layout_marginTop="1dp"
                                 android:layout_marginBottom="1dp"
-                                android:layout_weight="0.15"
+                                android:layout_weight="0.09"
                                 android:ellipsize="end"
-                                android:singleLine="true" />
+                                android:singleLine="true"
+                                android:text="@string/food"/>
 
                             <TextView
                                 android:id="@+id/txtShopping"
                                 style="@style/txtPoppinsmedium12"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="31dp"
+                                android:layout_marginStart="40dp"
                                 android:layout_marginTop="1dp"
                                 android:layout_marginBottom="1dp"
-                                android:layout_weight="0.24"
+                                android:layout_weight="0.18"
                                 android:ellipsize="end"
                                 android:singleLine="true"
                                 android:text="@string/lbl_shopping" />
@@ -337,21 +338,23 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="18dp"
-                                android:layout_marginTop="18dp"
-                                android:layout_weight="0.26"
+                                android:layout_marginTop="1dp"
+                                android:layout_weight="0.19"
                                 android:ellipsize="end"
-                                android:singleLine="true" />
+                                android:singleLine="true"
+                                android:text="@string/pharmacy"/>
 
                             <TextView
                                 android:id="@+id/txtWiFi"
                                 style="@style/txtPoppinsmedium12"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="35dp"
+                                android:layout_marginStart="20dp"
                                 android:layout_marginBottom="1dp"
-                                android:layout_weight="0.08"
+                                android:layout_weight="0.15"
                                 android:ellipsize="end"
-                                android:singleLine="true" />
+                                android:singleLine="true"
+                                android:text="@string/wi_fi"/>
                         </LinearLayout>
                     </LinearLayout>
                 </HorizontalScrollView>
@@ -359,71 +362,29 @@
                 <FrameLayout
                     android:id="@+id/frameStackrecentcheckin"
                     android:layout_width="match_parent"
-                    android:layout_height="516dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="17dp">
-
-                    <LinearLayout
-                        android:id="@+id/linearRecentCheckins"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="18dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/txtRecentCheckin"
-                            style="@style/txtPoppinsmedium16"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="10dp"
-                            android:ellipsize="end"
-                            android:singleLine="true"
-                            android:text="@string/msg_recent_check_in" />
-
-                        <View
-                            android:id="@+id/lineSaperator"
-                            android:layout_width="335dp"
-                            android:layout_height="1dp"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginStart="1dp"
-                            android:layout_marginTop="20dp"
-                            android:background="@color/bluegray_200" />
-                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/linearFooterbuttons"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="bottom|start"
-                        android:layout_marginTop="56dp"
-                        android:layout_marginBottom="56dp"
+                        android:layout_gravity="top|start"
+                        android:layout_marginTop="5dp"
                         android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/txtGroupFortyFive"
-                            style="@style/txtSolid"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="0.5"
-                            android:ellipsize="end"
-                            android:paddingTop="21dp"
-                            android:paddingBottom="18dp"
-                            android:singleLine="true"
-                            android:text="@string/lbl_add_check_in" />
-
-                        <EditText
-                            android:id="@+id/etGroupFortyFour"
+                        <Button
+                            android:id="@+id/btnSpotNav"
                             style="@style/etSolid"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="250dp"
                             android:layout_weight="0.5"
                             android:background="@drawable/rectangle_bg_green_a400"
                             android:drawableStart="@drawable/img_contrast"
                             android:drawablePadding="18dp"
                             android:ellipsize="end"
                             android:hint="@string/lbl_get_direction"
-                            android:inputType="text"
                             android:paddingStart="20dp"
                             android:paddingTop="21dp"
                             android:paddingEnd="28dp"

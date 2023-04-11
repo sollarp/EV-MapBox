@@ -2909,6 +2909,7 @@
     <string name="app_name">Call_Mapbox_API</string>
     <string name="datelaststatusupdate">DateLastStatusUpdate</string>
     <string name="enter_address_city_or_zip_code">enter_address</string>
+    <string name="food">Food</string>
     <string name="go">Go</string>
     <string name="lbl_12_points">12 Points</string>
     <string name="lbl_14_jun"/>
@@ -2952,11 +2953,13 @@
     <string name="msg_lorem_ipsum_dol2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
     <string name="msg_recent_check_in"/>
     <string name="no_internet_connection">No internet connection!</string>
+    <string name="pharmacy">Pharmacy</string>
     <string name="points">%s Points</string>
     <string name="points_counter">%d Points</string>
     <string name="splashScreenImage">splashScreenImage</string>
     <string name="txt_kW">%s kW</string>
     <string name="volt">V</string>
+    <string name="wi_fi">Wi-Fi</string>
     <style name="btnSolidRounded">
         <item name="android:textSize">@dimen/_16pxh</item>
         <item name="android:textColor">@color/white_A700</item>

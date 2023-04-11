@@ -58,4 +58,7 @@
     <string name="points">%s Points</string>
     <string name="amp">A</string>
     <string name="volt">V</string>
+    <string name="food">Food</string>
+    <string name="pharmacy">Pharmacy</string>
+    <string name="wi_fi">Wi-Fi</string>
 </resources>
