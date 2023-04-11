@@ -1,11 +1,24 @@
 package com.example.ev_mapbox.util
 
 import android.content.Context
+import android.content.Intent
+import android.net.Uri
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.Toast
 import com.example.ev_mapbox.data.local.EvPointsEntity
+import com.google.android.gms.maps.model.LatLng
+
+fun getNavigationIntent(latLng: LatLng?): Intent =
+    Intent(Intent.ACTION_VIEW, navigationIntentUri(latLng)).apply {
+        setPackage("com.google.android.apps.maps")
+    }
+
+fun navigationIntentUri(latLng: LatLng?): Uri =
+    Uri.parse(
+        "google.navigation:q=" + "$latLng"
+    )
 
 fun hideKeyboard(view: View, context: Context) {
     val inputMethodManager =

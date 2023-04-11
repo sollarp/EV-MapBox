@@ -1,13 +1,13 @@
 package com.example.ev_mapbox.ui.searchscreen
 
-import android.content.Intent
-import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.ev_mapbox.R
 import com.example.ev_mapbox.data.local.EvPointsEntity
-import com.example.ev_mapbox.data.remote.dto.AddressInfo
 import com.example.ev_mapbox.databinding.ItemCardviewBinding
+import com.example.ev_mapbox.util.getNavigationIntent
+import com.google.android.gms.maps.model.LatLng
 
 class SearchRecycleAdapter(
     private val evPointsEntity: ArrayList<EvPointsEntity>,
@@ -33,13 +33,17 @@ class SearchRecycleAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val evPoint = evPointsEntity[position]
         holder.bind(evPoint)
-        holder.binding.btnCard.setOnClickListener {
-            val navigation = holder.navigationIntentUri(evPoint.AddressInfo)
-            val context = holder.itemView.context
-            val intent = Intent(Intent.ACTION_VIEW, navigation).apply {
-                setPackage("com.google.android.apps.maps")
+        val latLng = evPoint.AddressInfo.Latitude?.let {
+            evPoint.AddressInfo.Longitude?.let { it1 ->
+                LatLng(
+                    it,
+                    it1
+                )
             }
-            context.startActivity(intent)
+        }
+        holder.binding.btnCard.setOnClickListener {
+            val intent = getNavigationIntent(latLng)
+            holder.itemView.context.startActivity(intent)
         }
         holder.binding.itemCardViewLinear.setOnClickListener { listener.onClick(evPointsEntity[position]) }
     }
@@ -57,19 +61,15 @@ class SearchRecycleAdapter(
             val address = "${selectedLocation.AddressInfo.AddressLine1}, " +
                     "${selectedLocation.AddressInfo.Town}, " +
                     "${selectedLocation.AddressInfo.Postcode}"
-            val pointsCount = selectedLocation.NumberOfPoints
             val title = selectedLocation.AddressInfo.Title
-            binding.txtCardAddress .text = address
-            binding.txtCardPointsCounter.text = pointsCount.toString()
+            binding.txtCardAddress.text = address
+            binding.txtCardPointsCounter.text = String.format(
+                itemView.context.getString(R.string.points),
+                selectedLocation.NumberOfPoints.toString()
+            )
             binding.txtCardTitle.text = title
         }
 
-        fun navigationIntentUri(addressInfo: AddressInfo): Uri =
-            Uri.parse(
-                "google.navigation:q=" +
-                        "${addressInfo.Latitude}," +
-                        "${addressInfo.Longitude}"
-            )
     }
 }
 

@@ -5,7 +5,6 @@ import com.example.ev_mapbox.di.RepositoryModule;
 import com.example.ev_mapbox.di.ServiceModule;
 import com.example.ev_mapbox.di.UseCaseModule;
 import com.example.ev_mapbox.ui.MainActivity_GeneratedInjector;
-import com.example.ev_mapbox.ui.detailscreen.DetailFragment_GeneratedInjector;
 import com.example.ev_mapbox.ui.searchscreen.SearchListFragment_GeneratedInjector;
 import com.example.ev_mapbox.ui.searchscreen.SearchListViewModel_HiltModules;
 import dagger.Binds;
@@ -226,8 +225,7 @@ public final class MyApplication_HiltComponents {
       modules = ViewWithFragmentCBuilderModule.class
   )
   @FragmentScoped
-  public abstract static class FragmentC implements DetailFragment_GeneratedInjector,
-      SearchListFragment_GeneratedInjector,
+  public abstract static class FragmentC implements SearchListFragment_GeneratedInjector,
       FragmentComponent,
       DefaultViewModelFactories.FragmentEntryPoint,
       ViewComponentManager.ViewWithFragmentComponentBuilderEntryPoint,

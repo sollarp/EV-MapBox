@@ -37,7 +37,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="4dp"
-        android:text="80 KM"
+        android:text="@string/_80_Mile"
         app:layout_constraintEnd_toStartOf="@+id/button_go"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/list_view"

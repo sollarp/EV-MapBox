@@ -23,7 +23,6 @@ import hilt_aggregated_deps._com_example_ev_mapbox_di_RepositoryModule;
 import hilt_aggregated_deps._com_example_ev_mapbox_di_ServiceModule;
 import hilt_aggregated_deps._com_example_ev_mapbox_di_UseCaseModule;
 import hilt_aggregated_deps._com_example_ev_mapbox_ui_MainActivity_GeneratedInjector;
-import hilt_aggregated_deps._com_example_ev_mapbox_ui_detailscreen_DetailFragment_GeneratedInjector;
 import hilt_aggregated_deps._com_example_ev_mapbox_ui_searchscreen_SearchListFragment_GeneratedInjector;
 import hilt_aggregated_deps._com_example_ev_mapbox_ui_searchscreen_SearchListViewModel_HiltModules_BindsModule;
 import hilt_aggregated_deps._com_example_ev_mapbox_ui_searchscreen_SearchListViewModel_HiltModules_KeyModule;
@@ -72,7 +71,6 @@ import hilt_aggregated_deps._dagger_hilt_android_internal_modules_HiltWrapper_Ac
         _com_example_ev_mapbox_di_ServiceModule.class,
         _com_example_ev_mapbox_di_UseCaseModule.class,
         _com_example_ev_mapbox_ui_MainActivity_GeneratedInjector.class,
-        _com_example_ev_mapbox_ui_detailscreen_DetailFragment_GeneratedInjector.class,
         _com_example_ev_mapbox_ui_searchscreen_SearchListFragment_GeneratedInjector.class,
         _com_example_ev_mapbox_ui_searchscreen_SearchListViewModel_HiltModules_BindsModule.class,
         _com_example_ev_mapbox_ui_searchscreen_SearchListViewModel_HiltModules_KeyModule.class,

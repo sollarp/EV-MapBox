@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/linearColumnjcounter"
+        style="@style/groupStylegreen_A400cornerRadius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtJCounter"
+            style="@style/txtPoppinssemibold14_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="78dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:singleLine="true"
+            android:text="@{gridjcounter1RowModel.txtJCounter}"
+            tools:text="@string/lbl_j_1772" />
+
+        <ImageView
+            android:id="@+id/imageImgMennekes"
+            android:layout_width="61dp"
+            android:layout_height="49dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/img_imgmennekes"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_imgmennekes" />
+    </LinearLayout>
+</LinearLayout>

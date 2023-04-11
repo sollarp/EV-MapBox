@@ -105,6 +105,6 @@ class SearchListFragment : Fragment() {
     }
     private fun createSearchListFragmentDirections(): NavDirections {
         return SearchListFragmentDirections
-            .actionSearchlistFragmentToDetailFragment()
+            .actionSearchlistFragmentToSpotinfoFragment()
     }
 }

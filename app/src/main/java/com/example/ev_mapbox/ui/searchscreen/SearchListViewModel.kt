@@ -1,9 +1,5 @@
 package com.example.ev_mapbox.ui.searchscreen
 
-import android.content.Context
-import android.location.Location
-import android.location.LocationManager
-import androidx.core.content.ContextCompat.getSystemService
 import androidx.lifecycle.*
 import com.example.ev_mapbox.data.local.EvPointsEntity
 import com.example.ev_mapbox.domain.ISearchListUseCase

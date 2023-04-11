@@ -22,7 +22,6 @@ import com.example.ev_mapbox.di.ServiceModule_ProvideRetrofitFactory;
 import com.example.ev_mapbox.domain.ISearchListUseCase;
 import com.example.ev_mapbox.domain.SearchListUseCaseImpl;
 import com.example.ev_mapbox.ui.MainActivity;
-import com.example.ev_mapbox.ui.detailscreen.DetailFragment;
 import com.example.ev_mapbox.ui.searchscreen.SearchListFragment;
 import com.example.ev_mapbox.ui.searchscreen.SearchListViewModel;
 import com.example.ev_mapbox.ui.searchscreen.SearchListViewModel_HiltModules_KeyModule_ProvideFactory;
@@ -341,10 +340,6 @@ public final class DaggerMyApplication_HiltComponents_SingletonC {
       this.activityCImpl = activityCImpl;
 
 
-    }
-
-    @Override
-    public void injectDetailFragment(DetailFragment detailFragment) {
     }
 
     @Override
