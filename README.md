@@ -25,12 +25,8 @@ Other features:
 - JUnit4, Mockito-Kotlin.
 
 ## Current Screens:
+[Screencast from 12-04-23 20:44:24.webm](https://user-images.githubusercontent.com/74240451/231569784-f28be571-41ce-4b08-ae26-cffa62463d44.webm)
 
-![Screenshot from 2023-04-12 20-47-33](https://user-images.githubusercontent.com/74240451/231569042-f7b6eff9-3d93-442b-ad12-2e763f58524b.png)
-
-![Screenshot from 2023-04-12 20-48-10](https://user-images.githubusercontent.com/74240451/231569051-e5726062-4f4f-4d50-9e9e-d1794b7414d3.png)
-
-![Screenshot from 2023-04-12 20-48-28](https://user-images.githubusercontent.com/74240451/231569060-250d152a-0382-48f7-891d-5f21a1571429.png)
 
 ## Development setup
 In order to clone and be able to run the code you will need to supply API Keys for the Google Maps SDK and Open Charge Map API:
