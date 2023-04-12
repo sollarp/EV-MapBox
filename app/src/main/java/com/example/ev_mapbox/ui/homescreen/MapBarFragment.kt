@@ -47,9 +47,7 @@ import kotlinx.coroutines.launch
 
 class MapBarFragment : Fragment(),
     OnMarkerClickListener,
-    OnMapReadyCallback,
-    GoogleMap.OnMyLocationClickListener,
-    GoogleMap.OnMyLocationButtonClickListener {
+    OnMapReadyCallback{
 
     private var _binding: FragmentMapbarBinding? = null
     private val binding get() = _binding!!
@@ -181,7 +179,6 @@ class MapBarFragment : Fragment(),
             ) {
                 return
             }
-            //map.isMyLocationEnabled = true
         } else {
             ActivityCompat.requestPermissions(
                 context as Activity,
@@ -195,9 +192,7 @@ class MapBarFragment : Fragment(),
         map = googleMap
         addMarkers(map)
         map.setOnMarkerClickListener(this)
-        map.setOnMyLocationButtonClickListener(this)
-        map.setOnMyLocationClickListener(this)
-        enableMyLocation()
+        //enableMyLocation()
         getLastLocation()
     }
 
@@ -288,18 +283,4 @@ class MapBarFragment : Fragment(),
     private fun createMapBarFragmentDirections(): NavDirections {
         return MapBarFragmentDirections.actionMapBarFragmentToSearchlistFragment()
     }
-
-    override fun onMyLocationButtonClick(): Boolean {
-        Toast.makeText(context, "MyLocation button clicked", Toast.LENGTH_SHORT)
-            .show()
-        // Return false so that we don't consume the event and the default behavior still occurs
-        // (the camera animates to the user's current position).
-        return false
-    }
-
-    override fun onMyLocationClick(location: Location) {
-        Toast.makeText(context, "Current location:\n$location", Toast.LENGTH_LONG)
-            .show()
-    }
-
 }

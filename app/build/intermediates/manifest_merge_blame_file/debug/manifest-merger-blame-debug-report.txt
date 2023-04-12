@@ -82,7 +82,7 @@
 47        <meta-data
 48            android:name="com.google.android.geo.API_KEY"
 48-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:22:13-58
-49            android:value="AIzaSyB3aWVHdIpMlmvPlj-" />
+49            android:value="AIzaSyB3aWVHdIpME" />
 49-->/home/peter/android-studio/Ev-Map-Git/EV-MapBox/app/src/main/AndroidManifest.xml:23:13-44
 50
 51        <activity

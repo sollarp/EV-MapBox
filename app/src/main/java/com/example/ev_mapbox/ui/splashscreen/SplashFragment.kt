@@ -25,7 +25,7 @@ class SplashFragment : Fragment() {
     private val viewModel: SearchListViewModel by activityViewModels()
 
     private val locationPermissionCode = 2
-    private lateinit var fusedLocationClient: FusedLocationProviderClient
+    //private lateinit var fusedLocationClient: FusedLocationProviderClient
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -33,14 +33,14 @@ class SplashFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentSplashBinding.inflate(inflater, container, false)
-        fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireActivity())
+        //fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireActivity())
         return binding.root
     }
 
     override fun onStart() {
         super.onStart()
         // Check for location permission
-        if (ActivityCompat.checkSelfPermission(
+        /*if (ActivityCompat.checkSelfPermission(
                 requireContext(),
                 Manifest.permission.ACCESS_FINE_LOCATION
             ) == PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
@@ -68,7 +68,7 @@ class SplashFragment : Fragment() {
                 ),
                 locationPermissionCode
             )
-        }
+        }*/
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

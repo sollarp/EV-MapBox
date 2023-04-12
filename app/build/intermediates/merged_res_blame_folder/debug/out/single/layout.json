@@ -1,66 +1,62 @@
 [
     {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-60:/layout/row_gridjcounter.xml",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/layout/row_gridjcounter.xml"
+        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/fragment_searchlist.xml",
+        "source": "com.example.ev_mapbox.app-main-63:/layout/fragment_searchlist.xml"
     },
     {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-60:/layout/layout_searchbar.xml",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/layout/layout_searchbar.xml"
+        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/fragment_searchlistitem.xml",
+        "source": "com.example.ev_mapbox.app-main-63:/layout/fragment_searchlistitem.xml"
     },
     {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-60:/layout/fragment_list_connections.xml",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/layout/fragment_list_connections.xml"
+        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/row_listavat.xml",
+        "source": "com.example.ev_mapbox.app-main-63:/layout/row_listavat.xml"
     },
     {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-60:/layout/fragment_searchlistitem.xml",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/layout/fragment_searchlistitem.xml"
+        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/fragment_list_connections.xml",
+        "source": "com.example.ev_mapbox.app-main-63:/layout/fragment_list_connections.xml"
     },
     {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-60:/layout/fragment_searchlist.xml",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/layout/fragment_searchlist.xml"
+        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/activity_main.xml",
+        "source": "com.example.ev_mapbox.app-main-63:/layout/activity_main.xml"
     },
     {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-60:/layout/row_gridjcounter1.xml",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/layout/row_gridjcounter1.xml"
+        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/row_gridjcounter.xml",
+        "source": "com.example.ev_mapbox.app-main-63:/layout/row_gridjcounter.xml"
     },
     {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-60:/layout/layout_toolbar.xml",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/layout/layout_toolbar.xml"
+        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/fragment_mapbar.xml",
+        "source": "com.example.ev_mapbox.app-main-63:/layout/fragment_mapbar.xml"
     },
     {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-60:/layout/row_listavat.xml",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/layout/row_listavat.xml"
-    },
-    {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-60:/layout/layout_popupcardview.xml",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/layout/layout_popupcardview.xml"
-    },
-    {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-60:/layout/activity_main.xml",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/layout/activity_main.xml"
+        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/layout_searchbar.xml",
+        "source": "com.example.ev_mapbox.app-main-63:/layout/layout_searchbar.xml"
     },
     {
         "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/layout_popupcardview.xml",
         "source": "com.example.ev_mapbox.app-main-63:/layout/layout_popupcardview.xml"
     },
     {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-60:/layout/item_cardview.xml",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/layout/item_cardview.xml"
+        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/row_gridjcounter1.xml",
+        "source": "com.example.ev_mapbox.app-main-63:/layout/row_gridjcounter1.xml"
     },
     {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-60:/layout/fragment_splash.xml",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/layout/fragment_splash.xml"
+        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/item_cardview.xml",
+        "source": "com.example.ev_mapbox.app-main-63:/layout/item_cardview.xml"
     },
     {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-60:/layout/item_map.xml",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/layout/item_map.xml"
+        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/layout_toolbar.xml",
+        "source": "com.example.ev_mapbox.app-main-63:/layout/layout_toolbar.xml"
     },
     {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-60:/layout/fragment_spot_info.xml",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/layout/fragment_spot_info.xml"
+        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/item_map.xml",
+        "source": "com.example.ev_mapbox.app-main-63:/layout/item_map.xml"
     },
     {
-        "merged": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-mergeDebugResources-60:/layout/fragment_mapbar.xml",
-        "source": "/home/peter/.gradle/daemon/7.3.3/com.example.ev_mapbox.app-main-63:/layout/fragment_mapbar.xml"
+        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/fragment_spot_info.xml",
+        "source": "com.example.ev_mapbox.app-main-63:/layout/fragment_spot_info.xml"
+    },
+    {
+        "merged": "com.example.ev_mapbox.app-mergeDebugResources-60:/layout/fragment_splash.xml",
+        "source": "com.example.ev_mapbox.app-main-63:/layout/fragment_splash.xml"
     }
 ]
