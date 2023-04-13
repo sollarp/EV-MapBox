@@ -17,7 +17,7 @@ fun getNavigationIntent(latLng: LatLng?): Intent =
 
 fun navigationIntentUri(latLng: LatLng?): Uri =
     Uri.parse(
-        "google.navigation:q=" + "$latLng"
+        "google.navigation:q=${latLng?.latitude},${latLng?.longitude}"
     )
 
 fun hideKeyboard(view: View, context: Context) {
