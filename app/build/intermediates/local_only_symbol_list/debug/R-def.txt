@@ -2953,6 +2953,7 @@ drawable rectangle_bg_white_a700_radius_10
 drawable rectangle_gradient_s_white_a700_00_c_white_a700_82_e_white_a700
 drawable rectangle_gradient_s_white_a700_e_white_a700_00
 drawable white_border
+drawable white_gradient_45
 font poppins
 font poppinsbold
 font poppinsmedium
@@ -2961,7 +2962,7 @@ font poppinssemibold
 id action_mapBarFragment_to_searchlistFragment
 id action_searchlistFragment_to_spotinfoFragment
 id action_splashFragment_to_mapBarFragment
-id btnCard
+id btnCardNav
 id btnNav
 id btnSpotLeft
 id btnSpotNav

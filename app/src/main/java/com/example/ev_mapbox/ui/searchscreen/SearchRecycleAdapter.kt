@@ -41,7 +41,7 @@ class SearchRecycleAdapter(
                 )
             }
         }
-        holder.binding.btnCard.setOnClickListener {
+        holder.binding.btnCardNav.setOnClickListener {
             val intent = getNavigationIntent(latLng)
             holder.itemView.context.startActivity(intent)
         }
@@ -68,6 +68,10 @@ class SearchRecycleAdapter(
                 selectedLocation.NumberOfPoints.toString()
             )
             binding.txtCardTitle.text = title
+            binding.txtCardDistance.text =String.format(
+                "%.2f Miles",
+                selectedLocation.AddressInfo.Distance
+            )
         }
 
     }

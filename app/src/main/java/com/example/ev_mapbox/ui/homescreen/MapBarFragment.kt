@@ -47,9 +47,7 @@ import kotlinx.coroutines.launch
 
 class MapBarFragment : Fragment(),
     OnMarkerClickListener,
-    OnMapReadyCallback,
-    GoogleMap.OnMyLocationClickListener,
-    GoogleMap.OnMyLocationButtonClickListener {
+    OnMapReadyCallback{
 
     private var _binding: FragmentMapbarBinding? = null
     private val binding get() = _binding!!
@@ -104,7 +102,6 @@ class MapBarFragment : Fragment(),
                 viewModel.pointsMediatorData.observe(viewLifecycleOwner) { pointItems ->
                     supportMapFragment.getMapAsync {
                         pointsEntity = pointItems
-                        //it.isMyLocationEnabled
                         onMapReady(it)
                         it.animateCamera(
                             CameraUpdateFactory.newLatLngZoom(
@@ -150,6 +147,7 @@ class MapBarFragment : Fragment(),
             val markerOptions = MarkerOptions()
                 .icon(BitmapDescriptorFactory.fromBitmap(bitmap))
                 .position(currentLocation)
+                .title("You")
             map.addMarker(markerOptions)
             map.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 14F))
 
@@ -181,7 +179,6 @@ class MapBarFragment : Fragment(),
             ) {
                 return
             }
-            //map.isMyLocationEnabled = true
         } else {
             ActivityCompat.requestPermissions(
                 context as Activity,
@@ -195,9 +192,6 @@ class MapBarFragment : Fragment(),
         map = googleMap
         addMarkers(map)
         map.setOnMarkerClickListener(this)
-        map.setOnMyLocationButtonClickListener(this)
-        map.setOnMyLocationClickListener(this)
-        enableMyLocation()
         getLastLocation()
     }
 
@@ -223,34 +217,42 @@ class MapBarFragment : Fragment(),
     }
 
     private fun setCardViewTexts(marker: Marker) {
-        val pointId: EvPointsEntity = marker.tag as EvPointsEntity
-        val address = pointId.AddressInfo.AddressLine1
-        val town = pointId.AddressInfo.Town
-        val title = pointId.AddressInfo.Title
-        val pointsCounterText = String.format(
-            resources.getString(R.string.points),
-            pointId.NumberOfPoints.toString()
-        )
-        val addressAndTownText = resources.getString(R.string.address_and_town, address, town)
-        textAddress?.text = addressAndTownText
-        textPointsCounter?.text = pointsCounterText
-        textTitle?.text = title
-        textDistance?.text = String.format(
-            "%.2f Miles",
-            pointId.AddressInfo.Distance
-        )
-        val latLng = pointId.AddressInfo.Latitude?.let {
-            pointId.AddressInfo.Longitude?.let { it1 ->
-                LatLng(
-                    it,
-                    it1
-                )
+        val pointId = marker.tag as? EvPointsEntity
+        if (pointId != null) {
+            val address = pointId.AddressInfo.AddressLine1
+            val town = pointId.AddressInfo.Town
+            val title = pointId.AddressInfo.Title
+            val pointsCounterText = String.format(
+                resources.getString(R.string.points),
+                pointId.NumberOfPoints.toString()
+            )
+            val addressAndTownText = resources.getString(R.string.address_and_town, address, town)
+            textAddress?.text = addressAndTownText
+            textPointsCounter?.text = pointsCounterText
+            textTitle?.text = title
+            textDistance?.text = String.format(
+                "%.2f Miles",
+                pointId.AddressInfo.Distance
+            )
+
+            val latLng = pointId.AddressInfo.Latitude?.let {
+                pointId.AddressInfo.Longitude?.let { it1 ->
+                    LatLng(
+                        it,
+                        it1
+                    )
+                }
             }
+
+            btnPosNav?.setOnClickListener {
+                val intent = getNavigationIntent(latLng)
+                context?.startActivity(intent)
+            }
+        } else {
+            // Handle the case when marker is the user current location.
+            bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
         }
-        btnPosNav?.setOnClickListener {
-            val intent = getNavigationIntent(latLng)
-            context?.startActivity(intent)
-        }
+
     }
 
     private fun addMarkers(googleMap: GoogleMap) {
@@ -288,18 +290,4 @@ class MapBarFragment : Fragment(),
     private fun createMapBarFragmentDirections(): NavDirections {
         return MapBarFragmentDirections.actionMapBarFragmentToSearchlistFragment()
     }
-
-    override fun onMyLocationButtonClick(): Boolean {
-        Toast.makeText(context, "MyLocation button clicked", Toast.LENGTH_SHORT)
-            .show()
-        // Return false so that we don't consume the event and the default behavior still occurs
-        // (the camera animates to the user's current position).
-        return false
-    }
-
-    override fun onMyLocationClick(location: Location) {
-        Toast.makeText(context, "Current location:\n$location", Toast.LENGTH_LONG)
-            .show()
-    }
-
 }

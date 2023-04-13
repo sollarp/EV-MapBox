@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -21,14 +21,14 @@
         <FrameLayout
             android:id="@+id/frameStack"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
                 <ImageView
                     android:id="@+id/imagePathFour"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
                     android:scaleType="fitXY"
+                    android:layout_marginTop="10dp"
                     android:src="@drawable/img_path4"
                     tools:ignore="ContentDescription" />
 
@@ -38,7 +38,6 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center"
                     android:layout_marginStart="@dimen/_15pxh"
-                    android:layout_marginTop="@dimen/_11pxv"
                     android:layout_marginEnd="@dimen/_15pxh"
                     android:layout_marginBottom="@dimen/_11pxv"
                     android:orientation="horizontal">
@@ -46,9 +45,9 @@
                     <LinearLayout
                         android:id="@+id/linearColumnbusinesscenter"
                         android:layout_width="0dp"
+                        android:layout_marginTop="20dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.78"
-                        android:gravity="start"
                         android:orientation="vertical">
 
                         <TextView
@@ -180,6 +179,7 @@
                         android:id="@+id/pop_distance"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:layout_weight="0.15"
                         android:orientation="vertical">
 
@@ -194,7 +194,7 @@
                             tools:text="@string/_80_Mile"/>
 
                         <ImageButton
-                            android:id="@+id/btnCard"
+                            android:id="@+id/btnCardNav"
                             android:layout_width="@dimen/_41pxh"
                             android:layout_height="@dimen/_41pxh"
                             android:layout_marginStart="@dimen/_10pxv"
@@ -269,4 +269,4 @@
                     android:background="@drawable/rectangle_gradient_s_white_a700_e_white_a700_00" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-    </LinearLayout>
+    </RelativeLayout>

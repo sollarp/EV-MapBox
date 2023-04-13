@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -24,7 +26,6 @@ class SplashFragment : Fragment() {
     private val binding get() = _binding!!
     private val viewModel: SearchListViewModel by activityViewModels()
 
-    private val locationPermissionCode = 2
     private lateinit var fusedLocationClient: FusedLocationProviderClient
 
     override fun onCreateView(
@@ -37,18 +38,41 @@ class SplashFragment : Fragment() {
         return binding.root
     }
 
-    override fun onStart() {
-        super.onStart()
-        // Check for location permission
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        requestLocationPermissions()
+    }
+
+    private fun onRequestPermissionLauncher(): ActivityResultLauncher<Array<String>> {
+        val requestPermissionLauncher = registerForActivityResult(
+            ActivityResultContracts.RequestMultiplePermissions()
+        ) { permissions ->
+            if (permissions.all { it.value }) {
+                requestLocationPermissions()
+            } else {
+                requestLocationPermissions()
+            }
+        }
+        return requestPermissionLauncher
+    }
+
+    private fun requestLocationPermissions() {
         if (ActivityCompat.checkSelfPermission(
                 requireContext(),
                 Manifest.permission.ACCESS_FINE_LOCATION
-            ) == PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
+            ) != PackageManager.PERMISSION_GRANTED &&
+            ActivityCompat.checkSelfPermission(
                 requireContext(),
                 Manifest.permission.ACCESS_COARSE_LOCATION
-            ) == PackageManager.PERMISSION_GRANTED
+            ) != PackageManager.PERMISSION_GRANTED
         ) {
-            // Request location updates
+            onRequestPermissionLauncher().launch(
+                arrayOf(
+                    Manifest.permission.ACCESS_FINE_LOCATION,
+                    Manifest.permission.ACCESS_COARSE_LOCATION
+                )
+            )
+        } else {
             fusedLocationClient.lastLocation.addOnSuccessListener(
                 requireActivity()
             ) { location ->
@@ -57,41 +81,26 @@ class SplashFragment : Fragment() {
                 val longitude = location?.longitude
                 // TODO: Do something with the latitude and longitude values
                 println("get location on: $latitude, $longitude")
+                viewModel.getAllPoints()
+                getLoadingState()
+
             }
-        } else {
-            // Request location permission
-            ActivityCompat.requestPermissions(
-                requireActivity(),
-                arrayOf(
-                    Manifest.permission.ACCESS_FINE_LOCATION,
-                    Manifest.permission.ACCESS_COARSE_LOCATION
-                ),
-                locationPermissionCode
-            )
         }
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        // Call API here and wait for response
-        viewModel.getAllPoints()
-        getLoadingState()
-
     }
 
     private fun getLoadingState() {
         viewModel.loadingStateLiveData.observe(viewLifecycleOwner) { loadingState ->
             when (loadingState) {
                 LoadingState.LOADING -> {
-                    println("LoadingStatus1")
+                    println("Loading")
                     view?.findNavController()?.navigate(createSplashFragmentDirections())
                 }
                 LoadingState.LOADED -> {
-                    println("LoadingStatus2")
+                    println("Loaded")
 
                 }
                 LoadingState.ERROR -> {
-                    println("LoadingStatus3")
+                    println("Error")
                 }
                 null -> {
                     println("LoadingStatus is null")

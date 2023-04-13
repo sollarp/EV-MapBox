@@ -5863,6 +5863,7 @@ drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable white_border
+drawable white_gradient_45
 font poppins
 font poppinsbold
 font poppinsmedium
@@ -5974,7 +5975,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id btnCard
+id btnCardNav
 id btnNav
 id btnSpotLeft
 id btnSpotNav
