@@ -27,6 +27,10 @@ Other features:
 
 ## Current Screens:
 [Screencast from 12-04-23 20:44:24.webm](https://user-images.githubusercontent.com/74240451/231569784-f28be571-41ce-4b08-ae26-cffa62463d44.webm)
+![Screenshot from 2023-04-12 20-47-33](https://user-images.githubusercontent.com/74240451/232127635-a2997202-0df1-4a41-869c-d45b900c016d.png)
+![Screenshot from 2023-04-12 20-48-10](https://user-images.githubusercontent.com/74240451/232127648-7f43d3e5-0594-429c-8af8-23c779c86bdb.png)
+![Screenshot from 2023-04-12 20-48-28](https://user-images.githubusercontent.com/74240451/232127655-05c40e3a-10a1-41dd-bdbf-216cf77dccbb.png)
+
 
 
 ## Development setup
