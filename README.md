@@ -1,6 +1,7 @@
 [![Build status](https://build.appcenter.ms/v0.1/apps/d791979b-c1a4-4049-994c-fc77f2a0637c/branches/master/badge)](https://appcenter.ms)
 
-# Ev MapBox
+# Ev MapBox 
+![image](https://user-images.githubusercontent.com/74240451/232126945-8e388a33-2fee-4e1a-97f7-fcc3de9d22e2.png)
 
 ## About
 This project is an Android app that uses data from Open Charge Map to display charging points for electric vehicles on a map.
