@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Call_Mapbox_API</string>
+    <string name="app_name">EV Map</string>
     <string name="location_details">location details</string>
     <string name="address">address</string>
     <string name="datelaststatusupdate">DateLastStatusUpdate</string>

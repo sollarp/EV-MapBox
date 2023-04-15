@@ -79,8 +79,6 @@ class SplashFragment : Fragment() {
                 // Use location data here
                 val latitude = location?.latitude
                 val longitude = location?.longitude
-                // TODO: Do something with the latitude and longitude values
-                println("get location on: $latitude, $longitude")
                 viewModel.getAllPoints()
                 getLoadingState()
 

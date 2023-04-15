@@ -106,9 +106,9 @@ class MapBarFragment : Fragment(),
                         it.animateCamera(
                             CameraUpdateFactory.newLatLngZoom(
                                 LatLng(
-                                    51.667683, -1.327816
-                                    /*pointItems[0].AddressInfo.Latitude!!.toDouble(),
-                                    pointItems[0].AddressInfo.Longitude!!.toDouble()*/
+                                    /*51.667683, -1.327816*/
+                                    pointItems[0].AddressInfo.Latitude!!.toDouble(),
+                                    pointItems[0].AddressInfo.Longitude!!.toDouble()
                                 ), 10f
                             )
                         )
@@ -140,9 +140,9 @@ class MapBarFragment : Fragment(),
             requireActivity()
         ) { location ->
             val currentLocation = LatLng(
-                51.5872529,-1.4423977
-                /*location.latitude,
-                location.longitude*/
+                /*51.5872529,-1.4423977*/
+                location.latitude,
+                location.longitude
             )
             val markerOptions = MarkerOptions()
                 .icon(BitmapDescriptorFactory.fromBitmap(bitmap))

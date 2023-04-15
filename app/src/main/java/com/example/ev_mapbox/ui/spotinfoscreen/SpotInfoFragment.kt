@@ -5,16 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.navigation.NavDirections
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.ev_mapbox.R
 import com.example.ev_mapbox.databinding.FragmentSpotInfoBinding
-import com.example.ev_mapbox.ui.searchscreen.SearchListFragmentDirections
 import com.example.ev_mapbox.ui.searchscreen.SearchListViewModel
 import com.example.ev_mapbox.util.Constants
 import com.example.ev_mapbox.util.getNavigationIntent
@@ -47,8 +43,8 @@ class SpotInfoFragment: Fragment()  {
             val town = "${detailItems.Town}, " +
                     "${detailItems.Postcode}"
             val addressAndTownText = resources.getString(R.string.address_and_town, address, town)
-            val latLng = detailItems.Latitude?.let {
-                detailItems.Longitude?.let { it1 ->
+            val latLng = detailItems.Longitude?.let {
+                detailItems.Latitude?.let { it1 ->
                     LatLng(
                         it,
                         it1
