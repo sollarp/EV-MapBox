@@ -4,13 +4,10 @@
 ![image](https://user-images.githubusercontent.com/74240451/232126945-8e388a33-2fee-4e1a-97f7-fcc3de9d22e2.png)
 
 ## About
-This project is an Android app that uses data from Open Charge Map to display charging points for electric vehicles on a map.
-Charging points are being shown based on the current displayed camera position with appropriate distance radius based on a current zoom level of a device.
-The app allows to filter POIs, also displays a more detailed information. Navigation to selected charging location using Google map.
-The app also contains a handy search bar which allows to enter a postcode and move a camera towards the said destination.
+This Android application displays electric vehicle charging points on a map by utilizing data from Open Charge Map. The charging points are displayed according to the camera position and the zoom level of the device. The app provides POI filtering and detailed information for each charging location, and enables navigation to the selected charging location using Google Maps. Additionally, the app includes a search bar that allows users to enter a postcode and move the camera to the specified destination..
 
 ## Key Features
-This app uses the latest cutting edge libraries and tools:
+This app uses the latest libraries and tools:
 - 100% written in Kotlin;
 - Kotlin Coroutines for asynchronous programming;
 - Dagger-Hilt for dependency injection.
