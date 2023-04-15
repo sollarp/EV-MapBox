@@ -1468,6 +1468,7 @@ int color gray_300 0x7f050075
 int color green_A400 0x7f050076
 int color highlighted_text_material_dark 0x7f050077
 int color highlighted_text_material_light 0x7f050078
+int color location_marker_background 0x7f0502a3
 int color m3_appbar_overlay_color 0x7f050079
 int color m3_assist_chip_icon_tint_color 0x7f05007a
 int color m3_assist_chip_stroke_color 0x7f05007b
@@ -5771,6 +5772,7 @@ int drawable img_path4 0x7f0700cb
 int drawable img_power 0x7f0700cc
 int drawable img_vectorcheckin 0x7f0700cd
 int drawable layer_list_bg_white_a700_border_gray_300_radius_10 0x7f0700ce
+int drawable location_marker_foreground 0x7f07012b
 int drawable m3_appbar_background 0x7f0700cf
 int drawable m3_avd_hide_password 0x7f0700d0
 int drawable m3_avd_show_password 0x7f0700d1
@@ -6713,6 +6715,8 @@ int layout select_dialog_multichoice_material 0x7f0c0081
 int layout select_dialog_singlechoice_material 0x7f0c0082
 int layout support_simple_spinner_dropdown_item 0x7f0c0083
 int mipmap ic_launcher 0x7f0e0000
+int mipmap location_marker 0x7f0e0001
+int mipmap location_marker_round 0x7f0e0002
 int navigation nav_graph 0x7f0f0000
 int plurals mtrl_badge_content_description 0x7f100000
 int string KM 0x7f110000

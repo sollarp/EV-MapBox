@@ -17,6 +17,7 @@
     <color name="gray_101">#edf8f3</color>
     <color name="gray_300">#dfe7e9</color>
     <color name="green_A400">#20d57b</color>
+    <color name="location_marker_background">#F3F8F5</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -2906,7 +2907,7 @@
     <string name="amp">A</string>
     <string name="amp_and_volt">%1$s, %2$s</string>
     <string name="amp_volt">55A 400V</string>
-    <string name="app_name">Call_Mapbox_API</string>
+    <string name="app_name">EV Map</string>
     <string name="datelaststatusupdate">DateLastStatusUpdate</string>
     <string name="enter_address_city_or_zip_code">enter_address</string>
     <string name="food">Food</string>

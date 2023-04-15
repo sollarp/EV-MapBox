@@ -18,6 +18,7 @@ color gray_100
 color gray_101
 color gray_300
 color green_A400
+color location_marker_background
 color purple_200
 color purple_500
 color purple_700
@@ -2936,6 +2937,7 @@ drawable img_path4
 drawable img_power
 drawable img_vectorcheckin
 drawable layer_list_bg_white_a700_border_gray_300_radius_10
+drawable location_marker_foreground
 drawable map_markers
 drawable pulsing_location
 drawable rectangle_bg_black_900_87_radius_tl_14_bl_14
@@ -3090,6 +3092,8 @@ layout row_gridjcounter
 layout row_gridjcounter1
 layout row_listavat
 mipmap ic_launcher
+mipmap location_marker
+mipmap location_marker_round
 navigation nav_graph
 string KM
 string _80_KM

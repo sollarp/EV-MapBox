@@ -1469,6 +1469,7 @@ color gray_300
 color green_A400
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color location_marker_background
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -5772,6 +5773,7 @@ drawable img_path4
 drawable img_power
 drawable img_vectorcheckin
 drawable layer_list_bg_white_a700_border_gray_300_radius_10
+drawable location_marker_foreground
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -6714,6 +6716,8 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
+mipmap location_marker
+mipmap location_marker_round
 navigation nav_graph
 plurals mtrl_badge_content_description
 string KM
