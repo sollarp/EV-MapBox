@@ -1,6 +1,7 @@
 [![Build status](https://build.appcenter.ms/v0.1/apps/d791979b-c1a4-4049-994c-fc77f2a0637c/branches/master/badge)](https://appcenter.ms)
 
-# Ev MapBox
+# Ev MapBox 
+![image](https://user-images.githubusercontent.com/74240451/232126945-8e388a33-2fee-4e1a-97f7-fcc3de9d22e2.png)
 
 ## About
 This project is an Android app that uses data from Open Charge Map to display charging points for electric vehicles on a map.
@@ -25,9 +26,11 @@ Other features:
 - JUnit4, Mockito-Kotlin.
 
 ## Current Screens:
-![Screenshot from 2023-03-09 17-04-07](https://user-images.githubusercontent.com/74240451/224102280-6a52cf9f-9009-4074-adf6-c7ddb3fe83cf.png)
-![Screenshot from 2023-03-09 17-04-59](https://user-images.githubusercontent.com/74240451/224102330-a636e0b2-879a-4f77-9f26-da2b07f8425e.png)
-
+![Screenshot from 2023-04-12 20-47-33](https://user-images.githubusercontent.com/74240451/232127635-a2997202-0df1-4a41-869c-d45b900c016d.png)
+![Screenshot from 2023-04-12 20-48-10](https://user-images.githubusercontent.com/74240451/232127648-7f43d3e5-0594-429c-8af8-23c779c86bdb.png)
+![Screenshot from 2023-04-12 20-48-28](https://user-images.githubusercontent.com/74240451/232127655-05c40e3a-10a1-41dd-bdbf-216cf77dccbb.png)
+## Video:
+[Screencast from 12-04-23 20:44:24.webm](https://user-images.githubusercontent.com/74240451/231569784-f28be571-41ce-4b08-ae26-cffa62463d44.webm)
 
 ## Development setup
 In order to clone and be able to run the code you will need to supply API Keys for the Google Maps SDK and Open Charge Map API:
