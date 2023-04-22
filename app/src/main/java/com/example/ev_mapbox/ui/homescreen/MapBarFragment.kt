@@ -146,7 +146,6 @@ class MapBarFragment : Fragment(),
                     .position(currentLocation!!)
                     .title("You")
                 map.addMarker(markerOptions)
-                println("megegyszer= ${clickedMarker?.position}")
                 if(clickedMarker == null){
                     map.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLocation!!, 12F))
                 }
@@ -171,26 +170,28 @@ class MapBarFragment : Fragment(),
 
     override fun onMarkerClick(marker: Marker): Boolean {
         if (clickedMarker == marker) {
-            // Marker is already selected, toggle bottom sheet state
-            if (bottomSheetBehavior.state == BottomSheetBehavior.STATE_EXPANDED) {
-                bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
+            val newState = if (bottomSheetBehavior.state == BottomSheetBehavior.STATE_EXPANDED) {
+                BottomSheetBehavior.STATE_COLLAPSED
             } else {
-                bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+                BottomSheetBehavior.STATE_EXPANDED
+            }
+            bottomSheetBehavior.state = newState
+            if (newState == BottomSheetBehavior.STATE_EXPANDED) {
                 setCardViewTexts()
             }
         } else {
-            // New marker selected, expand bottom sheet
+            clickedMarker = marker
+            mapBarViewModel.setLastClickedLocation(marker.position)
             bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
             Handler().postDelayed({
                 bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
                 setCardViewTexts()
             }, 250)
-            clickedMarker = marker
-            mapBarViewModel.setLastClickedLocation(marker.position)
         }
         clickedMarker?.let { mapBarViewModel.setMarker(it) }
         return false
     }
+
 
     private fun setCardViewTexts() {
         clickedMarker = mapBarViewModel.getMarker()
