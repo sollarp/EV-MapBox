@@ -67,8 +67,6 @@ class SearchListViewModel
         return _connectionItems
     }
 
-    // BUG letter "Q"
-    // if character does not match anyting than getAllPoints() does not update recycleview.
     fun onSearchQuery(query: String) {
         searchJob = viewModelScope.launch(Dispatchers.IO) {
             if (query.isEmpty()) {
