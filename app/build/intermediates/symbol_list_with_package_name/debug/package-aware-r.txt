@@ -5935,6 +5935,7 @@ id action_context_bar
 id action_divider
 id action_image
 id action_mapBarFragment_to_searchlistFragment
+id action_mapBarFragment_to_spotinfoFragment
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar

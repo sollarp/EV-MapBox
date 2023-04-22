@@ -2962,6 +2962,7 @@ font poppinsmedium
 font poppinsregular
 font poppinssemibold
 id action_mapBarFragment_to_searchlistFragment
+id action_mapBarFragment_to_spotinfoFragment
 id action_searchlistFragment_to_spotinfoFragment
 id action_splashFragment_to_mapBarFragment
 id btnCardNav

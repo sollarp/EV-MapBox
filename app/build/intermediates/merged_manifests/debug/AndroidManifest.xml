@@ -46,7 +46,7 @@
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDDMWOtt9YhCoHnWd2EhL4uSOYawZxxP3k" />
+            android:value="AIzaSyAAZi0skWFWdQOUUso0YnyLG0chjguVE54" />
 
         <activity
             android:name="com.example.ev_mapbox.ui.MainActivity"

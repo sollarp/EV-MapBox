@@ -28,4 +28,5 @@ object ServiceModule {
     @Singleton
     fun provideRetrofit(): Retrofit = RetrofitClient().retrofit
 
+
 }
