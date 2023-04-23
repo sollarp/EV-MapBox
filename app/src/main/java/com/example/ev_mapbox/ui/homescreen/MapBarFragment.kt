@@ -82,7 +82,7 @@ class MapBarFragment : Fragment(),
         bottomSheetView = binding.root.findViewById(R.id.layout_cardview)
         bottomSheetBehavior = BottomSheetBehavior.from(bottomSheetView)
         textAddress = binding.root.findViewById(R.id.txtAddress)
-        textPointsCounter = binding.root.findViewById(R.id.txtPointsCounter)
+        textPointsCounter = binding.root.findViewById(R.id.txtCardPointsCounter)
         textTitle = binding.root.findViewById(R.id.txtTitle)
         textDistance = binding.root.findViewById(R.id.txtDistance)
         btnPosNav = binding.root.findViewById(R.id.btnNav)

@@ -128,8 +128,7 @@
                             android:layout_weight="0.42"
                             android:ellipsize="end"
                             android:singleLine="true"
-                            android:text="@string/lbl_8_points"
-                            tools:text="@string/lbl_8_points" />
+                            android:text="@string/lbl_8_points" />
 
                         <LinearLayout
                             android:id="@+id/linearRowicwashroom"

@@ -3,6 +3,7 @@ package com.example.ev_mapbox.di
 import com.example.ev_mapbox.data.OpenMapApi
 import com.example.ev_mapbox.data.RetrofitClient
 import com.example.ev_mapbox.domain.model.EvPointDetails
+import com.example.ev_mapbox.util.LocationProvider
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -17,7 +18,7 @@ object ServiceModule {
     @Provides
     @Singleton
     suspend fun provideApiResult(openMapApi: OpenMapApi): List<EvPointDetails> {
-        return openMapApi.getMaxResults()
+        return openMapApi.getMaxResults(LocationProvider.longitude, LocationProvider.latitude)
     }
 
     @Provides

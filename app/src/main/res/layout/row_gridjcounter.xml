@@ -69,7 +69,7 @@
                 android:layout_weight="0.44"
                 android:ellipsize="end"
                 android:singleLine="true"
-                tools:text="@string/lbl_2_points" />
+                android:text="@string/lbl_1_points"/>
 
             <ImageView
                 android:id="@+id/imageImgMennekes"

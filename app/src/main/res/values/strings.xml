@@ -10,7 +10,7 @@
     <string name="lbl_ev">EV</string>
     <string name="lbl_connections">Connections</string>
     <string name="msg_a233_world_trad">A233 World Trade Park, New York</string>
-    <string name="lbl_8_points">8 Points</string>
+    <string name="lbl_8_points">1 Points</string>
     <string name="lbl_open">Open</string>
     <string name="lbl_business_center">Business Center</string>
     <string name="points_counter">%d Points</string>
@@ -40,9 +40,9 @@
     <string name="lbl_amenities">Amenities</string>
     <string name="msg_lorem_ipsum_dol2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
     <string name="lbl_phone_number">Phone Number</string>
-    <string name="msg_55_kw_0_05_kw">55 kW ($0.05/kW)</string>
+    <string name="msg_55_kw_0_05_kw">-- kW ($ no price)</string>
     <string name="amp_volt">55A 400V</string>
-    <string name="lbl_2_points">2 points</string>
+    <string name="lbl_1_points">1 points</string>
     <string name="msg_08_00_am_20_0">08:00 am - 20:00 pm</string>
     <string name="msg_recent_check_in" />
     <string name="msg_emili_williamso" />

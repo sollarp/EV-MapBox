@@ -17,6 +17,7 @@ import com.example.ev_mapbox.databinding.FragmentSplashBinding
 import com.example.ev_mapbox.domain.model.LoadingState
 import com.example.ev_mapbox.ui.searchscreen.SearchListFragmentDirections
 import com.example.ev_mapbox.ui.searchscreen.SearchListViewModel
+import com.example.ev_mapbox.util.LocationProvider
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 
@@ -77,8 +78,8 @@ class SplashFragment : Fragment() {
                 requireActivity()
             ) { location ->
                 // Use location data here
-                val latitude = location?.latitude
-                val longitude = location?.longitude
+                LocationProvider.latitude = location.latitude
+                LocationProvider.longitude = location.longitude
                 viewModel.getAllPoints()
                 getLoadingState()
 
