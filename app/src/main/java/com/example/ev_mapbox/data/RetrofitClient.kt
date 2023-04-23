@@ -1,6 +1,6 @@
 package com.example.ev_mapbox.data
 
-import com.example.ev_mapbox.util.Constants.MOCK_BASE_URL
+import com.example.ev_mapbox.util.Constants.OPEN_MAP_BASE_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -15,7 +15,7 @@ class RetrofitClient {
         .addInterceptor(mHttpLoggingInterceptor)
         .build()
         Retrofit.Builder()
-            .baseUrl(MOCK_BASE_URL)
+            .baseUrl(OPEN_MAP_BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .client(mOkHttpClient)
             .build()

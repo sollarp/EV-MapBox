@@ -17,7 +17,9 @@
 package com.example.ev_mapbox.di
 
 import android.content.Context
+import androidx.fragment.app.Fragment
 import androidx.room.Room
+import androidx.savedstate.SavedStateRegistryOwner
 import com.example.ev_mapbox.data.local.EvPointDataBase
 import com.example.ev_mapbox.data.local.EvPointsDao
 import dagger.Module
@@ -51,4 +53,5 @@ object DatabaseModule {
     fun provideEvPointsDao(database: EvPointDataBase): EvPointsDao {
         return database.evPointsDao()
     }
+
 }

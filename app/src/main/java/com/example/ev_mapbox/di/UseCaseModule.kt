@@ -15,4 +15,5 @@ abstract class UseCaseModule {
     @Singleton
     @Binds
     abstract fun bindSearchListUseCase(impl: SearchListUseCaseImpl): ISearchListUseCase
+
 }

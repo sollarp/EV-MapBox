@@ -24,6 +24,9 @@
         <action
             android:id="@+id/action_mapBarFragment_to_searchlistFragment"
             app:destination="@id/searchlistFragment" />
+        <action
+            android:id="@+id/action_mapBarFragment_to_spotinfoFragment"
+            app:destination="@id/spotinfoFragment" />
     </fragment>
 
     <fragment
