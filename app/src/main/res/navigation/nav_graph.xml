@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.example.ev_mapbox.ui.splashscreen.SplashFragment"
+        android:name="com.soldevcode.evmapbox.ui.splashscreen.SplashFragment"
         android:label="fragment_splashScreen"
         tools:layout="@layout/fragment_splash" />
     <action
@@ -18,7 +18,7 @@
 
     <fragment
         android:id="@+id/mapBarFragment"
-        android:name="com.example.ev_mapbox.ui.homescreen.MapBarFragment"
+        android:name="com.soldevcode.evmapbox.ui.homescreen.MapBarFragment"
         android:label="fragment_searchMap"
         tools:layout="@layout/fragment_mapbar">
         <action
@@ -31,7 +31,7 @@
 
     <fragment
         android:id="@+id/searchlistFragment"
-        android:name="com.example.ev_mapbox.ui.searchscreen.SearchListFragment"
+        android:name="com.soldevcode.evmapbox.ui.searchscreen.SearchListFragment"
         android:label="fragment_searchMap"
         tools:layout="@layout/fragment_searchlistitem">
         <action
@@ -41,7 +41,7 @@
 
     <fragment
         android:id="@+id/spotinfoFragment"
-        android:name="com.example.ev_mapbox.ui.spotinfoscreen.SpotInfoFragment"
+        android:name="com.soldevcode.evmapbox.ui.spotinfoscreen.SpotInfoFragment"
         android:label="fragment_spotInfo"
         tools:layout="@layout/fragment_spot_info">
     </fragment>
