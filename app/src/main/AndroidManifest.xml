@@ -22,7 +22,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="${MAPS_API_KEY}" />
         <activity
-            android:name="com.example.ev_mapbox.ui.MainActivity"
+            android:name="com.soldevcode.evmapbox.ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
