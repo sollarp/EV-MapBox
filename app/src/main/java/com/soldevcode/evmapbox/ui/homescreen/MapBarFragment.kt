@@ -1,10 +1,13 @@
 package com.soldevcode.evmapbox.ui.homescreen
 
+import android.Manifest
 import android.annotation.SuppressLint
+import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,6 +15,7 @@ import android.widget.ImageButton
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.cardview.widget.CardView
+import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -20,14 +24,13 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.NavDirections
 import androidx.navigation.findNavController
+import com.google.android.gms.location.*
 import com.soldevcode.evmapbox.R
 import com.soldevcode.evmapbox.databinding.FragmentMapbarBinding
 import com.soldevcode.evmapbox.ui.searchscreen.SearchListViewModel
 import com.soldevcode.evmapbox.data.local.EvPointsEntity
 import com.soldevcode.evmapbox.domain.model.itemDataConverter
 import com.soldevcode.evmapbox.util.getNavigationIntent
-import com.google.android.gms.location.FusedLocationProviderClient
-import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.GoogleMap.OnMarkerClickListener
@@ -66,6 +69,8 @@ class MapBarFragment : Fragment(),
     private lateinit var fusedLocationClient: FusedLocationProviderClient
     private var lastClickedMarkerLocation: LatLng? = null
     private var currentLocation: LatLng? = null
+    private lateinit var locationCallback: LocationCallback
+    private var myLocationMarker: Marker? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
@@ -116,7 +121,7 @@ class MapBarFragment : Fragment(),
         mapBarViewModel.getCurrentLocation().observe(viewLifecycleOwner) {
             currentLocation
         }
-        map.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLocation!!, 14F))
+        map.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLocation!!, 15F))
     }
 
     @SuppressLint("MissingPermission")
@@ -143,10 +148,12 @@ class MapBarFragment : Fragment(),
                 val markerOptions = MarkerOptions()
                     .icon(BitmapDescriptorFactory.fromBitmap(bitmap))
                     .position(currentLocation!!)
+                    .anchor(0.5f, 0.5f)
                     .title("You")
-                map.addMarker(markerOptions)
+                myLocationMarker = map.addMarker(markerOptions)
                 if(clickedMarker == null){
-                    map.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLocation!!, 12F))
+                    startLocationUpdates()
+                    map.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLocation!!, 15F))
                 }
                 mapBarViewModel.setLastClickedLocation(currentLocation!!)
                 lastClickedMarkerLocation = currentLocation
@@ -259,6 +266,50 @@ class MapBarFragment : Fragment(),
             marker?.tag = point
         }
     }
+
+    private fun startLocationUpdates() {
+        val locationRequest = LocationRequest.create().apply {
+            interval = 1000
+            fastestInterval = 500
+            priority = LocationRequest.PRIORITY_HIGH_ACCURACY
+        }
+        locationCallback = object : LocationCallback() {
+            override fun onLocationResult(locationResult: LocationResult) {
+                locationResult ?: return
+                val location = locationResult.lastLocation
+                // Update the marker position
+                myLocationMarker?.position = LatLng(location.latitude, location.longitude)
+                currentLocation = myLocationMarker?.position
+            }
+        }
+        if (context?.let {
+                ActivityCompat.checkSelfPermission(
+                    it,
+                    Manifest.permission.ACCESS_FINE_LOCATION
+                )
+            } != PackageManager.PERMISSION_GRANTED && context?.let {
+                ActivityCompat.checkSelfPermission(
+                    it,
+                    Manifest.permission.ACCESS_COARSE_LOCATION
+                )
+            } != PackageManager.PERMISSION_GRANTED
+        ) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return
+        }
+        fusedLocationClient.requestLocationUpdates(
+            locationRequest,
+            locationCallback,
+            Looper.getMainLooper()
+        )
+    }
+
 
     override fun onDestroyView() {
         super.onDestroyView()

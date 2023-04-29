@@ -84,6 +84,17 @@ class SplashFragment : Fragment() {
                 getLoadingState()
 
             }
+            // implement this code instead update location holder in location provider
+            /*fusedLocationClient.lastLocation.addOnSuccessListener(
+                requireActivity()
+            ) { location ->
+                // Use location data here
+                val latLng = LatLng(location.latitude, location.longitude)
+                LocationProvider.latitude = location.latitude
+                LocationProvider.longitude = location.longitude
+                viewModel.getAllPoints()
+                getLoadingState()
+            }*/
         }
     }
 

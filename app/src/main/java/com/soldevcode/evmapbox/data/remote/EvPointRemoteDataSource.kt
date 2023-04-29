@@ -16,6 +16,7 @@ class EvPointRemoteDataSource
                 LocationProvider.longitude,
                 LocationProvider.latitude
             )
+            println("all data returned : $result")
             emit(result) // Emits the result of the request to the flow
         }
     }
