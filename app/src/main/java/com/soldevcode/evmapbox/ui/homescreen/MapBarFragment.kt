@@ -197,8 +197,7 @@ class MapBarFragment : Fragment(),
         clickedMarker?.let { mapBarViewModel.setMarker(it) }
         return false
     }
-
-
+    
     private fun setCardViewTexts() {
         clickedMarker = mapBarViewModel.getMarker()
         val pointId = clickedMarker?.tag as? EvPointsEntity
@@ -267,6 +266,7 @@ class MapBarFragment : Fragment(),
         }
     }
 
+    @SuppressLint("MissingPermission")
     private fun startLocationUpdates() {
         val locationRequest = LocationRequest.create().apply {
             interval = 1000
@@ -275,33 +275,11 @@ class MapBarFragment : Fragment(),
         }
         locationCallback = object : LocationCallback() {
             override fun onLocationResult(locationResult: LocationResult) {
-                locationResult ?: return
                 val location = locationResult.lastLocation
                 // Update the marker position
                 myLocationMarker?.position = LatLng(location.latitude, location.longitude)
                 currentLocation = myLocationMarker?.position
             }
-        }
-        if (context?.let {
-                ActivityCompat.checkSelfPermission(
-                    it,
-                    Manifest.permission.ACCESS_FINE_LOCATION
-                )
-            } != PackageManager.PERMISSION_GRANTED && context?.let {
-                ActivityCompat.checkSelfPermission(
-                    it,
-                    Manifest.permission.ACCESS_COARSE_LOCATION
-                )
-            } != PackageManager.PERMISSION_GRANTED
-        ) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            return
         }
         fusedLocationClient.requestLocationUpdates(
             locationRequest,
@@ -309,7 +287,6 @@ class MapBarFragment : Fragment(),
             Looper.getMainLooper()
         )
     }
-
 
     override fun onDestroyView() {
         super.onDestroyView()

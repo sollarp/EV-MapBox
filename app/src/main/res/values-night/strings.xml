@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lbl_apply">Apply</string>
+    <string name="lbl_foods">Foods</string>
+    <string name="lbl_pharmacy">Pharmacy</string>
+    <string name="lbl_wifi">Wi-Fi</string>
+</resources>

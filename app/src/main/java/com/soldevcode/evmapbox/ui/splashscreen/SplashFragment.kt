@@ -1,14 +1,14 @@
 package com.soldevcode.evmapbox.ui.splashscreen
 
 import android.Manifest
-import android.content.pm.PackageManager
+import android.annotation.SuppressLint
+import android.app.AlertDialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.NavDirections
@@ -20,13 +20,14 @@ import com.soldevcode.evmapbox.ui.searchscreen.SearchListViewModel
 import com.soldevcode.evmapbox.util.LocationProvider
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
+import com.soldevcode.evmapbox.util.Constants.LOCATION_PERMISSION_REQUEST_CODE
+import com.soldevcode.evmapbox.util.LocationPermission
 
 class SplashFragment : Fragment() {
 
     private var _binding: FragmentSplashBinding? = null
     private val binding get() = _binding!!
     private val viewModel: SearchListViewModel by activityViewModels()
-
     private lateinit var fusedLocationClient: FusedLocationProviderClient
 
     override fun onCreateView(
@@ -41,7 +42,7 @@ class SplashFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        requestLocationPermissions()
+        getLocationPermissions()
     }
 
     private fun onRequestPermissionLauncher(): ActivityResultLauncher<Array<String>> {
@@ -49,24 +50,28 @@ class SplashFragment : Fragment() {
             ActivityResultContracts.RequestMultiplePermissions()
         ) { permissions ->
             if (permissions.all { it.value }) {
-                requestLocationPermissions()
+                getLocationPermissions()
             } else {
-                requestLocationPermissions()
+                val builder = AlertDialog.Builder(requireContext())
+                builder.setTitle("Location Permission Required")
+                builder.setMessage("This application requires location permission to function properly.")
+                builder.setPositiveButton("Grant Permission") { _, _ ->
+                    LocationPermission.requestLocationPermissions(requireActivity(), LOCATION_PERMISSION_REQUEST_CODE)
+                    getLocationPermissions()
+                }
+                builder.setNegativeButton("Deny Permission") { _, _ ->
+                    requireActivity().finish()
+                }
+                val dialog = builder.create()
+                dialog.show()
             }
         }
         return requestPermissionLauncher
     }
 
-    private fun requestLocationPermissions() {
-        if (ActivityCompat.checkSelfPermission(
-                requireContext(),
-                Manifest.permission.ACCESS_FINE_LOCATION
-            ) != PackageManager.PERMISSION_GRANTED &&
-            ActivityCompat.checkSelfPermission(
-                requireContext(),
-                Manifest.permission.ACCESS_COARSE_LOCATION
-            ) != PackageManager.PERMISSION_GRANTED
-        ) {
+    @SuppressLint("MissingPermission")
+    private fun getLocationPermissions() {
+        if (activity?.let { LocationPermission.isLocationPermissionsGranted(it) } == true) {
             onRequestPermissionLauncher().launch(
                 arrayOf(
                     Manifest.permission.ACCESS_FINE_LOCATION,
@@ -82,19 +87,7 @@ class SplashFragment : Fragment() {
                 LocationProvider.longitude = location.longitude
                 viewModel.getAllPoints()
                 getLoadingState()
-
             }
-            // implement this code instead update location holder in location provider
-            /*fusedLocationClient.lastLocation.addOnSuccessListener(
-                requireActivity()
-            ) { location ->
-                // Use location data here
-                val latLng = LatLng(location.latitude, location.longitude)
-                LocationProvider.latitude = location.latitude
-                LocationProvider.longitude = location.longitude
-                viewModel.getAllPoints()
-                getLoadingState()
-            }*/
         }
     }
 
@@ -102,7 +95,6 @@ class SplashFragment : Fragment() {
         viewModel.loadingStateLiveData.observe(viewLifecycleOwner) { loadingState ->
             when (loadingState) {
                 LoadingState.LOADING -> {
-                    println("Loading")
                     view?.findNavController()?.navigate(createSplashFragmentDirections())
                 }
                 LoadingState.LOADED -> {

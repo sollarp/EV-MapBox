@@ -12,6 +12,6 @@ object Constants {
     const val SPAN_COUNT_2 = 2
     const val LOCATION_MESSAGE = "This app requires location permission to function properly."
     const val AGREE = "Agree"
-    const val REQUEST_CODE_LOCATION_PERMISSION = 0
+    const val LOCATION_PERMISSION_REQUEST_CODE = 0
 }
 

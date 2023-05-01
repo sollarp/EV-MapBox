@@ -13,6 +13,8 @@
     <string name="lbl_8_points">1 Points</string>
     <string name="lbl_open">Open</string>
     <string name="lbl_business_center">Business Center</string>
+    <string name="lbl_filters">Filters</string>
+    <string name="msg_standard_3_7"><![CDATA[Standard (<3.7 kW)\u000bSemi Fast (3.7 –20 kW)\u000bFast (20–43 kW)\u000bUltra Fast (> 43 kW)]]></string>
     <string name="points_counter">%d Points</string>
     <string name="address_and_town">%1$s, %2$s</string>
     <string name="amp_and_volt">%1$s, %2$s</string>
@@ -61,4 +63,8 @@
     <string name="food">Food</string>
     <string name="pharmacy">Pharmacy</string>
     <string name="wi_fi">Wi-Fi</string>
+    <string name="lbl_apply">Apply</string>
+    <string name="lbl_foods">Foods</string>
+    <string name="lbl_pharmacy">Pharmacy</string>
+    <string name="lbl_wifi">Wi-Fi</string>
 </resources>

@@ -22,19 +22,17 @@
             <ImageView
                 android:id="@+id/imageMenu"
                 tools:ignore="ContentDescription"
-                tools:src="@drawable/img_menu"
                 android:layout_width="@dimen/_18pxh"
                 android:layout_height="@dimen/_14pxh"
                 android:layout_marginTop="@dimen/_6pxv"
                 android:layout_marginBottom="@dimen/_9pxv"
-                android:scaleType="fitXY"
-                android:src="@drawable/img_menu" />
+                android:scaleType="fitXY"/>
 
             <LinearLayout
                 android:id="@+id/linearRowev"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_40pxh"
+                android:layout_marginStart="@dimen/_60pxh"
                 android:layout_weight="0.92"
                 android:orientation="horizontal">
 
@@ -78,14 +76,12 @@
             <ImageView
                 android:id="@+id/imageFilter"
                 tools:ignore="ContentDescription"
-                tools:src="@drawable/img_filter"
                 android:layout_width="@dimen/_18pxh"
                 android:layout_height="@dimen/_18pxh"
                 android:layout_marginStart="@dimen/_79pxh"
                 android:layout_marginTop="@dimen/_4pxv"
                 android:layout_marginBottom="@dimen/_7pxv"
-                android:scaleType="fitXY"
-                android:src="@drawable/img_filter" />
+                android:scaleType="fitXY"/>
         </LinearLayout>
 
     </androidx.appcompat.widget.Toolbar>

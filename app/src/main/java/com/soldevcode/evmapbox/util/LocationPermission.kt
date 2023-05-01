@@ -1,18 +1,21 @@
 package com.soldevcode.evmapbox.util
 
 import android.Manifest
+import android.app.Activity
+import android.content.Context
 import android.content.pm.PackageManager
 import androidx.core.app.ActivityCompat
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.content.ContextCompat
 import com.soldevcode.evmapbox.ui.MainActivity
 
-object LocationPermission{
-    fun checkAndRequestLocationPermissions(activity: MainActivity) {
-        if (ContextCompat.checkSelfPermission(
+object LocationPermission {
+    fun requestLocationPermissions(activity: Activity, requestCode: Int) {
+        if (ActivityCompat.checkSelfPermission(
                 activity,
                 Manifest.permission.ACCESS_FINE_LOCATION
-            ) != PackageManager.PERMISSION_GRANTED
-            || ContextCompat.checkSelfPermission(
+            ) != PackageManager.PERMISSION_GRANTED &&
+            ActivityCompat.checkSelfPermission(
                 activity,
                 Manifest.permission.ACCESS_COARSE_LOCATION
             ) != PackageManager.PERMISSION_GRANTED
@@ -23,8 +26,19 @@ object LocationPermission{
                     Manifest.permission.ACCESS_FINE_LOCATION,
                     Manifest.permission.ACCESS_COARSE_LOCATION
                 ),
-                1
+                requestCode
             )
         }
+    }
+
+    fun isLocationPermissionsGranted(activity: Activity): Boolean {
+        return ActivityCompat.checkSelfPermission(
+                activity,
+                Manifest.permission.ACCESS_FINE_LOCATION
+            ) != PackageManager.PERMISSION_GRANTED &&
+            ActivityCompat.checkSelfPermission(
+                activity,
+                Manifest.permission.ACCESS_COARSE_LOCATION
+            ) != PackageManager.PERMISSION_GRANTED
     }
 }
