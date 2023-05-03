@@ -1,7 +1,8 @@
 [![Build status](https://build.appcenter.ms/v0.1/apps/d791979b-c1a4-4049-994c-fc77f2a0637c/branches/master/badge)](https://appcenter.ms)
 
 # Ev MapBox 
-![image](https://user-images.githubusercontent.com/74240451/232126945-8e388a33-2fee-4e1a-97f7-fcc3de9d22e2.png)
+![image](https://user-images.githubusercontent.com/74240451/232126945-8e388a33-2fee-4e1a-97f7-fcc3de9d22e2.png) <a href="https://play.google.com/store/apps/details?id=com.soldevcode.evmapbox" target="_blank">
+<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height="100"/></a>
 
 ## About
 This Android application displays electric vehicle charging points on a map by utilizing data from Open Charge Map. The charging points are displayed according to the camera position and the zoom level of the device. The app provides POI filtering and detailed information for each charging location, and enables navigation to the selected charging location using Google Maps. Additionally, the app includes a search bar that allows users to enter any keyword to find charging point and move the camera to the specified destination..
