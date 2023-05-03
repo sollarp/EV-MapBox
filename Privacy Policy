@@ -1,28 +1,23 @@
-This privacy policy governs your use of the EV MapBox mobile application created by SolarCodeDev.
+Privacy Policy
 
-Personal Information
+This privacy policy outlines how EV-MapBox ("the App") collects, uses, and protects user data. By using the App, you agree to the terms of this privacy policy.
 
-The App does not collect or store any personal information. The only information collected is your device's location, which is used to find the nearest charging station. This information is not shared with any third parties.
+Information We Collect
 
-Third-Party Services
+The App collects the user's location data in order to provide accurate information on the location of electric vehicle charging points. This data is shared with our third-party Mapbox API provider in order to provide mapping services.
 
-The App uses Google Maps API and Open Charge Map API to display charging station locations. By using the App, you agree to Google's and Open Charge Map's privacy policies.
+Information Sharing
 
-Google's privacy policy: https://policies.google.com/privacy
+The user's location data is only shared with the Mapbox API provider and is not stored apart from the user device. We do not share any other personal information with third parties.
 
-Open Charge Map's privacy policy: https://openchargemap.org/site/privacy
+Data Security
 
-Data Retention
-The location data collected by the App is only used to find nearby charging stations and is not retained beyond the current session.
+We take the security of user data seriously and implement appropriate technical and organizational measures to protect against unauthorized access, alteration, disclosure, or destruction. However, no data transmission over the internet can be guaranteed to be completely secure.
 
-Security
+Updates to Privacy Policy
 
-We take reasonable measures to protect the security of your information, including using encryption and secure servers.
-
-Changes to Privacy Policy
-
-We may update this privacy policy from time to time. If we make significant changes, we will notify you by email or in-app notification.
+We may update this privacy policy from time to time in order to reflect changes to our data practices. Users will be notified of any significant changes to this policy.
 
 Contact Us
 
-If you have any questions or concerns about this privacy policy or our use of your information, please contact us at szpitor@gmail.com .
+If you have any questions or concerns about this privacy policy, please contact us szpitor@gmail.com.
