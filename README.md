@@ -5,7 +5,7 @@
 <img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height="100"/></a>
 
 ## About
-This Android application displays electric vehicle charging points on a map by utilizing data from Open Charge Map. The charging points are displayed according to the camera position and the zoom level of the device. The app provides POI filtering and detailed information for each charging location, and enables navigation to the selected charging location using Google Maps. Additionally, the app includes a search bar that allows users to enter any keyword to find charging point and move the camera to the specified destination..
+This Android application displays electric vehicle charging points on a map by utilizing data from Open Charge Map. The charging points are displayed according to the camera position and the zoom level of the device. The app provides POI filtering and detailed information for each charging location, and enables navigation to the selected charging location using Google Maps. Additionally, the app includes a search bar that allows users to enter any keyword to find charging points using a search algorithm and move the camera to the specified destination..
 
 ## Key Features
 This app uses the latest libraries and tools:
