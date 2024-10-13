@@ -29,6 +29,7 @@ Other features:
 ![Screenshot from 2023-04-12 20-48-28](https://user-images.githubusercontent.com/74240451/232127655-05c40e3a-10a1-41dd-bdbf-216cf77dccbb.png)
 ## Video:
 [Screencast from 12-04-23 20:44:24.webm](https://user-images.githubusercontent.com/74240451/231569784-f28be571-41ce-4b08-ae26-cffa62463d44.webm)
+## Video of Play Store:
 [Screen Recording 2024-10-13 at 08.31.36.webm](https://github.com/user-attachments/assets/b431f7f4-c6f1-49d7-a211-5a2c93806e4b)
 
 ## Development setup
